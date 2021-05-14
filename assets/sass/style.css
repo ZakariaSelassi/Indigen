@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.banner {
+  height: 100vh;
+  background-image: url("../img/block-party.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+}
+
+h1 {
+  font-family: Sedgwick, sans-serif;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  z-index: 2;
+}
+
+.trapeze {
+  position: absolute;
+  z-index: 1;
+  width: 35vw;
+  height: 0;
+  border-left: 20vh solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 100vh solid rgba(0, 0, 0, 0.404);
+}
+/*# sourceMappingURL=style.css.map */
