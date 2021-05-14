@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "title_font";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf");
+}
+
+a {
+  font-family: "title_font";
+}
+
+h1 {
+  font-family: "title_font";
+}
+
+i {
+  font-size: 1.8rem;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=style.css.map */
