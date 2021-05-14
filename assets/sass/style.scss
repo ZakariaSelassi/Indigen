@@ -41,3 +41,19 @@ h2 {
     border-right : 0px solid transparent;
     border-top   : 100vh solid rgba(0, 0, 0, 0.404);
   }
+@font-face { 
+    font-family: "title_font"; 
+    src: url('../fonts/SedgwickAveDisplay-Regular.ttf'); 
+    }
+a {
+font-family: "title_font";
+}
+h1 {
+font-family: "title_font";
+}
+i{
+    font-size: 1.8rem;
+}
+header {
+   background-color: rgb(0, 0, 0, 0.2);
+}
