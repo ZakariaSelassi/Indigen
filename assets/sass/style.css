@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
   font-family: "Sedgwick";
   src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
@@ -14,49 +13,40 @@
   background-image: url("../img/block-party.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
 }
 
 h1 {
   font-family: Sedgwick, sans-serif;
+  text-align: right;
 }
 
 h2 {
   font-family: Roboto, sans-serif;
   z-index: 2;
+  text-align: right;
+  color: #db3632;
 }
 
 .trapeze {
   position: absolute;
+  top: 0;
+  right: 0;
   z-index: 1;
   width: 35vw;
-  height: 0;
   border-left: 20vh solid transparent;
-  border-right: 0px solid transparent;
-  border-top: 100vh solid rgba(0, 0, 0, 0.404);
-=======
-  font-family: "title_font";
-  src: url("../fonts/SedgwickAveDisplay-Regular.ttf");
+  border-top: 100vh solid rgba(0, 0, 0, 0.561);
 }
 
-a {
-  font-family: "title_font";
+.description {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-h1 {
-  font-family: "title_font";
-}
-
-i {
-  font-size: 1.8rem;
-}
-
-header {
-  background-color: rgba(255, 255, 255, 0.5);
->>>>>>> Pat
+p {
+  color: white;
+  text-align: right;
+  font-family: Roboto, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
