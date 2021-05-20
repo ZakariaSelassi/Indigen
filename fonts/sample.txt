@@ -1,0 +1,10 @@
+Youtube 
+<i class="fab fa-youtube"></i>
+Facebook
+<i class="fab fa-facebook"></i>
+Linkedin 
+<i class="fab fa-linkedin"></i>
+Instagram
+<i class="fab fa-instagram"></i>
+Style 
+<script src="https://kit.fontawesome.com/d97f99d55c.js" crossorigin="anonymous"></script>
