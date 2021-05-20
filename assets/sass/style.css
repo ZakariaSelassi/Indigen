@@ -1,24 +1,4 @@
 @font-face {
-<<<<<<< HEAD
-  font-family: "title_font";
-  src: url("../fonts/SedgwickAveDisplay-Regular.ttf");
-}
-
-a {
-  font-family: "title_font";
-}
-
-h1 {
-  font-family: "title_font";
-}
-
-i {
-  font-size: 1.8rem;
-}
-
-header {
-  background-color: rgba(255, 255, 255, 0.5);
-=======
   font-family: "Sedgwick";
   src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
@@ -68,6 +48,21 @@ p {
   color: white;
   text-align: right;
   font-family: Roboto, sans-serif;
->>>>>>> fac9a8d035bd9005b59375c34e416416201d13d1
+}
+
+a {
+  font-family: Sedgwick, sans-serif;
+}
+
+i {
+  font-size: 1.8rem;
+}
+
+header {
+  z-index: 999;
+}
+
+footer {
+  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */
