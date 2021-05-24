@@ -1,0 +1,134 @@
+@import url(c:\wamp64\www\INDIGEN\Indigen\wp-content\themes\Indigen\assets\sass\event.css);
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+.index-polygone-graffiti {
+  background-image: url("../img/graffiti-NB.jpg");
+  height: 74.1vh;
+  width: 31.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.index-polygone-graffiti .title-graffiti {
+  height: 20vh;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 74% 100%);
+          clip-path: polygon(0 0, 0% 100%, 74% 100%);
+  background-color: rgba(255, 0, 0, 0.274);
+  color: white;
+  font-size: 5vh;
+  font-family: "Sedgwick";
+  padding-left: 10vh;
+  padding-top: 12vh;
+}
+
+.index-polygone-graffiti:hover {
+  background-image: url("../img/graffiti.jpg");
+  height: 62.5vh;
+}
+
+.index-polygone-graffiti:hover .title-graffiti {
+  display: none;
+}
+
+.index-polygone-events {
+  background-image: url("../img/block-party-NB.jpg");
+  height: 74.1vh;
+  width: 31.5%;
+  float: left;
+  -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.index-polygone-events .title-events {
+  height: 20vh;
+  -webkit-clip-path: polygon(0 0, 0 100%, 90% 0);
+          clip-path: polygon(0 0, 0 100%, 90% 0);
+  background-color: rgba(255, 0, 0, 0.274);
+  color: white;
+  font-size: 5vh;
+  font-family: "Sedgwick";
+  padding-left: 10vh;
+  padding-top: 3vh;
+}
+
+.index-polygone-events:hover {
+  background-image: url("../img/block-party.jpg");
+  height: 62.5vh;
+}
+
+.index-polygone-events:hover .title-events {
+  display: none;
+}
+
+.index-polygone-tourisme {
+  background-image: url("../img/parcour urbain-NB.jpg");
+  height: 74.1vh;
+  width: 31.5%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.index-polygone-tourisme .title-tourisme {
+  height: 20vh;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+  background-color: rgba(255, 0, 0, 0.274);
+  color: white;
+  font-size: 5vh;
+  font-family: "Sedgwick";
+  padding-left: 3vh;
+  padding-top: 12vh;
+}
+
+.index-polygone-tourisme:hover {
+  background-image: url("../img/parcour urbain.jpg");
+  height: 62.5vh;
+  width: 28.45%;
+}
+
+.index-polygone-tourisme:hover .title-tourisme {
+  display: none;
+}
+
+.triptych {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.triptych:hover {
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.index-black-box {
+  height: 7vh;
+  width: 100vw;
+  background-color: black;
+}
+/*# sourceMappingURL=index.css.map */

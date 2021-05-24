@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.event-banner {
+  height: 100vh;
+  background-image: url("../img/block-party.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.evetn-title {
+  font-family: Sedgwick, sans-serif;
+  text-align: right;
+}
+
+.event-subtitle {
+  font-family: Roboto, sans-serif;
+  z-index: 2;
+  text-align: right;
+  color: #db3632;
+}
+
+.event-trapeze {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35vw;
+  border-left: 20vh solid transparent;
+  border-top: 100vh solid rgba(0, 0, 0, 0.561);
+}
+
+.event-description {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.event-p {
+  color: white;
+  text-align: right;
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=event.css.map */
