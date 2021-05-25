@@ -66,3 +66,22 @@ footer {
   z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */
+.logo{
+  width: 150px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 600px) {
+    .logo {
+        width: 5px;
+    }
+    
+}
