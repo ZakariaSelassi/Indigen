@@ -11,6 +11,22 @@ $titleFont: Sedgwick, sans-serif;
 $subtitlesFont: Roboto, sans-serif;
 $redIndigen: #db3632;
 //$opacityColor: ;
+
+//============================================  index.html (Nat)  ==================================================
+header {
+  z-index: 2;
+}
+
+footer {
+  z-index: 2;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
 // ------BANNER-------
 .banner {
   height: 100vh;
