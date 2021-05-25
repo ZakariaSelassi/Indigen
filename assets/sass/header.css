@@ -8,6 +8,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*HEADER*/
 li {
   list-style: none;
 }
@@ -119,5 +121,27 @@ a {
     transform: translate(0, -25%);
     margin: 3.5em auto 1em 1em;
     width: 5rem;
+  }
+}
+/*FOOTER*/
+.partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 20vh;
+  padding: 1rem 1.5rem;
+}
+.reseau {
+  font-size: 5vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .partner {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
   }
 }
