@@ -65,8 +65,8 @@ header {
 footer {
   z-index: 999;
 }
-/*# sourceMappingURL=style.css.map */
-.logo{
+
+.logo {
   width: 150px;
   height: auto;
 }
@@ -80,8 +80,8 @@ footer {
 }
 
 @media (min-width: 600px) {
-    .logo {
-        width: 5px;
-    }
-    
+  img.logo {
+    width: 5px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
