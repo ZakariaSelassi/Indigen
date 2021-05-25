@@ -6,7 +6,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 li {
@@ -22,9 +23,15 @@ a {
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: black;
   opacity: 50%;
   height: 20vh;
@@ -46,9 +53,15 @@ a {
 }
 
 .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-item {
@@ -74,31 +87,34 @@ a {
   z-index: 1;
   margin: 1.7rem;
 }
+
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     width: 100%;
     border-radius: 10px;
     text-align: center;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
   .nav-menu.active {
     left: 0;
   }
-
   .nav-item {
     margin: 2.5rem 0;
   }
   .nav-link {
     color: black;
   }
-
   .hamburger {
     position: absolute;
     display: block;
@@ -109,13 +125,13 @@ a {
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .logo {
     position: absolute;

@@ -1,45 +1,38 @@
 @font-face {
     font-family: "Sedgwick";
     src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
-}
-body{
-    font-family: "Sedgwick";
-}
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-li {
+  }
+  li {
     list-style: none;
-}
-
-a {
-   
-    text-decoration: none;
-}
-.header{
+  }
   
-   background-color: black;
-   opacity: 50%;
-   height: 20vh;
-}
-.header:hover{
+  a {
+    text-decoration: none;
+  }
+  
+  .navbar:hover {
     opacity: 100%;
-}
-.navbar {
-   
+  }
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    opacity: 50%;
+    height: 20vh;
     padding: 1rem 1.5rem;
-   
-}
-.hamburger {
+  }
+  .hamburger {
     display: none;
-}
-
-.bar {
+  }
+  
+  .bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -47,85 +40,84 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
-}
-.nav-menu {
+  }
+  .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
     margin-left: 5rem;
-}
-
-.nav-link{
+  }
+  
+  .nav-link {
+    font-family: "Sedgwick";
     font-size: 1.6rem;
     font-weight: 400;
     color: white;
-}
-
-.nav-link:hover{
-    color:#db3632;
-}
-
-.logo{
+  }
+  
+  .nav-link:hover {
+    color: #db3632;
+  }
+  
+  .logo {
     position: absolute;
     width: 11%;
     height: auto;
-  opacity: 100%;
-  z-index: 1;
-}
-@media only screen and (max-width: 768px) {
+    opacity: 100%;
+    z-index: 1;
+    margin: 1.7rem;
+  }
+  @media only screen and (max-width: 768px) {
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+  
     .nav-menu.active {
-        left: 0;
+      left: 0;
     }
-
+  
     .nav-item {
-        margin: 2.5rem 0;
+      margin: 2.5rem 0;
     }
-    .nav-link{
-       
-        color: black;
+    .nav-link {
+      color: black;
     }
-
+  
     .hamburger {
-        display: block;
-        cursor: pointer;
-       background-color: white;
-       margin-top: 0.8rem;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      background-color: white;
+      margin: 2px 1em 0 80%;
     }
     .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+      opacity: 0;
     }
-
+  
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
     }
-
+  
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
-    .logo{
-        position:absolute;
-        top :0 auto;
-        left: 0 auto;
-        transform: translate(0,-25%);
-        margin: 0 auto;
-        width : 3.5rem;
+    .logo {
+      position: absolute;
+      -webkit-transform: translate(0, -25%);
+      transform: translate(0, -25%);
+      margin: 3.5em auto 1em 1em;
+      width: 5rem;
     }
-
-}
+  }
