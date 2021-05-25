@@ -1,16 +1,28 @@
-@import "./event.css";
+// @import "./event.css";
 @font-face {
     font-family: "Sedgwick";
     src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 $title-font: "Sedgwick";
+
+body {
+    overflow-x: hidden;
+}
 
 // GRAFFITI
 .index-polygone-graffiti {
     background-image: url("../img/graffiti-NB.jpg");
-    height: 74.1vh;
-    width: 31.5%;
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -18,13 +30,18 @@ $title-font: "Sedgwick";
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     .title-graffiti {
         height: 20vh;
-        clip-path: polygon(0 0, 0% 100%, 74% 100%);
+        clip-path: polygon(0 0, 0% 100%, 70% 100%);
         background-color: rgba(255, 0, 0, 0.274);
-        color: white;
-        font-size: 5vh;
+        font-size: 2.5vw;
         font-family: $title-font;
-        padding-left: 10vh;
-        padding-top: 12vh;
+        position: relative;
+        p {
+            position: absolute;
+            left: 17%;
+            bottom: 0%;
+            color: white;
+        }
+        
     }
     &:hover {
         background-image: url("../img/graffiti.jpg");
@@ -35,23 +52,33 @@ $title-font: "Sedgwick";
     }
 }
 
+
 // EVENTS
 .index-polygone-events {
+    margin-left: -38px;
     background-image: url("../img/block-party-NB.jpg");
-    height: 74.1vh;
-    width: 31.5%;
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
     float: left;
     -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
     clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
     .title-events {
-        height: 20vh;
-        clip-path: polygon(0 0, 0 100%, 90% 0);
+        height: 25vh;
+        clip-path: polygon(0 0, 0 80%, 94% 0);
         background-color: rgba(255, 0, 0, 0.274);
         color: white;
-        font-size: 5vh;
+        font-size: 2.5vw;
         font-family: $title-font;
-        padding-left: 10vh;
-        padding-top: 3vh;
+        position: relative;
+        p {
+            position: absolute;
+            left: 25%;
+            top: 0%;
+            color: white;
+            padding-top: 2%;
+        }
     }
     &:hover {
         background-image: url("../img/block-party.jpg");
@@ -65,8 +92,11 @@ $title-font: "Sedgwick";
 // TOURISME
 .index-polygone-tourisme {
     background-image: url("../img/parcour\ urbain-NB.jpg");
-    height: 74.1vh;
-    width: 31.5%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 4vh;
+    height: 74.07407407vh;
+    width: 33.3333%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -75,13 +105,18 @@ $title-font: "Sedgwick";
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     .title-tourisme {
         height: 20vh;
-        clip-path: polygon(0 0, 0 100%, 100% 100%);
+        clip-path: polygon(0 0, 0 100%, 88% 100%);
         background-color: rgba(255, 0, 0, 0.274);
         color: white;
-        font-size: 5vh;
+        font-size: 2.5vw;
         font-family: $title-font;
-        padding-left: 3vh;
-        padding-top: 12vh;
+        position: relative;
+        p {
+            position: absolute;
+            left: 7%;
+            bottom: 0%;
+            color: white;
+        }
     }
     &:hover {
         background-image: url("../img/parcour\ urbain.jpg");
@@ -108,3 +143,12 @@ $title-font: "Sedgwick";
     width: 100vw;
     background-color: black;
 }
+
+.index-black-box-bot {
+    margin-top: 26vh;
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
