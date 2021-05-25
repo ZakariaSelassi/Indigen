@@ -20,6 +20,7 @@ a {
   
    background-color: black;
    opacity: 50%;
+   height: 20vh;
 }
 .header:hover{
     opacity: 100%;
@@ -30,6 +31,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+   
 }
 .hamburger {
     display: none;
@@ -65,9 +67,11 @@ a {
 }
 
 .logo{
-    width: 10%;
+    position: absolute;
+    width: 11%;
     height: auto;
   opacity: 100%;
+  z-index: 1;
 }
 @media only screen and (max-width: 768px) {
     .nav-menu {
@@ -99,6 +103,7 @@ a {
     .hamburger {
         display: block;
         cursor: pointer;
+       background-color: white;
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
