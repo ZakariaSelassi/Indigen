@@ -49,4 +49,20 @@ p {
   text-align: right;
   font-family: Roboto, sans-serif;
 }
+
+a {
+  font-family: Sedgwick, sans-serif;
+}
+
+i {
+  font-size: 1.8rem;
+}
+
+header {
+  z-index: 999;
+}
+
+footer {
+  z-index: 999;
+}
 /*# sourceMappingURL=style.css.map */

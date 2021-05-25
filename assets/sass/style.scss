@@ -49,4 +49,26 @@ p {
     text-align: right;
     font-family: $subtitlesFont;
 }
-// -------------------
+a {
+    font-family: $titleFont;
+}
+
+i{
+    font-size: 1.8rem;
+}
+
+//header/footer nav hamburger
+header{
+    z-index: 999;
+}
+footer{
+    z-index: 999;
+}
+
+@media (min-width: 1024px) {
+    .top-navbar {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+  }
