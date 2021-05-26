@@ -40,7 +40,7 @@ a {
           align-items: center;
   background-color: black;
   opacity: 50%;
-  height: 15vh;
+  height: 150px;
   border: 1px solid red;
   padding-right: 3rem;
 }
@@ -107,5 +107,11 @@ a {
 
 .reseau {
   font-size: 5vh;
+}
+
+.video {
+  position: relative;
+  top: -150px;
+  z-index: -1;
 }
 /*# sourceMappingURL=header.css.map */

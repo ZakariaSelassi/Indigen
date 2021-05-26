@@ -30,7 +30,7 @@ justify-content: flex-end;
 align-items: center;
 background-color: black;
 opacity: 50%;
-height: 15vh;
+height: 150px;
 border : 1px solid red;
 padding-right: 3rem;
 
@@ -85,3 +85,8 @@ color: #db3632;
     font-size: 5vh;
   }
   
+.video{
+    position: relative;
+    top: -150px;
+    z-index: -1;
+}
