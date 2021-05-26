@@ -40,7 +40,7 @@ a {
           align-items: center;
   background-color: black;
   opacity: 50%;
-  height: 10vh;
+  height: 15vh;
   border: 1px solid red;
   padding-right: 3rem;
 }
@@ -80,14 +80,14 @@ a {
 
 .logo {
   position: absolute;
-  top: 2%;
-  left: 5%;
-  -webkit-transform: translate(-5%, -2%);
-          transform: translate(-5%, -2%);
-  width: 8%;
+  top: 4%;
+  left: 2%;
+  width: 11%;
   height: auto;
   opacity: 100%;
   z-index: 1;
+  margin: auto;
+  border: 1px solid red;
 }
 
 .partner {
