@@ -10,7 +10,7 @@
 $titleFont: Sedgwick, sans-serif;
 $subtitlesFont: Roboto, sans-serif;
 $redIndigen: #db3632;
-//$opacityColor: ;
+
 // ------BANNER-------
 .event-banner {
     height: 100vh;
@@ -22,13 +22,17 @@ $redIndigen: #db3632;
 .event-title {
     font-family: $titleFont;
     text-align: right;
+    font-size: 7vw;
 }
+
 .event-subtitle {
     font-family: $subtitlesFont;
     z-index: 2;
     text-align: right;
     color: $redIndigen;
+    font-size: 1.5vw;
 }
+
 .event-trapeze {
     position: absolute;
     top: 0;
@@ -48,5 +52,12 @@ $redIndigen: #db3632;
     color: white;
     text-align: right;
     font-family: $subtitlesFont;
+    font-size: 0.9vw;
+    width: 15vw;
+}
+
+.event-video {
+    width: 15vw;
+    height: 20vh;
 }
 // -------------------
