@@ -3,8 +3,178 @@
   src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/*HEADER*/
+.navbar:hover {
+  opacity: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  opacity: 50%;
+  height: 15vh;
+  padding: 1rem 10rem 1rem 1rem;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Sedgwick";
+  font-size: 1.7vw;
+  font-weight: 400;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-link:hover {
+  color: #db3632;
+}
+
+.logo {
+  position: absolute;
+  width: 11%;
+  height: auto;
+  opacity: 100%;
+  z-index: 1;
+  margin: 1.2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .video {
+    position: relative;
+    top: -200px;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    opacity: 100%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 1.8rem 0;
+  }
+  .nav-link {
+    color: black;
+  }
+  .hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    margin: 2px 1em 0 80%;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .logo {
+    position: absolute;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    margin: 3.5em auto 1em 1em;
+    width: 5rem;
+  }
+}
+
+/*FOOTER*/
+.reseau {
+  font-size: 5vh;
+}
+
+/***** End Footer / Header ****/
+/****** Tryptique Jazzon**/
 .index-polygone-graffiti {
-  background-image: url("../img/blockparty.jpg");
+  background-image: url("../img/graffitiNB.jpg");
   background-size: cover;
   background-position: center;
   height: 74.07407407vh;
@@ -24,17 +194,18 @@
 }
 
 .index-polygone-graffiti .title-graffiti {
-  height: 20vh;
+  height: 30vh;
   -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
           clip-path: polygon(0 0, 0% 100%, 70% 100%);
   background-color: rgba(255, 0, 0, 0.274);
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
 
 .index-polygone-graffiti .title-graffiti p {
   position: absolute;
+  line-height: 90%;
   left: 17%;
   bottom: 0%;
   color: white;
@@ -51,7 +222,7 @@
 
 .index-polygone-events {
   margin-left: -38px;
-  background-image: url("../img/blockparty.jpg");
+  background-image: url("../img/blockpartyNB.jpg");
   background-size: cover;
   background-position: center;
   height: 74.07407407vh;
@@ -67,7 +238,7 @@
           clip-path: polygon(0 0, 0 80%, 94% 0);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -90,7 +261,7 @@
 }
 
 .index-polygone-tourisme {
-  background-image: url("../img/blockparty.jpg");
+  background-image: url("../img/parcoururbainNB.jpg");
   background-size: cover;
   background-position: center;
   margin-left: 4vh;
@@ -117,7 +288,7 @@
           clip-path: polygon(0 0, 0 100%, 88% 100%);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -130,7 +301,7 @@
 }
 
 .index-polygone-tourisme:hover {
-  background-image: url("../img/parcour urbain.jpg");
+  background-image: url("../img/parcoururbain.jpg");
   height: 62.5vh;
   width: 28.45%;
 }
@@ -159,25 +330,29 @@
 
 .index-black-box-bot {
   margin-top: 26vh;
-  height: 7vh;
+  height: 0.01vh;
   width: 100vw;
   background-color: black;
 }
 
-/*** Separator ***/
-.separatorContainer {
+/****** Tryptique Jazzon**/
+/*** Separateur **/
+.separator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  height: 20vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 11vh;
+  margin-top: -14vh;
+  margin-bottom: 4vh;
 }
 
-/*** video ***/
+.partner {
+  font-size: 0.8vw;
+  font-family: "Roboto";
+}
 /*# sourceMappingURL=index.css.map */
