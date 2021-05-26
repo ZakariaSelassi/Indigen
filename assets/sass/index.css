@@ -35,17 +35,18 @@ body {
 }
 
 .index-polygone-graffiti .title-graffiti {
-  height: 20vh;
+  height: 30vh;
   -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
           clip-path: polygon(0 0, 0% 100%, 70% 100%);
   background-color: rgba(255, 0, 0, 0.274);
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
 
 .index-polygone-graffiti .title-graffiti p {
   position: absolute;
+  line-height: 90%;
   left: 17%;
   bottom: 0%;
   color: white;
@@ -78,7 +79,7 @@ body {
           clip-path: polygon(0 0, 0 80%, 94% 0);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -128,7 +129,7 @@ body {
           clip-path: polygon(0 0, 0 100%, 88% 100%);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-family: "Sedgwick";
   position: relative;
 }
