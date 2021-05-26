@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+    <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
@@ -19,94 +25,45 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../sass/style.css" />
-
-    <title>Accueil</title>
+    <title>INDIGEN</title>
   </head>
   <body>
-    
-      <header>
-          
-         
-        <nav class="flex  space-around  justify-between items-center bg-black bg-opacity-60 hover:bg-opacity-100 p-3 flex-wrap">
-          <img
-            class="logo -mb-20 ml-2 opacity-100"
-            src="../img/logo.png"
-            alt="logo"
-            
-          />
-          <button
-          class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
-          data-target="#navigation"
-        >
-          <i class="material-icons">menu</i>
-        </button>
-
-          <div class="hidden inset-y-0 right-0 top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto pl-56" id="navigation" >
-            <div  class="gap-x-10  lg:inline-flex lg:flex-row  lg:w-full items-start flex flex-col lg:h-auto">
-              <a href="index.html" 
-              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center ">
-                <span class= "burger ">ACCUEIL</span ></a>
-              <a href="#"
-              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center">
-              <span class= "burger "> ART - GRAFFITI</span></a>
-              <a href="event.html"
-              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center"
-              ><span class="burger ">EVENTS</span></a>
-              <a href="#"
-              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center">
-              <span class="burger ">TOURISME URBAIN</span></a>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-<!-- CONTENT-->
-
+    <header class="header">
+      <a href="#" class="nav-logo">
+        <img class="logo" src="../img/logolight.png" alt="logo"
+      /></a>
+      <nav class="navbar">
+        <span></span>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ART - GRAFFITI</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">TOURISME URBAIN</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--CONTENT-->
     <footer
       class="fixed bottom-0 left-0 right-0 py-5 bg-black text-center text-white"
     >
-      <div>
+      <div class="reseau">
         <i class="fab fa-youtube"></i>
         <i class="fab fa-facebook"></i>
         <i class="fab fa-linkedin"></i>
         <i class="fab fa-instagram"></i>
-      </div>
-      <div class="py-5 bg-white p-0 m-0">
-        <div class="flex flex-wrap items-center justify-between ml-4 mr-4">
-          <img
-            class=""
-            src="../img/Bois-du-Cazier-logo.jpg"
-            alt="bois-du-cazier"
-            width="110"
-          />
-          <img class="" src="../img/eden-logo.png" alt="eden" width="50" />
-          <img
-            class=""
-            src="../img/Logo_of_charleroi.svg.png"
-            alt="Charleroi"
-            width="25"
-          />
-          <img class="" src="../img/pba-logo.png" alt="pba" width="50" />
-          <img
-            class=""
-            src="../img/Rockerill-logo.jpg"
-            alt="Rockerill"
-            width="50"
-          />
-          <img
-            class=""
-            src="../img/TEC_Charleroi.svg.png"
-            alt="TEC"
-            width="50"
-          />
-          <img
-            class=""
-            src="../img/wallonie-travel-logo.png"
-            alt="wallonie-travel"
-            width="50"
-          />
-        </div>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -114,8 +71,6 @@
       src="https://kit.fontawesome.com/d97f99d55c.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="../js/navbar.js"></script>
-   
-    
+    <script src="../js/header.js"></script>
   </body>
 </html>
