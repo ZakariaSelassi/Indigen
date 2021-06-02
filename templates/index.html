@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Indigen">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../sass/style.css" />
-    <script src="https://kit.fontawesome.com/d97f99d55c.js" crossorigin="anonymous"></script>
-    <title>Accueil</title>
+    <title>Document</title>
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../sass/index.css">
 </head>
 <body>
-    <!--Menu Navigation-->
-    <div class="flex flex-col ">
-        <header class="py-2 bg-black bg-opacity-60 hover:bg-opacity-100 text-white text-center text-xl md:text-lg pr-8">
-            <nav class="flex flex-wrap items-center justify-between ml-10">
-                <img class="-mb-20 ml-2 opacity-100" src="../img/logo.png" alt="logo" width="150"/>
-                    <a href="#">ACCUEIL</a>
-                    <a href="#">STREET ART - GRAFFITI</a>
-                    <a href="#">EVENTS</a>
-                    <a href="#">TOURISME URBAIN</a>
-            </nav>
-        </header>
+    <header>
+    <a href="index.html" class="nav-logo">
+    <img class="logo" src="../img/logolight.png" alt="logo"/></a>
+    <nav class="navbar">
+    <ul class="nav-menu">
+    <li class="nav-item">
+        <a href="index.html" class="nav-link">ACCUEIL</a>
+    </li>
+    <li class="nav-item">
+        <a href="street.html" class="nav-link">ART - GRAFFITI</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">EVENTS</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">TOURISME URBAIN</a>
+    </li>
+    </ul>
+    <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
     </div>
-
-    <video class="video" src="../video/teaser.mp4" autoplay muted></video>
-
-    <!--Footer-->
-    <footer class="fixed bottom-0 left-0 right-0 py-5 bg-black text-center text-white ">
-        <div>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
-        </div>
-        <div class="py-5 bg-white p-0">
-            <div class="flex flex-wrap items-center justify-between ml-4 mr-4">
-                <img class="" src="../img/Bois-du-Cazier-logo.jpg" alt="bois-du-cazier" width="110"/>
-                <img class="" src="../img/eden-logo.png" alt="eden" width="50" />
-                <img class="" src="../img/Logo_of_charleroi.svg.png" alt="Charleroi" width="25"/>
-                <img class="" src="../img/pba-logo.png" alt="pba" width="50" />
-                <img class="" src="../img/Rockerill-logo.jpg" alt="Rockerill" width="50"/>
-                <img class="" src="../img/TEC_Charleroi.svg.png" alt="TEC"  width="50"/>
-                <img class="" src="../img/wallonie-travel-logo.png" alt="wallonie-travel" width="50"/>
+    </nav>
+    </header>
+    <section  class="video" >
+        <video src="../video/teaser.mp4" autoplay muted></video>
+        <div class="index-black-box"></div>
+    </section>
+    <section class="separator">
+    <div class="separatorContainer">
+        <img src="../img/logoHorizontal.jpg" alt="logo">
+    </div>
+    </section>
+    <section class="triptych-container">
+    <div class="flex flex-col">
+    <div class="index-black-box"></div>
+        <div class="flex flex-row">
+            <div class="index-polygone-graffiti triptych">
+                <div class="title-graffiti"><p>Street art <br> Graffiti</p></div>
+            </div>
+            <div class="index-polygone-events triptych">
+                <div class="title-events"><p>Events</p></div>
+            </div>
+            <div class="index-polygone-tourisme triptych">
+                <div class="title-tourisme"><p>Tourisme urbain</p></div>
             </div>
         </div>
+    <div class="index-black-box-bot"></div>
+    </div>
+    </section>
+    <footer class="reseau py-5 bg-black text-center text-white">
+   
+    <div>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="partner">
+        <a href="#" >Nos partenaires</a>  
+      </div>
     </footer>
-    
+    <script src="../js/header.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d97f99d55c.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>

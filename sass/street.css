@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/*HEADER*/
+.navbar:hover {
+  opacity: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  opacity: 50%;
+  height: 15vh;
+  padding: 1rem 10rem 1rem 1rem;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Sedgwick";
+  font-size: 1.7vw;
+  font-weight: 400;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-link:hover {
+  color: #db3632;
+}
+
+.logo {
+  position: absolute;
+  width: 11%;
+  height: auto;
+  opacity: 100%;
+  z-index: 1;
+  margin: 1.2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .video {
+    position: relative;
+    top: -200px;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    opacity: 100%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 1.8rem 0;
+  }
+  .nav-link {
+    color: black;
+  }
+  .hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    margin: 2px 1em 0 80%;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .logo {
+    position: absolute;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    margin: 3.5em auto 1em 1em;
+    width: 5rem;
+  }
+}
+
+.street-banner {
+  height: 100vh;
+  background-image: url("../img/blockparty.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.street-title {
+  font-family: Sedgwick, sans-serif;
+  text-align: right;
+  font-size: 4vw;
+}
+
+.street-subtitle {
+  font-family: Roboto, sans-serif;
+  z-index: 2;
+  text-align: right;
+  color: #db3632;
+  font-size: 1.5vw;
+}
+
+.street-trapeze {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35vw;
+  border-left: 20vh solid transparent;
+  border-top: 100vh solid rgba(0, 0, 0, 0.561);
+}
+
+.street-description {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.street-p {
+  color: white;
+  text-align: right;
+  font-family: Roboto, sans-serif;
+  font-size: 0.9vw;
+  width: 15vw;
+}
+
+.street-video {
+  width: 15vw;
+  height: 20vh;
+}
+
+.black-box {
+  height: 7vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.galerie {
+  position: relative;
+  -webkit-column-count: 5;
+          column-count: 5;
+  padding: 20px;
+  margin: 40px 0 40px 0;
+}
+
+.photo {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.photo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 940px) {
+  .galerie {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .galerie {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+/*FOOTER*/
+.reseau {
+  font-size: 5vh;
+}
+
+.partner {
+  font-size: 0.8vw;
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=street.css.map */
