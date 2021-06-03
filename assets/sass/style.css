@@ -273,7 +273,7 @@ i {
 .title{
   font-family: Sedgwick, sans-serif;
   color: #db3632;
-  font-size: 3vw;
+  font-size: 2rem;
   padding: 1rem;
 }
 
@@ -284,7 +284,7 @@ i {
 }
 .event-text{
   font-family: Roboto, sans-serif;
-  font-size: 0.9vw;
+  font-size: 0.8rem;
   color: black;
   padding: 1rem;
 }
@@ -308,7 +308,7 @@ i {
   background: black url(../img/graph.jpg) center top no-repeat;
   background-size:cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  shape-margin: 20px;
+  shape-margin: 1.5rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   border: 1px solid black;
  
@@ -334,9 +334,8 @@ i {
   background: black url(../img/mama.png) center top no-repeat;
   background-size:cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 2rem;
+  shape-margin: 1.5rem;
   clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
  
 }
-
