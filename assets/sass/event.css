@@ -58,4 +58,75 @@
   width: 15vw;
   height: 20vh;
 }
+
+/*Page event second part*/
+.title{
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.content{
+ 
+  height: 50vh;
+  width: 80vw;
+}
+.event-text{
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 1rem;
+}
+
+.container_verse{
+  overflow:hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  margin-left: 10%;
+  border-left: 2px solid #db3632;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+.shaped{
+  float:left;
+  height:50vh;
+  width:40vw;
+  float:right;
+  background: black url(../img/graph.jpg) center top no-repeat;
+  background-size:cover;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  shape-margin: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  border: 1px solid black;
+ 
+}
+.container_reverse{
+  overflow:hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 2px solid #db3632;
+  margin-top: 5%;
+  margin-bottom: 15%;
+ 
+}
+
+.shaped_reverse{
+  float:right;
+  height:50vh;
+  width:40vw;
+  float:left;
+  background: black url(../img/mama.png) center top no-repeat;
+  background-size:cover;
+  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  shape-margin: 1.5rem;
+  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  border: 1px solid black;
+ 
+}
 /*# sourceMappingURL=event.css.map */
