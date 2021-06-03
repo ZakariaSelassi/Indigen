@@ -3,6 +3,7 @@
   src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
@@ -39,13 +40,45 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*HEADER*/
+
+.navbar:hover {
+  opacity: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> Pat
   background-color: black;
   opacity: 50%;
   height: 15vh;
   padding: 1rem 10rem 1rem 1rem;
   width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+.navbar-opaque{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  opacity: 100%;
+  height: 15vh;
+  padding: 1rem 10rem 1rem 1rem;
+  width: 100%;
+}
+>>>>>>> Pat
 .hamburger {
   display: none;
 }
@@ -59,6 +92,7 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+<<<<<<< HEAD
 
 .nav-menu {
   display: -webkit-box;
@@ -70,17 +104,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> Pat
 }
 
 .nav-item {
   list-style: none;
+<<<<<<< HEAD
+=======
+
+>>>>>>> Pat
   margin-left: 5rem;
 }
 
 .nav-link {
   text-decoration: none;
   font-family: "Sedgwick";
+<<<<<<< HEAD
   font-size: 1.7vw;
+=======
+  font-size: 1.3rem;
+>>>>>>> Pat
   font-weight: 400;
   color: white;
   padding-left: 2rem;
@@ -99,6 +147,7 @@ body {
   z-index: 1;
   margin: 1.2rem;
 }
+<<<<<<< HEAD
 
 @media only screen and (min-width: 1024px) {
   .video {
@@ -120,25 +169,33 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+=======
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
     background-color: #fff;
     width: 100%;
     height: auto;
     border-radius: 10px;
     text-align: center;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
-    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
+
   .nav-menu.active {
     left: 0;
   }
+
   .nav-item {
     margin: 1.8rem 0;
   }
   .nav-link {
     color: black;
   }
+
   .hamburger {
     position: absolute;
     display: block;
@@ -149,13 +206,13 @@ body {
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
   .logo {
     position: absolute;
@@ -164,6 +221,96 @@ body {
     margin: 3.5em auto 1em 1em;
     width: 5rem;
   }
+  .navbar {
+    height: 80px;
+    opacity: 100%;
+  }
+  .video {
+    position: relative;
+    top: 150px;
+    margin-top: 70px;
+    z-index: 1;
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+>>>>>>> Pat
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+<<<<<<< HEAD
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+=======
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+>>>>>>> Pat
+  .nav-item {
+    margin: 1.8rem 0;
+  }
+  .nav-link {
+    color: black;
+  }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Pat
+  .hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    margin: 2px 1em 0 80%;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+<<<<<<< HEAD
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+=======
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+>>>>>>> Pat
+  }
+  .logo {
+    position: absolute;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    margin: 3.5em auto 1em 1em;
+    width: 5rem;
+  }
+<<<<<<< HEAD
 }
 
 /*FOOTER*/
@@ -175,6 +322,38 @@ body {
 /****** Tryptique Jazzon**/
 .index-polygone-graffiti {
   background-image: url("../img/graffitiNB.jpg");
+=======
+  .navbar {
+    height: 80px;
+    opacity: 100%;
+  }
+  .video {
+    position: relative;
+    top: 150px;
+    margin-top: 70px;
+    z-index: 1;
+    width: 100%;
+  }
+}
+.video {
+  position: relative;
+  top: -150px;
+  z-index: -1;
+}
+/*FOOTER*/
+
+.reseau {
+  font-size: 2rem;
+}
+/*CONTENT*/
+
+body {
+  overflow-x: hidden;
+}
+
+.index-polygone-graffiti {
+  background-image: url("../img/graffiti-NB.jpg");
+>>>>>>> Pat
   background-size: cover;
   background-position: center;
   height: 74.07407407vh;
@@ -222,7 +401,11 @@ body {
 
 .index-polygone-events {
   margin-left: -38px;
+<<<<<<< HEAD
   background-image: url("../img/blockpartyNB.jpg");
+=======
+  background-image: url("../img/block-party-NB.jpg");
+>>>>>>> Pat
   background-size: cover;
   background-position: center;
   height: 74.07407407vh;
@@ -252,7 +435,11 @@ body {
 }
 
 .index-polygone-events:hover {
+<<<<<<< HEAD
   background-image: url("../img/blockparty.jpg");
+=======
+  background-image: url("../img/block-party.jpg");
+>>>>>>> Pat
   height: 62.5vh;
 }
 
@@ -261,7 +448,11 @@ body {
 }
 
 .index-polygone-tourisme {
+<<<<<<< HEAD
   background-image: url("../img/parcoururbainNB.jpg");
+=======
+  background-image: url("../img/parcour urbain-NB.jpg");
+>>>>>>> Pat
   background-size: cover;
   background-position: center;
   margin-left: 4vh;
@@ -301,7 +492,11 @@ body {
 }
 
 .index-polygone-tourisme:hover {
+<<<<<<< HEAD
   background-image: url("../img/parcoururbain.jpg");
+=======
+  background-image: url("../img/parcour urbain.jpg");
+>>>>>>> Pat
   height: 62.5vh;
   width: 28.45%;
 }
@@ -330,6 +525,7 @@ body {
 
 .index-black-box-bot {
   margin-top: 26vh;
+<<<<<<< HEAD
   height: 0.01vh;
   width: 100vw;
   background-color: black;
@@ -355,4 +551,10 @@ body {
   font-size: 0.8vw;
   font-family: "Roboto";
 }
+=======
+  height: 7vh;
+  width: 100vw;
+  background-color: black;
+}
+>>>>>>> Pat
 /*# sourceMappingURL=index.css.map */

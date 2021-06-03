@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
 font-family: "Sedgwick";
 src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
@@ -153,6 +154,29 @@ font-size: 5vh;
 /****** Tryptique Jazzon**/
 .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.jpg");
+=======
+// @import "./event.css";
+@font-face {
+    font-family: "Sedgwick";
+    src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$title-font: "Sedgwick";
+
+body {
+    overflow-x: hidden;
+}
+
+// GRAFFITI
+.index-polygone-graffiti {
+    background-image: url("../img/graffiti-NB.jpg");
+>>>>>>> Pat
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -191,7 +215,11 @@ font-size: 5vh;
 // EVENTS
 .index-polygone-events {
     margin-left: -38px;
+<<<<<<< HEAD
     background-image: url("../img/blockpartyNB.jpg");
+=======
+    background-image: url("../img/block-party-NB.jpg");
+>>>>>>> Pat
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -216,7 +244,11 @@ font-size: 5vh;
         }
     }
     &:hover {
+<<<<<<< HEAD
         background-image: url("../img/blockparty.jpg");
+=======
+        background-image: url("../img/block-party.jpg");
+>>>>>>> Pat
         height: 62.5vh;
         .title-events {
             display: none;
@@ -226,7 +258,11 @@ font-size: 5vh;
 
 // TOURISME
 .index-polygone-tourisme {
+<<<<<<< HEAD
     background-image: url("../img/parcoururbainNB.jpg");
+=======
+    background-image: url("../img/parcour\ urbain-NB.jpg");
+>>>>>>> Pat
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -254,10 +290,16 @@ font-size: 5vh;
         }
     }
     &:hover {
+<<<<<<< HEAD
         background-image: url("../img/parcoururbain.jpg");
         height: 62.5vh;
         width: 28.45%;
       
+=======
+        background-image: url("../img/parcour\ urbain.jpg");
+        height: 62.5vh;
+        width: 28.45%;
+>>>>>>> Pat
         .title-tourisme {
             display: none;
         }
@@ -282,6 +324,7 @@ font-size: 5vh;
 
 .index-black-box-bot {
     margin-top: 26vh;
+<<<<<<< HEAD
     height: 0.01vh;
     width: 100vw;
     background-color: black;
@@ -302,3 +345,11 @@ font-size: 5vh;
     font-family: $sub-title;
 
 }
+=======
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+>>>>>>> Pat
