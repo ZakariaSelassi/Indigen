@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.tourism-polygone-visit {
+  background-image: url("../img/tourisme-vélo-NB.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.tourism-polygone-visit .title-visit {
+  height: 30vh;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
+          clip-path: polygon(0 0, 0% 100%, 70% 100%);
+  background-color: rgba(255, 0, 0, 0.274);
+  font-size: 2.3vw;
+  font-family: "Sedgwick";
+  position: relative;
+}
+
+.tourism-polygone-visit .title-visit p {
+  position: absolute;
+  left: 17%;
+  bottom: 0%;
+  color: white;
+}
+
+.tourism-polygone-visit:hover {
+  background-image: url("../img/toursime-vélo.jpg");
+  height: 62.5vh;
+}
+
+.tourism-polygone-visit:hover .title-visit {
+  display: none;
+}
+
+.tourism-polygone-workshop {
+  margin-left: -38px;
+  background-image: url("../img/workshop-NB.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  float: left;
+  -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.tourism-polygone-workshop .title-workshop {
+  height: 25vh;
+  -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
+          clip-path: polygon(0 0, 0 80%, 94% 0);
+  background-color: rgba(255, 0, 0, 0.274);
+  color: white;
+  font-size: 2.3vw;
+  font-family: "Sedgwick";
+  position: relative;
+}
+
+.tourism-polygone-workshop .title-workshop p {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  color: white;
+  padding-top: 2%;
+}
+
+.tourism-polygone-workshop:hover {
+  background-image: url("../img/workshop.jpg");
+  height: 62.5vh;
+}
+
+.tourism-polygone-workshop:hover .title-workshop {
+  display: none;
+}
+
+.tourism-polygone-vip {
+  background-image: url("../img/vip-NB.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 4vh;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.tourism-polygone-vip .title-vip {
+  height: 20vh;
+  -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
+          clip-path: polygon(0 0, 0 100%, 88% 100%);
+  background-color: rgba(255, 0, 0, 0.274);
+  color: white;
+  font-size: 2.3vw;
+  font-family: "Sedgwick";
+  position: relative;
+}
+
+.tourism-polygone-vip .title-vip p {
+  position: absolute;
+  left: 7%;
+  bottom: 0%;
+  color: white;
+}
+
+.tourism-polygone-vip:hover {
+  background-image: url("../img/vip.jpg");
+  height: 62.5vh;
+  width: 28.45%;
+}
+
+.tourism-polygone-vip:hover .title-vip {
+  display: none;
+}
+
+.triptych {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.triptych:hover {
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+/*# sourceMappingURL=tourism.css.map */
