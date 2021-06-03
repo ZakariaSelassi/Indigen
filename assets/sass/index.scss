@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @font-face {
 font-family: "Sedgwick";
 src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
@@ -155,6 +156,8 @@ font-size: 5vh;
 .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.jpg");
 =======
+=======
+>>>>>>> Pat
 // @import "./event.css";
 @font-face {
     font-family: "Sedgwick";
@@ -352,4 +355,164 @@ body {
 }
 
 
+<<<<<<< HEAD
+>>>>>>> Pat
+=======
+=======
+// @import "./event.css";
+@font-face {
+    font-family: "Sedgwick";
+    src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$title-font: "Sedgwick";
+
+body {
+    overflow-x: hidden;
+}
+
+// GRAFFITI
+.index-polygone-graffiti {
+    background-image: url("../img/graffiti-NB.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    .title-graffiti {
+        height: 30vh;
+        clip-path: polygon(0 0, 0% 100%, 70% 100%);
+        background-color: rgba(255, 0, 0, 0.274);
+        font-size: 2.3vw;
+        font-family: $title-font;
+        position: relative;
+        p {
+            position: absolute;
+            line-height: 90%;
+            left: 17%;
+            bottom: 0%;
+            color: white;
+        }
+        
+    }
+    &:hover {
+        background-image: url("../img/graffiti.jpg");
+        height: 62.5vh;
+        .title-graffiti {
+            display: none;
+        }
+    }
+}
+
+
+// EVENTS
+.index-polygone-events {
+    margin-left: -38px;
+    background-image: url("../img/block-party-NB.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    float: left;
+    -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+    .title-events {
+        height: 25vh;
+        clip-path: polygon(0 0, 0 80%, 94% 0);
+        background-color: rgba(255, 0, 0, 0.274);
+        color: white;
+        font-size: 2.3vw;
+        font-family: $title-font;
+        position: relative;
+        p {
+            position: absolute;
+            left: 25%;
+            top: 0%;
+            color: white;
+            padding-top: 2%;
+        }
+    }
+    &:hover {
+        background-image: url("../img/block-party.jpg");
+        height: 62.5vh;
+        .title-events {
+            display: none;
+        }
+    }
+}
+
+// TOURISME
+.index-polygone-tourisme {
+    background-image: url("../img/parcour\ urbain-NB.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-left: 4vh;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    .title-tourisme {
+        height: 20vh;
+        clip-path: polygon(0 0, 0 100%, 88% 100%);
+        background-color: rgba(255, 0, 0, 0.274);
+        color: white;
+        font-size: 2.3vw;
+        font-family: $title-font;
+        position: relative;
+        p {
+            position: absolute;
+            left: 7%;
+            bottom: 0%;
+            color: white;
+        }
+    }
+    &:hover {
+        background-image: url("../img/parcour\ urbain.jpg");
+        height: 62.5vh;
+        width: 28.45%;
+        .title-tourisme {
+            display: none;
+        }
+    }
+}
+
+.triptych {
+    transform: scale(1.35);
+    transform-origin: top;
+    &:hover {
+        -webkit-transform: scale(1.6);
+        transform: scale(1.6);
+    }
+}
+
+// BLACK BOXES
+.index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.index-black-box-bot {
+    margin-top: 26vh;
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+>>>>>>> 5a9193a379e79d01b497bfc25affeb26e685eb53
 >>>>>>> Pat
