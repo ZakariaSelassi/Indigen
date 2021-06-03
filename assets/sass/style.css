@@ -274,6 +274,7 @@ i {
   font-family: Sedgwick, sans-serif;
   color: #db3632;
   font-size: 3vw;
+  padding: 1rem;
 }
 
 .content{
@@ -285,6 +286,7 @@ i {
   font-family: Roboto, sans-serif;
   font-size: 0.9vw;
   color: black;
+  padding: 1rem;
 }
 
 .container_verse{
@@ -318,7 +320,7 @@ i {
   text-align: left;
   margin-right: 10%;
   margin-left: 10%;
-  border-right: 2px solid #db3632;;
+  border-right: 2px solid #db3632;
   margin-top: 5%;
   margin-bottom: 15%;
  
@@ -332,7 +334,7 @@ i {
   background: black url(../img/mama.png) center top no-repeat;
   background-size:cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 20px;
+  shape-margin: 2rem;
   clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
  
