@@ -129,4 +129,32 @@
   border: 1px solid black;
  
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .container_verse{
+    overflow:hidden;
+    height: 50vh;
+    width: 80vw;
+    text-align: right;
+    margin-left: 10%;
+    border-left: 2px solid #db3632;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  .shaped{
+    
+    height:50vh;
+    width:40vw;
+    float:right;
+    background: black url(../img/graph.jpg) center top no-repeat;
+    background-size:cover;
+    shape-outside:none;
+    shape-margin: 1.5rem;
+    clip-path: none;
+    border: 1px solid black;
+   
+  }
+
+}
 /*# sourceMappingURL=event.css.map */
