@@ -195,7 +195,7 @@ $redIndigen: #db3632;
   background-color: black;
 }
 
-//Galerie photos
+//Galerie photos-------------------------------
 .galerie {
   position: relative;
   column-count: 4;
@@ -210,10 +210,12 @@ $redIndigen: #db3632;
   border-radius: 10px;
 }
 
+//Hide
 .photo.hide {
   display: none;
 }
 
+//Show
 .photo.show {
   display: inline-block;
   animation: show 0.5s ease;
@@ -230,6 +232,7 @@ $redIndigen: #db3632;
   }
 }
 
+// C'est l'animation d'effet zoom
 img {
   width: 100%;
   transition: 0.25s ease-in-out;

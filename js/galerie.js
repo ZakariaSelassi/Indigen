@@ -23,7 +23,9 @@ function showPhotos() {
     }
 }
 
-/* Fonction qui permet de désactiver le "prev" / "next" par rapport à l'index */
+/* Fonction qui permet de désactiver le "prev" / "next" par rapport à l'index 
+le disabled est lui aussi défini dans street.scss
+classlist vient ajouter cette classe de manière fictive*/
 function check() {
     if(index == 1 ) {
         prev.classList.add("disabled");
