@@ -5,8 +5,11 @@ const page = document.getElementById("page-num");
 const maxPhotos = 8;
 let index = 1;
 
-const pagination = Math.ceil(photosGalerie.length / maxPhotos);
+const pagination = Math.ceil(photosGalerie.length / maxPhotos); /*Calcul du ratio de photo qui sert dans le calcul de showPhotos */
 
+/*Cette fonction permet de n'afficher qu'une partie des photos de la galerie (selon l'index)
+classlist vient ajouter de manière fictive la classe show ou hide selon index et le maxPhotos déclaré plus haur de la Galerie 
+Show et hide sont définis dans street.scss*/
 function showPhotos() {
     for(let i = 0; i < photosGalerie.length; i++) {
         photosGalerie[i].classList.remove("show");
@@ -20,6 +23,7 @@ function showPhotos() {
     }
 }
 
+/* Fonction qui permet de désactiver le "prev" / "next" par rapport à l'index */
 function check() {
     if(index == 1 ) {
         prev.classList.add("disabled");
@@ -37,6 +41,9 @@ function check() {
 
 }
 
+/* Relie les boutons prev et next du HTML et lance les fonctions check() et showPhotos()
+Pour le prev l'index diminue 
+Pour le next l'index augmente */
 prev.addEventListener("click", function(){
     index--;
     check();
