@@ -242,7 +242,7 @@ img {
   transform: scale(1.1);
 }
 
-//Pagination
+//Pagination--------------------------------------------
 .pagination {
   width: 100%;
   text-align: center;
@@ -267,6 +267,7 @@ img {
   padding: 7px 15px;
 }
 
+// Disabled également
 .prev.disabled,
 .next.disabled {
   border-color: gray;
