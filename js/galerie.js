@@ -2,7 +2,7 @@ const photosGalerie = document.getElementById("photos").children;
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const page = document.getElementById("page-num");
-const maxPhotos = 8;
+const maxPhotos = 12;
 let index = 1;
 
 const pagination = Math.ceil(photosGalerie.length / maxPhotos); /*Calcul du ratio de photos qui sert dans le calcul de showPhotos */
