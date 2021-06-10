@@ -71,6 +71,9 @@
   width: 15vw;
   height: 20vh;
 }
+.separator{
+  height: 30vh;
+}
 
 /*Page event second part*/
 .title {
