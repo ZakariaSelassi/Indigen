@@ -212,10 +212,9 @@
 
 .galerie {
   position: relative;
-  -webkit-column-count: 4;
-          column-count: 4;
-  padding: 5px;
-  margin: 40px 0 40px 0;
+  -webkit-column-count: 5;
+          column-count: 5;
+  margin-top: 80px;
 }
 
 .photo {
@@ -261,13 +260,13 @@
   }
 }
 
-img {
+.galerie-image {
   width: 100%;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
-.photo:hover img {
+.photo:hover .galerie-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -285,7 +284,7 @@ img {
 .pagination div {
   display: inline-block;
   padding: 15px;
-  margin: 0 10px;
+  margin-bottom: 40px;
 }
 
 .prev,
