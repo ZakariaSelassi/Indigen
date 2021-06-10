@@ -233,12 +233,12 @@ $redIndigen: #db3632;
 }
 
 // C'est l'animation d'effet zoom
-img {
+.galerie-image {
   width: 100%;
   transition: 0.25s ease-in-out;
 }
 
-.photo:hover img {
+.photo:hover .galerie-image {
   transform: scale(1.1);
 }
 
