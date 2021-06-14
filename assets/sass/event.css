@@ -70,6 +70,9 @@
   width: 15vw;
   height: 20vh;
 }
+.separator{
+  visibility: hidden;
+}
 
 /*Page event second part*/
 .title {
@@ -132,7 +135,7 @@
   border: 1px solid black;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 1024px) {
   .shaped {
     border: none;
     shape-outside: none;
@@ -155,10 +158,11 @@
   
   .title {
     font-size: 3vh;
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
   .event-text {
     font-size: 1vh;
+   padding: 0;
   }
   /*disparition du banner en responsive*/
   .event-trapeze {
@@ -176,8 +180,15 @@
    display: none;
   }
   .separator {
-    height: 30vh;
     visibility: visible;
+    display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 3vw;
+   font-family: Roboto-bold, sans-serif;
+  color: #db3632;
+  font-size: 4vw;
+  margin-top: 5vw;
   }
 }
 /*# sourceMappingURL=event.css.map */
