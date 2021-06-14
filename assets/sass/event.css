@@ -12,7 +12,6 @@
   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-
 .event-banner {
   height: 85vh;
   background-image: url("../img/blockparty.jpg");
@@ -28,7 +27,7 @@
 
 .event-trapeze {
   -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-          clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+  clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(0, 0, 0, 0.514);
   width: 70%;
   padding: 2%;
@@ -49,10 +48,10 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .event-p {
@@ -71,9 +70,6 @@
   width: 15vw;
   height: 20vh;
 }
-.separator{
-  height: 30vh;
-}
 
 /*Page event second part*/
 .title {
@@ -82,7 +78,6 @@
   font-size: 2rem;
   padding: 1rem;
 }
-
 
 .event-text {
   font-family: Roboto, sans-serif;
@@ -103,7 +98,6 @@
   margin-bottom: 15%;
 }
 .shaped {
- 
   height: 50vh;
   width: 40vw;
   float: right;
@@ -127,7 +121,6 @@
 }
 
 .shaped_reverse {
-  
   height: 50vh;
   width: 40vw;
   float: left;
@@ -167,10 +160,24 @@
   .event-text {
     font-size: 1vh;
   }
+  /*disparition du banner en responsive*/
+  .event-trapeze {
+   
+    background-color: rgba(0, 0, 0, 0);
+   
+  }
+  .event-video {
+   display: none;
+  }
+  .event-subtitle {
+   display: none;
+  }
+  .event-p {
+   display: none;
+  }
+  .separator {
+    height: 30vh;
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=event.css.map */
-
-
-
-
-
