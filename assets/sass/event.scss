@@ -1,20 +1,15 @@
-@font-face {
-    font-family: "Sedgwick";
-    src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-
-$titleFont: Sedgwick, sans-serif;
-$subtitlesFont: Roboto, sans-serif;
-$redIndigen: #db3632;
-
+@import './header.scss';
+@import './font.scss';
+@import './footer.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 // ------BANNER-------
 .event-banner {
-    height: 100vh;
-    background-image: url("../img/block-party.jpg");
+    height: 85vh;
+    background-image: url("../img/blockparty.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -25,6 +20,13 @@ $redIndigen: #db3632;
     font-size: 7vw;
 }
 
+.event-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+}
+
 .event-subtitle {
     font-family: $subtitlesFont;
     z-index: 2;
@@ -33,21 +35,12 @@ $redIndigen: #db3632;
     font-size: 1.5vw;
 }
 
-.event-trapeze {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 35vw;
-    border-left: 20vh solid transparent;
-    border-top: 100vh solid rgba(0, 0, 0, 0.561);
-}
 
 .event-description {
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    right: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .event-p {
@@ -58,8 +51,109 @@ $redIndigen: #db3632;
     width: 15vw;
 }
 
+.textBold {
+    font-family: $textBold;
+}
+
 .event-video {
     width: 15vw;
     height: 20vh;
 }
-// -------------------
+.title {
+    font-family: Sedgwick, sans-serif;
+    color: #db3632;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  .content_verse
+  .content_reverse {
+    height: 50vh;
+    width: 80vw;
+  }
+  .event-text {
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .container_verse {
+    overflow: hidden;
+    height: 50vh;
+    width: 80vw;
+    text-align: right;
+    margin-left: 10%;
+    border-left: 2px solid #db3632;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  .shaped {
+   
+    height: 50vh;
+    width: 40vw;
+    float: right;
+    background: black url(../img/graph.png) center top no-repeat;
+    background-size: cover;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    shape-margin: 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    border: 1px solid black;
+  }
+  .container_reverse {
+    overflow: hidden;
+    height: 50vh;
+    width: 80vw;
+    text-align: left;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-right: 2px solid #db3632;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .shaped_reverse {
+    
+    height: 50vh;
+    width: 40vw;
+    float: left;
+    background: black url(../img/mama.png) center top no-repeat;
+    background-size: cover;
+    shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+    shape-margin: 1.5rem;
+    clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+    border: 1px solid black;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .shaped {
+      border: none;
+      shape-outside: none;
+      clip-path: none;
+      margin-left: 1rem;
+    }
+    .shaped_reverse {
+      border: none;
+      shape-outside: none;
+      margin-right: 1rem;
+      clip-path: none;
+    }
+    
+    .content_verse {
+      height: 50vh;
+      width: 80vw;
+    
+    }
+    .content_reverse{
+      height: 50vh;
+      width: 80vw;
+      text-align: right;
+      padding-right: 0.5rem;
+    }
+    
+    .title {
+      font-size: 1.2rem;
+      padding: 0.4rem;
+    }
+  }

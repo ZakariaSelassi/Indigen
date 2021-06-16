@@ -1,34 +1,4 @@
-@font-face {
-  font-family: "Sedgwick";
-  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-
-/*FOOTER*/
-.reseau {
-  font-size: 2rem;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 /*HEADER*/
-.navbar:hover {
-  opacity: 100%;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +13,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  opacity: 50%;
   height: 15vh;
   width: 100%;
 }
@@ -87,7 +56,7 @@ body {
   font-weight: 400;
   color: white;
   /*padding-left: 2rem;
-  padding-right: 2rem;*/
+    padding-right: 2rem;*/
 }
 
 .nav-link:hover {
@@ -235,171 +204,181 @@ body {
   }
 }
 
-.video {
-  position: relative;
-  top: -150px;
-  z-index: -1;
-}
-
-/*CONTENT*/
-.index-polygone-graffiti {
-  background-image: url("../img/graffitiNB.png");
-  background-size: cover;
-  background-position: center;
-  height: 74.07407407vh;
-  width: 33.3333%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-}
-
-.index-polygone-graffiti .title-graffiti {
-  height: 30vh;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
-  clip-path: polygon(0 0, 0% 100%, 70% 100%);
-  background-color: rgba(255, 0, 0, 0.274);
-  font-size: 2.3vw;
+@font-face {
   font-family: "Sedgwick";
-  position: relative;
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
 }
 
-.index-polygone-graffiti .title-graffiti p {
-  position: absolute;
-  line-height: 90%;
-  left: 17%;
-  bottom: 0%;
-  color: white;
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
-.index-polygone-graffiti:hover {
-  background-image: url("../img/graffiti.png");
-  height: 62.5vh;
+/*FOOTER*/
+.reseau {
+  font-size: 2rem;
 }
 
-.index-polygone-graffiti:hover .title-graffiti {
-  display: none;
-}
-
-.index-polygone-events {
-  margin-left: -38px;
-  background-image: url("../img/blockpartyNB.png");
+.street-banner {
+  height: 100vh;
+  background-image: url("../img/blockparty.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 74.07407407vh;
-  width: 33.3333%;
-  float: left;
-  -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
 }
 
-.index-polygone-events .title-events {
-  height: 25vh;
-  -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
-  clip-path: polygon(0 0, 0 80%, 94% 0);
-  background-color: rgba(255, 0, 0, 0.274);
-  color: white;
-  font-size: 2.3vw;
-  font-family: "Sedgwick";
-  position: relative;
+.street-title {
+  font-family: Sedgwick, sans-serif;
+  text-align: right;
+  font-size: 4vw;
 }
 
-.index-polygone-events .title-events p {
+.street-subtitle {
+  font-family: Roboto, sans-serif;
+  z-index: 2;
+  text-align: right;
+  color: #db3632;
+  font-size: 1.5vw;
+}
+
+.street-trapeze {
   position: absolute;
-  left: 25%;
-  top: 0%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35vw;
+  border-left: 20vh solid transparent;
+  border-top: 100vh solid rgba(0, 0, 0, 0.561);
+}
+
+.street-description {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.street-p {
   color: white;
-  padding-top: 2%;
+  text-align: right;
+  font-family: Roboto, sans-serif;
+  font-size: 0.9vw;
+  width: 15vw;
 }
 
-.index-polygone-events:hover {
-  background-image: url("../img/blockparty.png");
-  height: 62.5vh;
-}
-
-.index-polygone-events:hover .title-events {
-  display: none;
-}
-
-.index-polygone-tourisme {
-  background-image: url("../img/parcoururbainNB.png");
-  background-size: cover;
-  background-position: center;
-  margin-left: 4vh;
-  height: 74.07407407vh;
-  width: 33.3333%;
-  float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.index-polygone-tourisme .title-tourisme {
+.street-video {
+  width: 15vw;
   height: 20vh;
-  -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
-  clip-path: polygon(0 0, 0 100%, 88% 100%);
-  background-color: rgba(255, 0, 0, 0.274);
-  color: white;
-  font-size: 2.3vw;
-  font-family: "Sedgwick";
-  position: relative;
 }
 
-.index-polygone-tourisme .title-tourisme p {
-  position: absolute;
-  left: 7%;
-  bottom: 0%;
-  color: white;
-}
-
-.index-polygone-tourisme:hover {
-  background-image: url("../img/parcoururbain.png");
-  height: 62.5vh;
-  width: 28.45%;
-}
-
-.index-polygone-tourisme:hover .title-tourisme {
-  display: none;
-}
-
-.triptych {
-  -webkit-transform: scale(1.35);
-  transform: scale(1.35);
-  -webkit-transform-origin: top;
-  transform-origin: top;
-}
-
-.triptych:hover {
-  -webkit-transform: scale(1.6);
-  transform: scale(1.6);
-}
-
-.index-black-box {
+.black-box {
   height: 7vh;
   width: 100vw;
   background-color: black;
 }
 
-.index-black-box-bot {
-  margin-top: 26vh;
-  width: 100vw;
-  background-color: black;
+.galerie {
+  position: relative;
+  -webkit-column-count: 5;
+          column-count: 5;
+  margin: 80px 0 20px 10px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.photo {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.photo.hide {
+  display: none;
+}
+
+.photo.show {
+  display: inline-block;
+  -webkit-animation: show 0.5s ease;
+          animation: show 0.5s ease;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.galerie-image {
+  width: 100%;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.photo:hover .galerie-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pagination {
+  width: 100%;
+  text-align: center;
+}
+
+.pagination .page {
+  color: #000;
+  font-family: Roboto, sans-serif;
+}
+
+.pagination div {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 0 40px 0;
+}
+
+.prev,
+.next {
+  color: #000;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 7px 15px;
+}
+
+.prev.disabled,
+.next.disabled {
+  border-color: gray;
+  color: gray;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 940px) {
+  .galerie {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .galerie {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */

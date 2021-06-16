@@ -24,7 +24,6 @@
       integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../sass/index.css" />
     <link rel="stylesheet" href="../sass/event.css" />
     <title>INDIGEN</title>
   </head>
@@ -33,20 +32,23 @@
       <a href="index.html" class="nav-logo">
         <img class="logo" src="../img/logolight.png" alt="logo"
       /></a>
-      <nav class="navbar-opaque">
-        <span></span>
+      <nav class="navbar">
+
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">ACCUEIL</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Street ART - GRAFFITI</a>
+            <a href="#" class="nav-link">STREET ART - GRAFFITI</a>
           </li>
           <li class="nav-item">
             <a href="event.html" class="nav-link">EVENTS</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">TOURISME URBAIN</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link">GALERIE</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -59,49 +61,46 @@
 
     <!--CONTENT-->
     <main>
-      <div class="event-banner flex flex-row justify-end"></div>
-
-      <div class="event-trapeze"></div>
-
-      <div
-        class="event-description m-10 w-1/4 flex flex-col justify-end items-end"
-      >
-        <h1 class="event-title text-white text-9xl">Events</h1>
-        <h2 class="event-subtitle mt-3">TEAM BUILDING</h2>
-        <p class="event-p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          ipsam fugiat quisquam corporis numquam ea debitis nisi voluptates
-          sapiente, tempora quibusdam, eos perferendis necessitatibus ex
-          nesciunt provident dignissimos vero soluta!
-        </p>
-        <h2 class="event-subtitle mt-3 text-3xl">LIVE PAINTING</h2>
-        <p class="event-p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          ipsam fugiat quisquam corporis numquam ea debitis nisi voluptates
-          sapiente, tempora quibusdam, eos perferendis necessitatibus ex
-          nesciunt provident dignissimos vero soluta!
-        </p>
-        <h2 class="event-subtitle mt-3 text-3xl">FESTIVALS</h2>
-        <p class="event-p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          ipsam fugiat quisquam corporis numquam ea debitis nisi voluptates
-          sapiente, tempora quibusdam, eos perferendis necessitatibus ex
-          nesciunt provident dignissimos vero soluta!
-        </p>
-        <div class="mt-5 flex flex-row justify-end">
-          <iframe
-            class="event-video"
-            src="https://www.youtube.com/embed/et6-3dq_wEw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div class="event-banner flex flex-row justify-end">
+          <div class="event-trapeze">
+              <div class="event-description flex flex-col items-end">
+                  <h1 class="event-title text-white text-9xl">Events</h1>
+                  <div>
+                      <h2 class="event-subtitle mt-3">TEAM BUILDING</h2>
+                      <p class="event-p">
+                          Faites de vos journées d'entrerpise un évenement <span class="textBold">culturel</span> et
+                          <span class="textBold">participatif</span>
+                      </p>
+                  </div>
+                  <div>
+                      <h2 class="event-subtitle mt-3 text-3xl">LIVE PAINTING</h2>
+                      <p class="event-p">
+                          Une <span class="textBold">performance artistique</span> pour
+                          animer vos événements ,faites le
+                          show devant vos invités !
+                      </p>
+                  </div>
+                  <div>
+                      <h2 class="event-subtitle mt-3 text-3xl">FESTIVALS</h2>
+                      <p class="event-p">
+                          Animation musicale ,ambiances
+                          DJ, live painting sortez le grand
+                          jeu pour vos événements
+                      </p>
+                  </div>
+                  <div class="mt-5 flex flex-row justify-end">
+                      <iframe class="event-video" src="https://www.youtube.com/embed/et6-3dq_wEw"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                      </iframe>
+                  </div>
+              </div>
+          </div>
       </div>
+  </main>
 
       <!--second part-->
-
       <div class="container_verse">
         <div class="shaped"></div>
         <div class="content">
@@ -182,14 +181,15 @@
         </div>
       </div>
     </main>
-    <footer
-      class="fixed bottom-0 left-0 right-0 py-5 bg-black text-center text-white"
-    >
-      <div class="reseau">
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i>
+    <footer class="reseau py-5 bg-black text-center text-white">
+      <div>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    <div class="partner">
+        <a href="#" >Nos partenaires</a>  
       </div>
     </footer>
     <script
