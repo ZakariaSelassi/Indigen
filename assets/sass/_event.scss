@@ -60,18 +60,14 @@
 }
 /*TEXTE_PHOTO EN DIAGONALE*/
 .title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
+  font-family: $titleFont;
+  color: $redIndigen;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.content_verse .content_reverse {
-  height: 50vh;
-  width: 80vw;
-}
 .event-text {
-  font-family: Roboto, sans-serif;
+  font-family: $subtitlesFont;
   font-size: 0.8rem;
   color: black;
   padding: 1rem;
@@ -174,10 +170,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw;
-    font-family: Roboto-bold, sans-serif;
-    color: #db3632;
-    font-size: 4vw;
-    margin-top: 5vw;
+    gap: 3%;
+    font-family: $textBold;
+    color: $redIndigen;
+    font-size: 1rem;
+    margin-top: 5%;
   }
 }

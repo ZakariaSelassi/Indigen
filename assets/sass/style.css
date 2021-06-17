@@ -460,11 +460,6 @@
   padding: 1rem;
 }
 
-.content_verse .content_reverse {
-  height: 50vh;
-  width: 80vw;
-}
-
 .event-text {
   font-family: Roboto, sans-serif;
   font-size: 0.8rem;
@@ -578,11 +573,11 @@
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 3vw;
-    font-family: Roboto-bold, sans-serif;
+    gap: 3%;
+    font-family: Roboto-bold;
     color: #db3632;
-    font-size: 4vw;
-    margin-top: 5vw;
+    font-size: 1rem;
+    margin-top: 5%;
   }
 }
 
