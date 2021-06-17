@@ -448,6 +448,11 @@
   height: 20vh;
 }
 
+.separator {
+  visibility: hidden;
+}
+
+/*TEXTE_PHOTO EN DIAGONALE*/
 .title {
   font-family: Sedgwick, sans-serif;
   color: #db3632;
@@ -455,8 +460,7 @@
   padding: 1rem;
 }
 
-.content_verse
-.content_reverse {
+.content_verse .content_reverse {
   height: 50vh;
   width: 80vw;
 }
@@ -546,6 +550,39 @@
   .title {
     font-size: 1.2rem;
     padding: 0.4rem;
+  }
+  .event-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+  /*disparition du banner en responsive*/
+  .event-trapeze {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .event-video {
+    display: none;
+  }
+  .event-subtitle {
+    display: none;
+  }
+  .event-p {
+    display: none;
+  }
+  .separator {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3vw;
+    font-family: Roboto-bold, sans-serif;
+    color: #db3632;
+    font-size: 4vw;
+    margin-top: 5vw;
   }
 }
 
