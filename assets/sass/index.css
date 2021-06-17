@@ -14,6 +14,16 @@ body {
   overflow-x: hidden;
 }
 
+.triptych-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .index-polygone-graffiti {
   background-image: url("../img/graffiti-NB.jpg");
   background-size: cover;
@@ -39,7 +49,7 @@ body {
   -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
           clip-path: polygon(0 0, 0% 100%, 70% 100%);
   background-color: rgba(255, 0, 0, 0.274);
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -79,7 +89,7 @@ body {
           clip-path: polygon(0 0, 0 80%, 94% 0);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -107,7 +117,7 @@ body {
   background-position: center;
   margin-left: 4vh;
   height: 74.07407407vh;
-  width: 33.3333%;
+  width: 29%;
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,7 +139,7 @@ body {
           clip-path: polygon(0 0, 0 100%, 88% 100%);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -144,7 +154,7 @@ body {
 .index-polygone-tourisme:hover {
   background-image: url("../img/parcour urbain.jpg");
   height: 62.5vh;
-  width: 28.45%;
+  width: 26.2%;
 }
 
 .index-polygone-tourisme:hover .title-tourisme {
@@ -170,9 +180,15 @@ body {
 }
 
 .index-black-box-bot {
-  margin-top: 26vh;
+  margin-top: 25.9vh;
   height: 7vh;
   width: 100vw;
   background-color: black;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

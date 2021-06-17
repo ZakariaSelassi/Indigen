@@ -16,6 +16,11 @@ body {
     overflow-x: hidden;
 }
 
+.triptych-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 // GRAFFITI
 .index-polygone-graffiti {
     background-image: url("../img/graffiti-NB.jpg");
@@ -32,7 +37,7 @@ body {
         height: 30vh;
         clip-path: polygon(0 0, 0% 100%, 70% 100%);
         background-color: rgba(255, 0, 0, 0.274);
-        font-size: 2.3vw;
+        font-size: 2.8rem;
         font-family: $title-font;
         position: relative;
         p {
@@ -42,7 +47,6 @@ body {
             bottom: 0%;
             color: white;
         }
-        
     }
     &:hover {
         background-image: url("../img/graffiti.jpg");
@@ -52,7 +56,6 @@ body {
         }
     }
 }
-
 
 // EVENTS
 .index-polygone-events {
@@ -70,7 +73,7 @@ body {
         clip-path: polygon(0 0, 0 80%, 94% 0);
         background-color: rgba(255, 0, 0, 0.274);
         color: white;
-        font-size: 2.3vw;
+        font-size: 2.8rem;
         font-family: $title-font;
         position: relative;
         p {
@@ -97,7 +100,7 @@ body {
     background-position: center;
     margin-left: 4vh;
     height: 74.07407407vh;
-    width: 33.3333%;
+    width: 29%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -109,7 +112,7 @@ body {
         clip-path: polygon(0 0, 0 100%, 88% 100%);
         background-color: rgba(255, 0, 0, 0.274);
         color: white;
-        font-size: 2.3vw;
+        font-size: 2.8rem;
         font-family: $title-font;
         position: relative;
         p {
@@ -122,7 +125,7 @@ body {
     &:hover {
         background-image: url("../img/parcour\ urbain.jpg");
         height: 62.5vh;
-        width: 28.45%;
+        width: 26.2%;
         .title-tourisme {
             display: none;
         }
@@ -146,10 +149,14 @@ body {
 }
 
 .index-black-box-bot {
-    margin-top: 26vh;
+    margin-top: 25.9vh;
     height: 7vh;
     width: 100vw;
     background-color: black;
 }
 
-
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+    p {
+        font-size: 1.8rem;
+    }
+}
