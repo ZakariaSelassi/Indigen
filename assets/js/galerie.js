@@ -5,7 +5,8 @@ const page = document.getElementById("page-num");
 const maxPhotos = 12;
 let index = 1;
 
-const pagination = Math.ceil(photosGalerie.length / maxPhotos); /*Calcul du ratio de photos qui sert dans le calcul de showPhotos */
+const pagination = Math.ceil(photosGalerie.length / maxPhotos); 
+/*Calcul du ratio de photos qui sert dans le calcul de showPhotos */
 
 /* Relie les boutons prev et next du HTML et lance les fonctions check() et showPhotos()
 Pour le prev l'index diminue 
