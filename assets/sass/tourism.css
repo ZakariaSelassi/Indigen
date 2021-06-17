@@ -40,7 +40,7 @@ body {
   -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
           clip-path: polygon(0 0, 0% 100%, 70% 100%);
   background-color: rgba(255, 0, 0, 0.274);
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -79,7 +79,7 @@ body {
           clip-path: polygon(0 0, 0 80%, 94% 0);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -129,7 +129,7 @@ body {
           clip-path: polygon(0 0, 0 100%, 88% 100%);
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
-  font-size: 2.3vw;
+  font-size: 2.8rem;
   font-family: "Sedgwick";
   position: relative;
 }
@@ -151,6 +151,16 @@ body {
   display: none;
 }
 
+.triptych-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .triptych {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
@@ -161,5 +171,11 @@ body {
 .triptych:hover {
   -webkit-transform: scale(1.6);
   transform: scale(1.6);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=tourism.css.map */
