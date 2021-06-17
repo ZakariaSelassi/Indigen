@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Sedgwick";
+  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$title-font: "Sedgwick";
+
+body {
+  overflow-x: hidden;
+}
+// ------BANNER-------
+.event-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 85vh;
+  width: 100vw;
+  background-image: url("../img/block-party.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-trapeze {
+  clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 70%;
+  padding: 2%;
+}
+
+.event-description {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.event-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.event-title {
+  font-weight: lighter;
+  font-family: $titleFont;
+  text-align: right;
+  font-size: 7rem;
+}
+
+.event-subtitle {
+  margin-top: 8%;
+  font-weight: lighter;
+  font-family: $subtitlesFont;
+  z-index: 2;
+  text-align: right;
+  color: $redIndigen;
+  font-size: 2rem;
+}
+
+.event-p {
+  margin-top: 2%;
+  font-weight: lighter;
+  color: white;
+  text-align: right;
+  font-family: $subtitlesFont;
+  font-size: 1rem;
+  width: 16vw;
+}
+
+.textBold {
+  font-family: $textBold;
+}
+
+.event-video {
+  margin-top: 2rem;
+  width: 15vw;
+  height: 20vh;
+}
+
+// VISIT
+.tourism-polygone-visit {
+  background-image: url("../img/tourisme-vélo-NB.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  .title-visit {
+    height: 30vh;
+    clip-path: polygon(0 0, 0% 100%, 70% 100%);
+    background-color: rgba(255, 0, 0, 0.274);
+    font-size: 2.8rem;
+    font-family: $title-font;
+    position: relative;
+    p {
+      position: absolute;
+      left: 17%;
+      bottom: 0%;
+      color: white;
+    }
+  }
+  &:hover {
+    background-image: url("../img/toursime-vélo.jpg");
+    height: 62.5vh;
+    .title-visit {
+      display: none;
+    }
+  }
+}
+
+// WORKSHOP
+.tourism-polygone-workshop {
+  margin-left: -38px;
+  background-image: url("../img/workshop-NB.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  float: left;
+  -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  .title-workshop {
+    height: 25vh;
+    clip-path: polygon(0 0, 0 80%, 94% 0);
+    background-color: rgba(255, 0, 0, 0.274);
+    color: white;
+    font-size: 2.8rem;
+    font-family: $title-font;
+    position: relative;
+    p {
+      position: absolute;
+      left: 20%;
+      top: 0%;
+      color: white;
+      padding-top: 2%;
+    }
+  }
+  &:hover {
+    background-image: url("../img/workshop.jpg");
+    height: 62.5vh;
+    .title-workshop {
+      display: none;
+    }
+  }
+}
+
+// VIP
+.tourism-polygone-vip {
+  background-image: url("../img/vipNB.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 4vh;
+  height: 74.07407407vh;
+  width: 33.3333%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  .title-vip {
+    height: 20vh;
+    clip-path: polygon(0 0, 0 100%, 88% 100%);
+    background-color: rgba(255, 0, 0, 0.274);
+    color: white;
+    font-size: 2.8rem;
+    font-family: $title-font;
+    position: relative;
+    p {
+      position: absolute;
+      left: 7%;
+      bottom: 0%;
+      color: white;
+    }
+  }
+  &:hover {
+    background-image: url("../img/vip.png");
+    height: 62.5vh;
+    width: 28.45%;
+    .title-vip {
+      display: none;
+    }
+  }
+}
+/*voir avec jazzon car cette partie recouvre le footer*/
+.triptych-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.triptych {
+  transform: scale(1.35);
+  transform-origin: top;
+  &:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
