@@ -149,26 +149,12 @@
   background-size: cover;
 }
 
-.event-title {
-  font-family: Sedgwick, sans-serif;
-  text-align: right;
-  font-size: 7rem;
-}
-
 .event-trapeze {
   -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
           clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(0, 0, 0, 0.514);
   width: 70%;
   padding: 2%;
-}
-
-.event-subtitle {
-  font-family: Roboto, sans-serif;
-  z-index: 2;
-  text-align: right;
-  color: #db3632;
-  font-size: 2rem;
 }
 
 .event-description {
@@ -180,16 +166,51 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
+.event-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.event-title {
+  font-weight: lighter;
+  font-family: Sedgwick, sans-serif;
+  text-align: right;
+  font-size: 7rem;
+}
+
+.event-subtitle {
+  margin-top: 8%;
+  font-weight: lighter;
+  font-family: Roboto, sans-serif;
+  z-index: 2;
+  text-align: right;
+  color: #db3632;
+  font-size: 2rem;
+}
+
 .event-p {
+  margin-top: 2%;
+  font-weight: lighter;
   color: white;
   text-align: right;
   font-family: Roboto, sans-serif;
   font-size: 1rem;
-  width: 15vw;
+  width: 16vw;
 }
 
 .textBold {
@@ -197,6 +218,7 @@
 }
 
 .event-video {
+  margin-top: 2rem;
   width: 15vw;
   height: 20vh;
 }
@@ -326,6 +348,8 @@
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .event-title {
     font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
   }
   .event-subtitle {
     font-size: 1.5rem;
@@ -333,6 +357,11 @@
   .event-p {
     font-size: 1rem;
     text-align: right;
+  }
+  .event-video {
+    margin-top: 15%;
+    width: 9rem;
+    height: 7rem;
   }
 }
 /*# sourceMappingURL=event.css.map */
