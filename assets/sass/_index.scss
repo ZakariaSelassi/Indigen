@@ -11,16 +11,17 @@
 .navbar:hover {
   opacity: 100%;
 }
+.opacity{
+  opacity: 50%;
+}
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  opacity: 50%;
   height: 15vh;
   width: 100%;
-
 }
 .hamburger {
   display: none;

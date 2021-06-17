@@ -565,6 +565,10 @@ body {
   opacity: 100%;
 }
 
+.opacity {
+  opacity: 50%;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,7 +583,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  opacity: 50%;
   height: 15vh;
   width: 100%;
 }
