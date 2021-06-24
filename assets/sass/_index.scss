@@ -16,18 +16,15 @@ body {
 .triptych-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  gap: 10px;
-}
-.triptych {
-  // font-size: 7vw;
-  display: flex;
-  flex-direction: column;
+  p {
+    font-size: 1.3rem;
+    line-height: 95%;
+  }
 }
 
 .index-polygone-graffiti {
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   background-image: url("../img/graffiti.png");
   background-position: center;
   background-size: cover;
@@ -36,17 +33,17 @@ body {
   font-family: $titleFont;
   margin-bottom: 10px;
   .title-graffiti {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 20vh;
-      background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
   }
 }
 
 .index-polygone-events {
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   background-image: url("../img/blockparty.png");
   background-position: center;
   background-size: cover;
@@ -55,16 +52,16 @@ body {
   font-family: $titleFont;
   margin-bottom: 10px;
   .title-events {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 20vh;
-      background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
   }
 }
 .index-polygone-tourisme {
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   background-image: url("../img/parcoururbain.png");
   background-position: center;
   background-size: cover;
@@ -73,16 +70,23 @@ body {
   font-family: $titleFont;
   margin-bottom: 10px;
   .title-tourisme {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 20vh;
-      background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
   }
 }
 
-@media only screen and (min-width: 1025px) {
-  // GRAFFITI
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .triptych-wrapper {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.png");
     background-size: cover;
@@ -94,11 +98,11 @@ body {
     justify-content: flex-end;
     -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    margin-bottom: 0;
     .title-graffiti {
       height: 30vh;
       clip-path: polygon(0 0, 0% 100%, 70% 100%);
       background-color: rgba(255, 0, 0, 0.274);
-      font-size: 2.8rem;
       font-family: $titleFont;
       position: relative;
       p {
@@ -117,10 +121,11 @@ body {
       }
     }
   }
-
+  
   // EVENTS
   .index-polygone-events {
     margin-left: -38px;
+    margin-bottom: 0;
     background-image: url("../img/blockpartyNB.png");
     background-size: cover;
     background-position: center;
@@ -134,7 +139,6 @@ body {
       clip-path: polygon(0 0, 0 80%, 94% 0);
       background-color: rgba(255, 0, 0, 0.274);
       color: white;
-      font-size: 2.8rem;
       font-family: $titleFont;
       position: relative;
       p {
@@ -153,13 +157,14 @@ body {
       }
     }
   }
-
+  
   // TOURISME
   .index-polygone-tourisme {
     background-image: url("../img/parcoururbainNB.png");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
+    margin-bottom: 0;
     height: 74.07407407vh;
     width: 29%;
     float: left;
@@ -173,7 +178,6 @@ body {
       clip-path: polygon(0 0, 0 100%, 88% 100%);
       background-color: rgba(255, 0, 0, 0.274);
       color: white;
-      font-size: 2.8rem;
       font-family: $titleFont;
       position: relative;
       p {
@@ -196,7 +200,7 @@ body {
     display: flex;
     flex-direction: row;
   }
-
+  
   .triptych {
     transform: scale(1.35);
     transform-origin: top;
@@ -205,24 +209,32 @@ body {
       transform: scale(1.6);
     }
   }
-
+  
   // BLACK BOXES
   .index-black-box {
     height: 7vh;
     width: 100vw;
     background-color: black;
   }
-
+  
   .index-black-box-bot {
     margin-top: 25.9vh;
     height: 7vh;
     width: 100vw;
     background-color: black;
   }
+  .triptych-wrapper {
+    p {
+      font-size: 1.8rem;
+    }
+  }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1919px) {
-  p {
-    font-size: 1.8rem;
+@media only screen and (min-width: 1920px) {
+  // GRAFFITI
+  .triptych-wrapper {
+    p {
+      font-size: 2.8rem;
+    }
   }
 }
