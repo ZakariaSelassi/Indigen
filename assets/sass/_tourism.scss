@@ -1,217 +1,361 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-}
-.tourism-black-box-bot {
-  margin-top: 26vh;
-  width: 100vw;
-  height: auto;
-  background-color: black;
-}
 // ------BANNER-------
 .tourism-banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  max-height: auto;
-  max-width: 100%;
-  // background-image: url("../img/parcoururbainresize.png");
+  background-image: url("../img/blockparty.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .tourism-trapeze {
-  clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(0, 0, 0, 0.514);
-  width: 70%;
-  padding: 2%;
+  background-color: none;
 }
 
 .tourism-description {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-around;
+  color: none;
 }
 
 .tourism-type {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: none;
+}
+
+.tourism-video {
+  display: none;
 }
 
 .tourism-title {
-  font-weight: lighter;
-  font-family: $titleFont;
-  text-align: right;
-  font-size: 2.4rem;
-}
-
-.tourism-subtitle {
-  margin-top: 8%;
-  font-weight: lighter;
-  font-family: $subtitlesFont;
-  z-index: 2;
-  text-align: right;
-  color: $redIndigen;
-  font-size: 1.8rem;
-}
-
-.tourism-p {
-  margin-top: 2%;
-  font-weight: lighter;
   color: white;
-  text-align: right;
-  font-family: $subtitlesFont;
-  font-size: 1rem;
-  width: 16vw;
-}
-
-.textBold {
-  font-family: $textBold;
-}
-
-// VISIT
-.tourism-polygone-visit {
-  background-image: url("../img/tourisme-vélo-NB.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 74.07407407vh;
-  width: 33.3333%;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 4rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-  .title-visit {
-    height: 30vh;
-    clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
-    font-size: 2.8rem;
-    font-family: $titleFont;
-    position: relative;
-    p {
-      position: absolute;
-      left: 17%;
-      bottom: 0%;
-      color: white;
-    }
-  }
-  &:hover {
-    background-image: url("../img/toursime-vélo.jpg");
-    height: 62.5vh;
-    .title-visit {
-      display: none;
-    }
-  }
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
 }
 
-// WORKSHOP
-.tourism-polygone-workshop {
-  margin-left: -38px;
-  background-image: url("../img/workshop-NB.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 74.07407407vh;
-  width: 33.3333%;
-  float: left;
-  -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  .title-workshop {
-    height: 25vh;
-    clip-path: polygon(0 0, 0 80%, 94% 0);
-    background-color: rgba(255, 0, 0, 0.274);
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tourism-title {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .tourism-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+
+  .tourism-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+
+  .tourism-description {
     color: white;
-    font-size: 2.8rem;
-    font-family: $titleFont;
-    position: relative;
-    p {
-      position: absolute;
-      left: 20%;
-      top: 0%;
-      color: white;
-      padding-top: 2%;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
   }
-  &:hover {
-    background-image: url("../img/workshop.jpg");
-    height: 62.5vh;
-    .title-workshop {
-      display: none;
-    }
-  }
-}
 
-// VIP
-.tourism-polygone-vip {
-  background-image: url("../img/vipNB.png");
-  background-size: cover;
-  background-position: center;
-  margin-left: 4vh;
-  height: 74.07407407vh;
-  width: 33.3333%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  .title-vip {
-    height: 20vh;
-    clip-path: polygon(0 0, 0 100%, 88% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
+  .tourism-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .tourism-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+
+  .tourism-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
+
+  .tourism-p {
+    margin-top: 2%;
+    font-weight: lighter;
     color: white;
-    font-size: 2.8rem;
-    font-family: $titleFont;
-    position: relative;
-    p {
-      position: absolute;
-      left: 7%;
-      bottom: 0%;
-      color: white;
-    }
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
   }
-  &:hover {
-    background-image: url("../img/vip.png");
-    height: 62.5vh;
-    width: 28.45%;
-    .title-vip {
-      display: none;
-    }
+
+  .textBold {
+    font-family: $textBold;
+  }
+
+  .tourism-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
   }
 }
 
-/*voir avec jazzon car cette partie recouvre le footer*/
+// FONT SIZE SPECIAL SCREEN
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .tourism-title {
+    font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .tourism-subtitle {
+    font-size: 1.5rem;
+  }
+  .tourism-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .tourism-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+}
 
+// MOBILE
 .triptych-wrapper {
   display: flex;
-  flex-direction: row;
-}
-
-.triptych {
-  transform: scale(1.35);
-  transform-origin: top;
-  &:hover {
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
+  flex-direction: column;
+  p {
+    font-size: 1.3rem;
+    line-height: 95%;
   }
 }
-.index-polygone-graffiti {
-  background-image: url("../img/graffitiNB.png");
-  background-size: cover;
+
+.tourism-polygone-graffiti {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/graffiti.png");
   background-position: center;
-  height: 74.07407407vh;
-  width: 33.3333%;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: $titleFont;
+  margin-bottom: 10px;
+  .title-graffiti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1919px) {
-  p {
-    font-size: 1.8rem;
+.tourism-polygone-events {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/blockparty.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: $titleFont;
+  margin-bottom: 10px;
+  .title-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+.tourism-polygone-tourisme {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/parcoururbain.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: $titleFont;
+  margin-bottom: 10px;
+  .title-tourisme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .triptych-wrapper {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .tourism-polygone-graffiti {
+    background-image: url("../img/graffitiNB.png");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    margin-bottom: 0;
+    .title-graffiti {
+      height: 30vh;
+      clip-path: polygon(0 0, 0% 100%, 70% 100%);
+      background-color: rgba(255, 0, 0, 0.274);
+      font-family: $titleFont;
+      position: relative;
+      p {
+        position: absolute;
+        line-height: 90%;
+        left: 17%;
+        bottom: 0%;
+        color: white;
+      }
+    }
+    &:hover {
+      background-image: url("../img/graffiti.png");
+      height: 62.5vh;
+      .title-graffiti {
+        display: none;
+      }
+    }
+  }
+
+  // EVENTS
+  .tourism-polygone-events {
+    margin-left: -38px;
+    margin-bottom: 0;
+    background-image: url("../img/blockpartyNB.png");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    float: left;
+    -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+    .title-events {
+      height: 25vh;
+      clip-path: polygon(0 0, 0 80%, 94% 0);
+      background-color: rgba(255, 0, 0, 0.274);
+      color: white;
+      font-family: $titleFont;
+      position: relative;
+      p {
+        position: absolute;
+        left: 25%;
+        top: 0%;
+        color: white;
+        padding-top: 2%;
+      }
+    }
+    &:hover {
+      background-image: url("../img/blockparty.png");
+      height: 62.5vh;
+      .title-events {
+        display: none;
+      }
+    }
+  }
+
+  // TOURISME
+  .tourism-polygone-tourisme {
+    background-image: url("../img/parcoururbainNB.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: 4vh;
+    margin-bottom: 0;
+    height: 74.07407407vh;
+    width: 29%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    .title-tourisme {
+      height: 20vh;
+      clip-path: polygon(0 0, 0 100%, 88% 100%);
+      background-color: rgba(255, 0, 0, 0.274);
+      color: white;
+      font-family: $titleFont;
+      position: relative;
+      p {
+        position: absolute;
+        left: 7%;
+        bottom: 0%;
+        color: white;
+      }
+    }
+    &:hover {
+      background-image: url("../img/parcoururbain.png");
+      height: 62.5vh;
+      width: 26.2%;
+      .title-tourisme {
+        display: none;
+      }
+    }
+  }
+  .triptych-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .triptych {
+    transform: scale(1.35);
+    transform-origin: top;
+    &:hover {
+      -webkit-transform: scale(1.6);
+      transform: scale(1.6);
+    }
+  }
+
+  // BLACK BOXES
+  .tourism-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
+
+  .tourism-black-box-bot {
+    margin-top: 25.9vh;
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
+  .triptych-wrapper {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  // GRAFFITI
+  .triptych-wrapper {
+    p {
+      font-size: 2.8rem;
+    }
   }
 }
