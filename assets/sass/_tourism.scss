@@ -1,39 +1,38 @@
-@font-face {
-  font-family: "Sedgwick";
-  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-$title-font: "Sedgwick";
-
 body {
   overflow-x: hidden;
 }
+.tourism-black-box-bot {
+  margin-top: 26vh;
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
 // ------BANNER-------
-.event-banner {
+.tourism-banner {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  height: 85vh;
-  width: 100vw;
-  background-image: url("../img/block-party.jpg");
+  max-height: auto;
+  max-width: 100%;
+  // background-image: url("../img/parcoururbainresize.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.event-trapeze {
+.tourism-trapeze {
   clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(0, 0, 0, 0.514);
   width: 70%;
   padding: 2%;
 }
 
-.event-description {
+.tourism-description {
   color: white;
   display: flex;
   flex-direction: column;
@@ -41,30 +40,30 @@ body {
   justify-content: space-around;
 }
 
-.event-type {
+.tourism-type {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.event-title {
+.tourism-title {
   font-weight: lighter;
   font-family: $titleFont;
   text-align: right;
-  font-size: 7rem;
+  font-size: 2.4rem;
 }
 
-.event-subtitle {
+.tourism-subtitle {
   margin-top: 8%;
   font-weight: lighter;
   font-family: $subtitlesFont;
   z-index: 2;
   text-align: right;
   color: $redIndigen;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.event-p {
+.tourism-p {
   margin-top: 2%;
   font-weight: lighter;
   color: white;
@@ -76,12 +75,6 @@ body {
 
 .textBold {
   font-family: $textBold;
-}
-
-.event-video {
-  margin-top: 2rem;
-  width: 15vw;
-  height: 20vh;
 }
 
 // VISIT
@@ -101,7 +94,7 @@ body {
     clip-path: polygon(0 0, 0% 100%, 70% 100%);
     background-color: rgba(255, 0, 0, 0.274);
     font-size: 2.8rem;
-    font-family: $title-font;
+    font-family: $titleFont;
     position: relative;
     p {
       position: absolute;
@@ -136,7 +129,7 @@ body {
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-size: 2.8rem;
-    font-family: $title-font;
+    font-family: $titleFont;
     position: relative;
     p {
       position: absolute;
@@ -175,7 +168,7 @@ body {
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-size: 2.8rem;
-    font-family: $title-font;
+    font-family: $titleFont;
     position: relative;
     p {
       position: absolute;
@@ -193,7 +186,9 @@ body {
     }
   }
 }
+
 /*voir avec jazzon car cette partie recouvre le footer*/
+
 .triptych-wrapper {
   display: flex;
   flex-direction: row;
@@ -206,6 +201,13 @@ body {
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
   }
+}
+.index-polygone-graffiti {
+  background-image: url("../img/graffitiNB.png");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1919px) {

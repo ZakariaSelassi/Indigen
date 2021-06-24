@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Sedgwick";
-  src: url("../fonts/SedgwickAveDisplay-Regular.ttf") format("truetype");
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +10,14 @@ body {
   overflow-x: hidden;
 }
 
-.event-banner {
+.tourism-black-box-bot {
+  margin-top: 26vh;
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
+
+.tourism-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,14 +28,13 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 85vh;
-  width: 100vw;
-  background-image: url("../img/block-party.jpg");
+  max-height: auto;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.event-trapeze {
+.tourism-trapeze {
   -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
           clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(0, 0, 0, 0.514);
@@ -41,7 +42,7 @@ body {
   padding: 2%;
 }
 
-.event-description {
+.tourism-description {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +58,7 @@ body {
       justify-content: space-around;
 }
 
-.event-type {
+.tourism-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,24 +71,24 @@ body {
           align-items: flex-end;
 }
 
-.event-title {
+.tourism-title {
   font-weight: lighter;
   font-family: Sedgwick, sans-serif;
   text-align: right;
-  font-size: 7rem;
+  font-size: 2.4rem;
 }
 
-.event-subtitle {
+.tourism-subtitle {
   margin-top: 8%;
   font-weight: lighter;
   font-family: Roboto, sans-serif;
   z-index: 2;
   text-align: right;
   color: #db3632;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.event-p {
+.tourism-p {
   margin-top: 2%;
   font-weight: lighter;
   color: white;
@@ -99,12 +100,6 @@ body {
 
 .textBold {
   font-family: Roboto-bold;
-}
-
-.event-video {
-  margin-top: 2rem;
-  width: 15vw;
-  height: 20vh;
 }
 
 .tourism-polygone-visit {
@@ -133,7 +128,7 @@ body {
           clip-path: polygon(0 0, 0% 100%, 70% 100%);
   background-color: rgba(255, 0, 0, 0.274);
   font-size: 2.8rem;
-  font-family: "Sedgwick";
+  font-family: Sedgwick, sans-serif;
   position: relative;
 }
 
@@ -172,7 +167,7 @@ body {
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
   font-size: 2.8rem;
-  font-family: "Sedgwick";
+  font-family: Sedgwick, sans-serif;
   position: relative;
 }
 
@@ -222,7 +217,7 @@ body {
   background-color: rgba(255, 0, 0, 0.274);
   color: white;
   font-size: 2.8rem;
-  font-family: "Sedgwick";
+  font-family: Sedgwick, sans-serif;
   position: relative;
 }
 
@@ -266,6 +261,14 @@ body {
   transform: scale(1.6);
 }
 
+.index-polygone-graffiti {
+  background-image: url("../img/graffitiNB.png");
+  background-size: cover;
+  background-position: center;
+  height: 74.07407407vh;
+  width: 33.3333%;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1919px) {
   p {
     font-size: 1.8rem;
@@ -288,7 +291,7 @@ body {
           align-items: center;
   background-color: black;
   height: 15vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .hamburger {
@@ -643,8 +646,8 @@ body {
 
 /*FOOTER*/
 .reseau {
-  font-size: 2rem;
-  padding-top: 3rem;
+  font-size: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: black;
   text-align: center;
