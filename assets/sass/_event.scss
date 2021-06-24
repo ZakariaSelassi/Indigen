@@ -1,3 +1,42 @@
+.event-banner {
+  background-image: url("../img/blockparty.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-trapeze {
+  background-color: none;
+}
+
+.event-description {
+  color: none;
+}
+
+.event-type {
+  display: none;
+}
+
+.event-video {
+  display: none;
+}
+
+.event-title {
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .event-title {
+    font-size: 6rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   // ------BANNER-------
   .event-banner {
@@ -6,9 +45,6 @@
     justify-content: flex-end;
     height: 85vh;
     width: 100vw;
-    background-image: url("../img/blockparty.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .event-trapeze {
@@ -37,6 +73,10 @@
     font-family: $titleFont;
     text-align: right;
     font-size: 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
   }
 
   .event-subtitle {
@@ -64,11 +104,14 @@
   }
 
   .event-video {
-    margin-top: 2rem;
-    width: 15vw;
-    height: 20vh;
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
   }
 }
+
+// FONT SIZE SPECIAL SCREEN
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
   .event-title {
     font-size: 5rem;

@@ -86,7 +86,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.png");
     background-size: cover;
