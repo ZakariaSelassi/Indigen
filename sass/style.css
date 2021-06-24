@@ -968,4 +968,41 @@ body {
   width: 100vw;
   background-color: black;
 }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ecole-banner {
+  height: 85vh;
+  background-image: url("../img/blockparty.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ecole-title {
+  font-family: Sedgwick, sans-serif;
+  text-align: right;
+  font-size: 4vw;
+  color: white;
+}
+
+.ecole-trapeze {
+  -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+          clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 70%;
+  padding: 2%;
+}
+
+.textBold {
+  font-family: Roboto-bold;
+}
+
+.ecole-video {
+  width: 15vw;
+  height: 20vh;
+}
 /*# sourceMappingURL=style.css.map */

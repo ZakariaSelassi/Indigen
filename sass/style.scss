@@ -1,4 +1,3 @@
-
 $titleFont: Sedgwick, sans-serif;
 $subtitlesFont: Roboto, sans-serif;
 $redIndigen: #db3632;
@@ -7,13 +6,13 @@ $subtitlesFont: Roboto, sans-serif;
 $textBold: Roboto-bold;
 $redIndigen: #db3632;
 
-@import 'tourism';
-@import 'streetart';
-@import 'partenaires';
-@import 'header';
-@import 'gallery';
-@import 'footer';
-@import 'font';
-@import 'event';
-@import 'index';
-
+@import "tourism";
+@import "streetart";
+@import "partenaires";
+@import "header";
+@import "gallery";
+@import "footer";
+@import "font";
+@import "event";
+@import "index";
+@import "ecole";
