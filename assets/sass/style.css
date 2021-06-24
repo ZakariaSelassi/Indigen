@@ -800,6 +800,109 @@ body {
   opacity: 50%;
 }
 
+.triptych-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  gap: 10px;
+}
+
+.triptych {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-polygone-graffiti {
+  width: 100vw;
+  height: 20vh;
+  background-image: url("../img/graffiti.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.index-polygone-graffiti .title-graffiti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.index-polygone-events {
+  width: 100vw;
+  height: 20vh;
+  background-image: url("../img/blockparty.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.index-polygone-events .title-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.index-polygone-tourisme {
+  width: 100vw;
+  height: 20vh;
+  background-image: url("../img/parcoururbain.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.index-polygone-tourisme .title-tourisme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 @media only screen and (min-width: 1025px) {
   .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.png");

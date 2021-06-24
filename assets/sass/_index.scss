@@ -16,10 +16,11 @@ body {
 .triptych-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   gap: 10px;
 }
 .triptych {
-  font-size: 7vw;
+  // font-size: 7vw;
   display: flex;
   flex-direction: column;
 }
@@ -32,13 +33,12 @@ body {
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: $title-font;
+  font-family: $titleFont;
   margin-bottom: 10px;
   .title-graffiti {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100vw;
       height: 20vh;
       background-color: rgba(0, 0, 0, 0.35);
   }
@@ -52,13 +52,12 @@ body {
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: $title-font;
+  font-family: $titleFont;
   margin-bottom: 10px;
   .title-events {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100vw;
       height: 20vh;
       background-color: rgba(0, 0, 0, 0.35);
   }
@@ -66,18 +65,17 @@ body {
 .index-polygone-tourisme {
   width: 100vw;
   height: 20vh;
-  background-image: url("../img/parcour\ urbain.jpg");
+  background-image: url("../img/parcoururbain.png");
   background-position: center;
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: $title-font;
+  font-family: $titleFont;
   margin-bottom: 10px;
   .title-tourisme {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100vw;
       height: 20vh;
       background-color: rgba(0, 0, 0, 0.35);
   }
