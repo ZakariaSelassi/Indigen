@@ -1,9 +1,138 @@
-.banner {
-  background: url("../img/partenaires/banner.jpg") no-repeat;
-  width: 100%;
-  height: 50vh;
+.partenaires-banner {
+  background-image: url("../img/blockparty.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.partenaires-trapeze {
+  background-color: none;
+}
+
+.partenaires-description {
+  color: none;
+}
+
+.partenaires-type {
+  display: none;
+}
+
+.partenaires-video {
+  display: none;
+}
+
+.partenaires-title {
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .partenaires-title {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .partenaires-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+
+  .partenaires-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+
+  .partenaires-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .partenaires-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .partenaires-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+
+  .partenaires-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
+
+  .partenaires-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
+  }
+
+  .textBold {
+    font-family: $textBold;
+  }
+
+  .partenaires-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+// FONT SIZE SPECIAL SCREEN
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .partenaires-title {
+    font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .partenaires-subtitle {
+    font-size: 1.5rem;
+  }
+  .partenaires-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .partenaires-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+}
+
+//Partenaires
 .partenaires {
   display: flex;
   flex-direction: row;
