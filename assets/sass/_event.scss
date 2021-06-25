@@ -120,6 +120,11 @@
 
 // FONT SIZE SPECIAL SCREEN
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
   .event-title {
     font-size: 5rem;
     margin-bottom: -3%;

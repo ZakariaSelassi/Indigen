@@ -5,8 +5,17 @@
   padding: 0;
 }
 
+.tourism-sep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .tourism-banner {
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/landgraph.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,11 +36,10 @@
   display: none;
 }
 
-.event-title {
+.tourism-title {
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,15 +107,13 @@
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .event-title {
+  .tourism-title {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 7rem;
+    font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
-    margin-bottom: -50px;
-    margin-top: -40px;
   }
   .event-subtitle {
     margin-top: 8%;
@@ -300,6 +306,11 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
   .event-title {
     font-size: 5rem;
     margin-bottom: -3%;
@@ -1001,6 +1012,11 @@ video {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
   .event-title {
     font-size: 5rem;
     margin-bottom: -3%;
