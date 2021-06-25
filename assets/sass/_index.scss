@@ -1,20 +1,22 @@
-
-  *,::before,::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html,body {
-    overflow-x: hidden;
-  }
-  /*HEADER*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/*HEADER*/
 .navbar:hover {
   opacity: 100%;
 }
-.opacity{
+.opacity {
   opacity: 50%;
 }
- // MOBILE
+// MOBILE
 .triptych-wrapper {
   display: flex;
   flex-direction: column;
@@ -123,7 +125,7 @@
       }
     }
   }
-  
+
   // EVENTS
   .index-polygone-events {
     margin-left: -38px;
@@ -159,7 +161,7 @@
       }
     }
   }
-  
+
   // TOURISME
   .index-polygone-tourisme {
     background-image: url("../img/parcoururbainNB.png");
@@ -202,7 +204,7 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .triptych {
     transform: scale(1.35);
     transform-origin: top;
@@ -211,14 +213,14 @@
       transform: scale(1.6);
     }
   }
-  
+
   // BLACK BOXES
   .index-black-box {
     height: 7vh;
     width: 100vw;
     background-color: black;
   }
-  
+
   .index-black-box-bot {
     margin-top: 25.9vh;
     height: 7vh;
