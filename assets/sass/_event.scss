@@ -5,58 +5,141 @@
 }
 // ------BANNER-------
 .event-banner {
-  height: 85vh;
   background-image: url("../img/blockparty.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.event-title {
-  font-family: $titleFont;
-  text-align: right;
-  font-size: 7vw;
-}
-
 .event-trapeze {
-  clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(0, 0, 0, 0.514);
-  width: 70%;
-  padding: 2%;
-}
-
-.event-subtitle {
-  font-family: $subtitlesFont;
-  z-index: 2;
-  text-align: right;
-  color: $redIndigen;
-  font-size: 1.5vw;
+  background-color: none;
 }
 
 .event-description {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  color: none;
 }
 
-.event-p {
-  color: white;
-  text-align: right;
-  font-family: $subtitlesFont;
-  font-size: 0.9vw;
-  width: 15vw;
-}
-
-.textBold {
-  font-family: $textBold;
+.event-type {
+  display: none;
 }
 
 .event-video {
-  width: 15vw;
-  height: 20vh;
+  display: none;
 }
-.separator {
-  visibility: hidden;
+
+.event-title {
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .event-title {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .event-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+
+  .event-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+
+  .event-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .event-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .event-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+
+  .event-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
+
+  .event-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
+  }
+
+  .textBold {
+    font-family: $textBold;
+  }
+
+  .event-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+// FONT SIZE SPECIAL SCREEN
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .event-title {
+    font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .event-subtitle {
+    font-size: 1.5rem;
+  }
+  .event-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+}
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
+.separator-event {
+  display: none;
 }
 /*TEXTE_PHOTO EN DIAGONALE*/
 .title {
@@ -149,8 +232,10 @@
     padding: 0.4rem;
   }
   .event-text {
-    font-size: 0.42rem;
+    font-size: 0.5rem;
     padding: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
   }
   /*disparition du banner en responsive*/
   .event-trapeze {

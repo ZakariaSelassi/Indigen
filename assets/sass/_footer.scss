@@ -20,5 +20,13 @@
   .reseau {
     padding-top: 2rem;
     font-size: 2rem;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 2rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
