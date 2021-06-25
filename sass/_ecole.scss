@@ -3,30 +3,30 @@
   margin: 0;
   padding: 0;
 }
-
+// ------BANNER-------
 .ecole-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/parcoururbain.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.ecole-trapeze {
+.event-trapeze {
   background-color: none;
 }
 
-.ecole-description {
+.event-description {
   color: none;
 }
 
-.ecole-type {
+.event-type {
   display: none;
 }
 
-.ecole-video {
+.event-video {
   display: none;
 }
 
-.ecole-title {
+.event-title {
   color: white;
   height: 50vh;
   font-family: $titleFont;
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .ecole-title {
+  .event-title {
     font-size: 6rem;
   }
 }
@@ -52,14 +52,14 @@
     width: 100vw;
   }
 
-  .ecole-trapeze {
+  .event-trapeze {
     clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
   }
 
-  .ecole-description {
+  .event-description {
     color: white;
     display: flex;
     flex-direction: column;
@@ -67,13 +67,13 @@
     justify-content: space-around;
   }
 
-  .ecole-type {
+  .event-type {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
-  .ecole-title {
+  .event-title {
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
@@ -84,7 +84,7 @@
     margin-top: -40px;
   }
 
-  .ecole-subtitle {
+  .event-subtitle {
     margin-top: 8%;
     font-weight: lighter;
     font-family: $subtitlesFont;
@@ -94,7 +94,7 @@
     font-size: 2rem;
   }
 
-  .ecole-p {
+  .event-p {
     margin-top: 2%;
     font-weight: lighter;
     color: white;
@@ -108,7 +108,7 @@
     font-family: $textBold;
   }
 
-  .ecole-video {
+  .event-video {
     margin-top: 1rem;
     width: 10vw;
     height: 15vh;
@@ -118,22 +118,23 @@
 
 // FONT SIZE SPECIAL SCREEN
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-  .ecole-title {
+  .event-title {
     font-size: 5rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
-  .ecole-subtitle {
+  .event-subtitle {
     font-size: 1.5rem;
   }
-  .ecole-p {
+  .event-p {
     line-height: 120%;
     font-size: 1rem;
     text-align: right;
   }
-  .ecole-video {
+  .event-video {
     margin-top: 7%;
     width: 9rem;
     height: 6rem;
   }
 }
+@import "event";

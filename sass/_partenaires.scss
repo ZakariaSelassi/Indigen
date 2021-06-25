@@ -1,26 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ------BANNER-------
 .partenaires-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/parcoururbain.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.partenaires-trapeze {
+.event-trapeze {
   background-color: none;
 }
 
-.partenaires-description {
+.event-description {
   color: none;
 }
 
-.partenaires-type {
+.event-type {
   display: none;
 }
 
-.partenaires-video {
+.event-video {
   display: none;
 }
 
-.partenaires-title {
+.event-title {
   color: white;
   height: 50vh;
   font-family: $titleFont;
@@ -32,7 +39,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .partenaires-title {
+  .event-title {
     font-size: 6rem;
   }
 }
@@ -46,14 +53,14 @@
     width: 100vw;
   }
 
-  .partenaires-trapeze {
+  .event-trapeze {
     clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
   }
 
-  .partenaires-description {
+  .event-description {
     color: white;
     display: flex;
     flex-direction: column;
@@ -61,7 +68,7 @@
     justify-content: space-around;
   }
 
-  .partenaires-type {
+  .event-type {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -71,14 +78,14 @@
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
-    font-size: 7rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
     margin-top: -40px;
   }
 
-  .partenaires-subtitle {
+  .event-subtitle {
     margin-top: 8%;
     font-weight: lighter;
     font-family: $subtitlesFont;
@@ -88,7 +95,7 @@
     font-size: 2rem;
   }
 
-  .partenaires-p {
+  .event-p {
     margin-top: 2%;
     font-weight: lighter;
     color: white;
@@ -102,7 +109,7 @@
     font-family: $textBold;
   }
 
-  .partenaires-video {
+  .event-video {
     margin-top: 1rem;
     width: 10vw;
     height: 15vh;
@@ -112,25 +119,26 @@
 
 // FONT SIZE SPECIAL SCREEN
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-  .partenaires-title {
+  .event-title {
     font-size: 5rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
-  .partenaires-subtitle {
+  .event-subtitle {
     font-size: 1.5rem;
   }
-  .partenaires-p {
+  .event-p {
     line-height: 120%;
     font-size: 1rem;
     text-align: right;
   }
-  .partenaires-video {
+  .event-video {
     margin-top: 7%;
     width: 9rem;
     height: 6rem;
   }
 }
+@import "event";
 
 //Partenaires
 .partenaires {

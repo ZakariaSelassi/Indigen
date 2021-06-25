@@ -179,6 +179,17 @@
       top: 150px;
       margin-top: 70px;
       z-index: 1;
-      width: 100%;
+      width: 100%    !important;
+      height: auto   !important;
     }
   }
+
+video{
+  display: block;
+  width: 100%;
+}
+.video {
+  position: relative;
+  top: -210px;
+  z-index: -1;
+}
