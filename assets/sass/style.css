@@ -649,7 +649,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-black-box {
     height: 7vh;
     width: 100vw;
@@ -1479,7 +1479,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-black-box {
     height: 7vh;
     width: 100vw;
@@ -1824,7 +1824,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-black-box {
     height: 7vh;
     width: 100vw;
