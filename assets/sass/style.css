@@ -614,10 +614,77 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-          clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(0, 0, 0, 0.514);
+  -webkit-clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
+          clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
+  background-color: rgba(255, 255, 255, 0.214);
   padding: 2%;
+  z-index: -1;
+}
+
+.tourism-polygone-classique {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/tourismebike.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.tourism-polygone-vip {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/workshop.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.tourism-polygone-vip .title-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.tourism-polygone-urbain {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../img/parcoururbain.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Sedgwick, sans-serif;
+  margin-bottom: 10px;
+}
+
+.tourism-polygone-urbain .title-tourisme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .separator-tourism {
@@ -626,6 +693,131 @@ body {
   text-align: center;
   height: 20vh;
   padding-top: calc(20vh / 2);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .tourism-polygone-classique {
+    background-image: url("../img/tourismebikeNB.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    margin-bottom: 0;
+  }
+  .tourism-polygone-classique .title-graffiti {
+    height: 30vh;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
+            clip-path: polygon(0 0, 0% 100%, 70% 100%);
+    background-color: rgba(255, 0, 0, 0.274);
+    font-family: Sedgwick, sans-serif;
+    position: relative;
+  }
+  .tourism-polygone-classique .title-graffiti p {
+    position: absolute;
+    line-height: 90%;
+    left: 17%;
+    bottom: 0%;
+    color: white;
+  }
+  .tourism-polygone-classique:hover {
+    background-image: url("../img/tourismebike.png");
+    height: 62.5vh;
+  }
+  .tourism-polygone-classique:hover .title-graffiti {
+    display: none;
+  }
+  .tourism-polygone-vip {
+    margin-left: -38px;
+    margin-bottom: 0;
+    background-image: url("../img/workshopNB.png");
+    background-size: cover;
+    background-position: center;
+    height: 74.07407407vh;
+    width: 33.3333%;
+    float: left;
+    -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  }
+  .tourism-polygone-vip .title-events {
+    height: 25vh;
+    -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
+            clip-path: polygon(0 0, 0 80%, 94% 0);
+    background-color: rgba(255, 0, 0, 0.274);
+    color: white;
+    font-family: Sedgwick, sans-serif;
+    position: relative;
+  }
+  .tourism-polygone-vip .title-events p {
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    color: white;
+    padding-top: 2%;
+  }
+  .tourism-polygone-vip:hover {
+    background-image: url("../img/workshop.png");
+    height: 62.5vh;
+  }
+  .tourism-polygone-vip:hover .title-events {
+    display: none;
+  }
+  .tourism-polygone-urbain {
+    background-image: url("../img/parcoururbainNB.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: 4vh;
+    margin-bottom: 0;
+    height: 74.07407407vh;
+    width: 29%;
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .tourism-polygone-urbain .title-tourisme {
+    height: 20vh;
+    -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
+            clip-path: polygon(0 0, 0 100%, 88% 100%);
+    background-color: rgba(255, 0, 0, 0.274);
+    color: white;
+    font-family: Sedgwick, sans-serif;
+    position: relative;
+  }
+  .tourism-polygone-urbain .title-tourisme p {
+    position: absolute;
+    left: 7%;
+    bottom: 0%;
+    color: white;
+  }
+  .tourism-polygone-urbain:hover {
+    background-image: url("../img/parcoururbain.png");
+    height: 62.5vh;
+    width: 26.2%;
+  }
+  .tourism-polygone-urbain:hover .title-tourisme {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
