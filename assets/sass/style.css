@@ -848,7 +848,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  height: 15vh;
+  height: 7rem;
   width: 100%;
 }
 
@@ -966,8 +966,7 @@
   }
   .video {
     position: relative;
-    top: 150px;
-    margin-top: 70px;
+    margin-top: -80px;
     z-index: 1;
     width: 100%;
   }
@@ -1032,8 +1031,7 @@
   }
   .video {
     position: relative;
-    top: 150px;
-    margin-top: 70px;
+    margin-top: -80px;
     z-index: 1;
     width: 100%    !important;
     height: auto   !important;
@@ -1047,7 +1045,7 @@ video {
 
 .video {
   position: relative;
-  top: -210px;
+  margin-top: -115px;
   z-index: -1;
 }
 
@@ -2255,7 +2253,6 @@ html, body {
   }
   .index-black-box-bot {
     margin-top: 25.9vh;
-    height: 7vh;
     width: 100vw;
     background-color: black;
   }
