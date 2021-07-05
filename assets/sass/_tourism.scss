@@ -11,13 +11,28 @@
   background-size: cover;
 }
 .tourism-trapeze {
-  display: flex;
-  justify-content: flex-end;
-  clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(255, 255, 255, 0.214);
-  padding: 2%;
-  z-index: -1;
+  background-color: none;
 }
+.tourism-description{
+  color: none;
+}
+.tourism-type{
+  display:none;
+}
+.tourism-video{
+  display:none;
+}
+.tourism-title{
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
 .tourism-polygone-classique {
   width: 100vw;
   height: 15vh;
@@ -89,14 +104,14 @@
   width: 100vw;
 }
 
-.event-trapeze {
+.tourism-trapeze {
   clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(0, 0, 0, 0.514);
   width: 70%;
   padding: 2%;
 }
 
-.event-description {
+.tourism-description {
   color: white;
   display: flex;
   flex-direction: column;
@@ -104,7 +119,7 @@
   justify-content: space-around;
 }
 
-.event-type {
+.tourism-type {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -119,7 +134,7 @@
   height: auto;
 }
 
-.event-subtitle {
+.tourism-subtitle {
   margin-top: 8%;
   font-weight: lighter;
   font-family: $subtitlesFont;
@@ -129,7 +144,7 @@
   font-size: 2rem;
 }
 
-.event-p {
+.tourism-p {
   margin-top: 2%;
   font-weight: lighter;
   color: white;
