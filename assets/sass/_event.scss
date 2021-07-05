@@ -36,10 +36,25 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
+.event-subtitle-mobile a {
+  text-decoration: none;
+  color: $redIndigen;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
     font-size: 6rem;
+  }
+  .separator-event {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    font-family: $textBold;
+    color: $redIndigen;
+    font-size: 0.6rem;
+    margin-top: 5%;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -117,7 +132,12 @@
 }
 
 // FONT SIZE SPECIAL SCREEN
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
   .event-title {
     font-size: 5rem;
     margin-bottom: -3%;
@@ -136,12 +156,11 @@
     width: 9rem;
     height: 6rem;
   }
+  .separator-event {
+    display: none;
+  }
 }
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
-.separator-event {
-  display: none;
-}
-/*TEXTE_PHOTO EN DIAGONALE*/
 .title {
   font-family: $titleFont;
   color: $redIndigen;
@@ -250,7 +269,7 @@
   .event-p {
     display: none;
   }
-  .separator {
+  .separator-event {
     visibility: visible;
     display: flex;
     justify-content: center;

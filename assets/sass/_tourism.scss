@@ -6,18 +6,9 @@
   margin: 0;
   padding: 0;
 }
-/*
-.event-title-small {
-  color: white;
-  height: 20vh;
-  font-family: $titleFont;
-  font-size: 3.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
+
 .tourism-banner {
-  background-image: url("../img/landgraph.jpg");
+  background-image: url("../img/landgraph.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,7 +74,75 @@
   height: 20vh;
   padding-top: calc(20vh / 2);
 }
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .event-title {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .tourism-banner {
+    display: flex;
+    justify-content: flex-end;
+    clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(255, 255, 255, 0.214);
+    padding: 2%;
+    z-index: -1;
+  }
+  .tourism-polygone-classique {
+    width: 100vw;
+    height: 15vh;
+    background-image: url("../img/tourismebike.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .event-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .tourism-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+  }
+  .tourism-polygone-vip {
+    width: 100vw;
+    height: 15vh;
+    background-image: url("../img/workshop.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: $titleFont;
+    margin-bottom: 10px;
+    .title-events {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 15vh;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+  .tourism-polygone-urbain {
+    width: 100vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .tourism-polygone-classique {
     background-image: url("../img/tourismebikeNB.jpg");
     background-size: cover;
@@ -190,10 +249,25 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .tourism-trapeze {
-    background-color: none;
+  .event-title {
+    font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .event-subtitle {
+    font-size: 1.5rem;
+  }
+  .event-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
   }
 }
+
+// triptyque
+//@import 'event'
