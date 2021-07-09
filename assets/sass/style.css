@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,10 +16,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
-  clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
+          clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
   background-color: rgba(255, 255, 255, 0.214);
   padding: 2%;
   z-index: -1;
@@ -55,11 +55,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.35);
 }
@@ -82,11 +82,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.35);
 }
@@ -112,17 +112,17 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -134,13 +134,13 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -148,11 +148,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .tourism-title {
     font-weight: lighter;
@@ -203,11 +203,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     margin-bottom: 0;
@@ -215,7 +215,7 @@
   .tourism-polygone-classique .title-graffiti {
     height: 30vh;
     -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    clip-path: polygon(0 0, 0% 100%, 70% 100%);
+            clip-path: polygon(0 0, 0% 100%, 70% 100%);
     background-color: rgba(255, 0, 0, 0.274);
     font-family: Sedgwick, sans-serif;
     position: relative;
@@ -249,7 +249,7 @@
   .tourism-polygone-vip .title-events {
     height: 25vh;
     -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
-    clip-path: polygon(0 0, 0 80%, 94% 0);
+            clip-path: polygon(0 0, 0 80%, 94% 0);
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-family: Sedgwick, sans-serif;
@@ -283,18 +283,18 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
   }
   .tourism-polygone-urbain .title-tourisme {
     height: 20vh;
     -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
-    clip-path: polygon(0 0, 0 100%, 88% 100%);
+            clip-path: polygon(0 0, 0 100%, 88% 100%);
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-family: Sedgwick, sans-serif;
@@ -365,11 +365,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -386,17 +386,17 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -408,13 +408,13 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -422,11 +422,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .partenaires-title {
     font-weight: lighter;
@@ -490,7 +490,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -526,11 +526,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -549,10 +549,10 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 3%;
     font-family: Roboto-bold;
     color: #db3632;
@@ -568,17 +568,17 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -590,13 +590,13 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -604,11 +604,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .event-title {
     font-weight: lighter;
@@ -714,7 +714,7 @@
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   border: 1px solid black;
 }
 
@@ -739,7 +739,7 @@
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
 }
 
@@ -748,7 +748,7 @@
     border: none;
     shape-outside: none;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
     margin-left: 1rem;
   }
   .shaped_reverse {
@@ -756,7 +756,7 @@
     shape-outside: none;
     margin-right: 1rem;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
   }
   .content_verse {
     height: 50vh;
@@ -791,545 +791,21 @@
   .event-p {
     display: none;
   }
-  .separator {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 3%;
-    font-family: Roboto-bold;
-    color: #db3632;
-    font-size: 0.6rem;
-    margin-top: 5%;
-  }
-}
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-/*HEADER*/
-.navbar:hover {
-  opacity: 100%;
-}
-
-.opacity {
-  opacity: 50%;
-}
-
-.triptych-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.triptych-wrapper p {
-  font-size: 1.3rem;
-  line-height: 95%;
-}
-
-.index-polygone-graffiti {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/graffiti.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.index-polygone-graffiti .title-graffiti {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 15vh;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.index-polygone-events {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/blockparty.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.index-polygone-events .title-events {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 15vh;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.index-polygone-tourisme {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/parcoururbain.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.index-polygone-tourisme .title-tourisme {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 15vh;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .triptych-wrapper p {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .index-polygone-graffiti {
-    background-image: url("../img/graffitiNB.png");
-    background-size: cover;
-    background-position: center;
-    height: 74.07407407vh;
-    width: 33.3333%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-    margin-bottom: 0;
-  }
-  .index-polygone-graffiti .title-graffiti {
-    height: 30vh;
-    -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .index-polygone-graffiti .title-graffiti p {
-    position: absolute;
-    line-height: 90%;
-    left: 17%;
-    bottom: 0%;
-    color: white;
-  }
-  .index-polygone-graffiti:hover {
-    background-image: url("../img/graffiti.png");
-    height: 62.5vh;
-  }
-  .index-polygone-graffiti:hover .title-graffiti {
-    display: none;
-  }
-  .index-polygone-events {
-    margin-left: -38px;
-    margin-bottom: 0;
-    background-image: url("../img/blockpartyNB.png");
-    background-size: cover;
-    background-position: center;
-    height: 74.07407407vh;
-    width: 33.3333%;
-    float: left;
-    -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
-    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  }
-  .index-polygone-events .title-events {
-    height: 25vh;
-    -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
-    clip-path: polygon(0 0, 0 80%, 94% 0);
-    background-color: rgba(255, 0, 0, 0.274);
-    color: white;
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .index-polygone-events .title-events p {
-    position: absolute;
-    left: 25%;
-    top: 0%;
-    color: white;
-    padding-top: 2%;
-  }
-  .index-polygone-events:hover {
-    background-image: url("../img/blockparty.png");
-    height: 62.5vh;
-  }
-  .index-polygone-events:hover .title-events {
-    display: none;
-  }
-  .index-polygone-tourisme {
-    background-image: url("../img/parcoururbainNB.png");
-    background-size: cover;
-    background-position: center;
-    margin-left: 4vh;
-    margin-bottom: 0;
-    height: 74.07407407vh;
-    width: 29%;
-    float: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .index-polygone-tourisme .title-tourisme {
-    height: 20vh;
-    -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
-    clip-path: polygon(0 0, 0 100%, 88% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
-    color: white;
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .index-polygone-tourisme .title-tourisme p {
-    position: absolute;
-    left: 7%;
-    bottom: 0%;
-    color: white;
-  }
-  .index-polygone-tourisme:hover {
-    background-image: url("../img/parcoururbain.png");
-    height: 62.5vh;
-    width: 26.2%;
-  }
-  .index-polygone-tourisme:hover .title-tourisme {
-    display: none;
-  }
-  .triptych-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  .triptych {
-    -webkit-transform: scale(1.35);
-    transform: scale(1.35);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-  .triptych:hover {
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-  .index-black-box {
-    height: 7vh;
-    width: 100vw;
-    background-color: black;
-  }
-  .index-black-box-bot {
-    margin-top: 25.9vh;
-    height: 7vh;
-    width: 100vw;
-    background-color: black;
-  }
-  .triptych-wrapper p {
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .triptych-wrapper p {
-    font-size: 2.8rem;
-  }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/*
-.event-title-small {
-  color: white;
-  height: 20vh;
-  font-family: $titleFont;
-  font-size: 3.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-.tourism-banner {
-  background-image: url("../img/landgraph.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.tourism-trapeze {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
-  clip-path: polygon(52% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(255, 255, 255, 0.214);
-  padding: 2%;
-  z-index: -1;
-}
-
-.tourism-polygone-classique {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/tourismebike.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.tourism-polygone-vip {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/workshop.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.tourism-polygone-vip .title-events {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 15vh;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.tourism-polygone-urbain {
-  width: 100vw;
-  height: 15vh;
-  background-image: url("../img/parcoururbain.png");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  font-family: Sedgwick, sans-serif;
-  margin-bottom: 10px;
-}
-
-.tourism-polygone-urbain .title-tourisme {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 15vh;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.separator-tourism {
-  font-size: 3vh;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  height: 20vh;
-  padding-top: calc(20vh / 2);
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .tourism-polygone-classique {
-    background-image: url("../img/tourismebikeNB.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 74.07407407vh;
-    width: 33.3333%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-    margin-bottom: 0;
-  }
-  .tourism-polygone-classique .title-graffiti {
-    height: 30vh;
-    -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .tourism-polygone-classique .title-graffiti p {
-    position: absolute;
-    line-height: 90%;
-    left: 17%;
-    bottom: 0%;
-    color: white;
-  }
-  .tourism-polygone-classique:hover {
-    background-image: url("../img/tourismebike.png");
-    height: 62.5vh;
-  }
-  .tourism-polygone-classique:hover .title-graffiti {
-    display: none;
-  }
-  .tourism-polygone-vip {
-    margin-left: -38px;
-    margin-bottom: 0;
-    background-image: url("../img/workshopNB.png");
-    background-size: cover;
-    background-position: center;
-    height: 74.07407407vh;
-    width: 33.3333%;
-    float: left;
-    -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0%, 100%);
-    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  }
-  .tourism-polygone-vip .title-events {
-    height: 25vh;
-    -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
-    clip-path: polygon(0 0, 0 80%, 94% 0);
-    background-color: rgba(255, 0, 0, 0.274);
-    color: white;
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .tourism-polygone-vip .title-events p {
-    position: absolute;
-    left: 25%;
-    top: 0%;
-    color: white;
-    padding-top: 2%;
-  }
-  .tourism-polygone-vip:hover {
-    background-image: url("../img/workshop.png");
-    height: 62.5vh;
-  }
-  .tourism-polygone-vip:hover .title-events {
-    display: none;
-  }
   .separator-event {
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .tourism-polygone-urbain .title-tourisme {
-    height: 20vh;
-    -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
-    clip-path: polygon(0 0, 0 100%, 88% 100%);
-    background-color: rgba(255, 0, 0, 0.274);
-    color: white;
-    font-family: Sedgwick, sans-serif;
-    position: relative;
-  }
-  .tourism-polygone-urbain .title-tourisme p {
-    position: absolute;
-    left: 7%;
-    bottom: 0%;
-    color: white;
-  }
-  .tourism-polygone-urbain:hover {
-    background-image: url("../img/parcoururbain.png");
-    height: 62.5vh;
-    width: 26.2%;
-  }
-  .tourism-polygone-urbain:hover .title-tourisme {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .tourism-trapeze {
-    background-color: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3%;
+    font-family: Roboto-bold;
+    color: #db3632;
+    font-size: 0.6rem;
+    margin-top: 5%;
   }
 }
 
@@ -1339,16 +815,16 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 40px;
   margin: 30px 0 50px 0;
 }
@@ -1364,13 +840,13 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: black;
   height: 7rem;
   width: 100%;
@@ -1395,11 +871,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
 }
 
@@ -1415,7 +891,7 @@ body {
   font-weight: 400;
   color: white;
   /*padding-left: 2rem;
-    padding-right: 2rem;*/
+  padding-right: 2rem;*/
 }
 
 .nav-link:hover {
@@ -1438,8 +914,8 @@ body {
     top: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     width: 100%;
     height: auto;
@@ -1448,7 +924,7 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
     left: 0;
@@ -1471,11 +947,11 @@ body {
   }
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .logo {
     position: absolute;
@@ -1503,8 +979,8 @@ body {
     top: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     width: 100%;
     height: auto;
@@ -1513,7 +989,7 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
     left: 0;
@@ -1536,11 +1012,11 @@ body {
   }
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .logo {
     position: absolute;
@@ -1557,74 +1033,14 @@ body {
     position: relative;
     margin-top: -80px;
     z-index: 1;
-    margin: 1.2rem;
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1024px) {
-  .nav-menu {
-    position: absolute;
-    left: -100%;
-    top: 5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-  .nav-menu.active {
-    left: 0;
-  }
-  .nav-item {
-    margin: 1.8rem 0;
-  }
-  .nav-link {
-    color: black;
-  }
-  .hamburger {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    background-color: white;
-    margin: 2px 1em 0 80%;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .logo {
-    position: absolute;
-    -webkit-transform: translate(0, -25%);
-    transform: translate(0, -25%);
-    margin: 3.5em auto 1em 1em;
-    width: 5rem;
-  }
-  .navbar {
-    height: 80px;
-    opacity: 100%;
-  }
-  .video {
-    position: relative;
-    top: 150px;
-    margin-top: 70px;
-    z-index: 1;
-    width: 100%;
-  }
+video {
+  display: block;
+  width: 100%;
 }
 
 .video {
@@ -1635,7 +1051,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -1643,7 +1059,7 @@ body {
 .galerie {
   position: relative;
   -webkit-column-count: 5;
-  column-count: 5;
+          column-count: 5;
   margin: 80px 50px 20px 50px;
 }
 
@@ -1661,19 +1077,19 @@ body {
 .photo.show {
   display: inline-block;
   -webkit-animation: show 0.5s ease;
-  animation: show 0.5s ease;
+          animation: show 0.5s ease;
 }
 
 @-webkit-keyframes show {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1681,12 +1097,12 @@ body {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1698,7 +1114,7 @@ body {
 
 .photo:hover .galerie-image {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .pagination {
@@ -1735,14 +1151,14 @@ body {
 @media screen and (max-width: 940px) {
   .galerie {
     -webkit-column-count: 3;
-    column-count: 3;
+            column-count: 3;
   }
 }
 
 @media screen and (max-width: 425px) {
   .galerie {
     -webkit-column-count: 2;
-    column-count: 2;
+            column-count: 2;
   }
 }
 
@@ -1777,11 +1193,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -1798,17 +1214,17 @@ body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -1820,13 +1236,13 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -1834,11 +1250,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .event-title {
     font-weight: lighter;
@@ -1902,7 +1318,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -1938,11 +1354,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -1961,10 +1377,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 3%;
     font-family: Roboto-bold;
     color: #db3632;
@@ -1980,17 +1396,17 @@ body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -2002,13 +1418,13 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -2016,11 +1432,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .event-title {
     font-weight: lighter;
@@ -2126,7 +1542,7 @@ body {
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   border: 1px solid black;
 }
 
@@ -2151,7 +1567,7 @@ body {
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
 }
 
@@ -2160,7 +1576,7 @@ body {
     border: none;
     shape-outside: none;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
     margin-left: 1rem;
   }
   .shaped_reverse {
@@ -2168,7 +1584,7 @@ body {
     shape-outside: none;
     margin-right: 1rem;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
   }
   .content_verse {
     height: 50vh;
@@ -2209,10 +1625,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 3%;
     font-family: Roboto-bold;
     color: #db3632;
@@ -2269,7 +1685,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -2305,11 +1721,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -2328,10 +1744,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 3%;
     font-family: Roboto-bold;
     color: #db3632;
@@ -2347,17 +1763,17 @@ body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 85vh;
     width: 100vw;
   }
   .event-trapeze {
     -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     padding: 2%;
@@ -2369,13 +1785,13 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .event-type {
     display: -webkit-box;
@@ -2383,11 +1799,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .event-title {
     font-weight: lighter;
@@ -2493,7 +1909,7 @@ body {
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   border: 1px solid black;
 }
 
@@ -2518,7 +1934,7 @@ body {
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
 }
 
@@ -2527,7 +1943,7 @@ body {
     border: none;
     shape-outside: none;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
     margin-left: 1rem;
   }
   .shaped_reverse {
@@ -2535,7 +1951,7 @@ body {
     shape-outside: none;
     margin-right: 1rem;
     -webkit-clip-path: none;
-    clip-path: none;
+            clip-path: none;
   }
   .content_verse {
     height: 50vh;
@@ -2576,10 +1992,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 3%;
     font-family: Roboto-bold;
     color: #db3632;
@@ -2592,7 +2008,7 @@ body {
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -2617,8 +2033,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .triptych-wrapper p {
@@ -2644,11 +2060,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.35);
 }
@@ -2671,11 +2087,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.35);
 }
@@ -2698,11 +2114,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.35);
 }
@@ -2725,11 +2141,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     margin-bottom: 0;
@@ -2737,7 +2153,7 @@ body {
   .index-polygone-graffiti .title-graffiti {
     height: 30vh;
     -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
-    clip-path: polygon(0 0, 0% 100%, 70% 100%);
+            clip-path: polygon(0 0, 0% 100%, 70% 100%);
     background-color: rgba(255, 0, 0, 0.274);
     font-family: Sedgwick, sans-serif;
     position: relative;
@@ -2771,7 +2187,7 @@ body {
   .index-polygone-events .title-events {
     height: 25vh;
     -webkit-clip-path: polygon(0 0, 0 80%, 94% 0);
-    clip-path: polygon(0 0, 0 80%, 94% 0);
+            clip-path: polygon(0 0, 0 80%, 94% 0);
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-family: Sedgwick, sans-serif;
@@ -2805,18 +2221,18 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
   }
   .index-polygone-tourisme .title-tourisme {
     height: 20vh;
     -webkit-clip-path: polygon(0 0, 0 100%, 88% 100%);
-    clip-path: polygon(0 0, 0 100%, 88% 100%);
+            clip-path: polygon(0 0, 0 100%, 88% 100%);
     background-color: rgba(255, 0, 0, 0.274);
     color: white;
     font-family: Sedgwick, sans-serif;
@@ -2842,14 +2258,14 @@ body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .triptych {
     -webkit-transform: scale(1.35);
-    transform: scale(1.35);
+            transform: scale(1.35);
     -webkit-transform-origin: top;
-    transform-origin: top;
+            transform-origin: top;
   }
   .triptych:hover {
     -webkit-transform: scale(1.6);
