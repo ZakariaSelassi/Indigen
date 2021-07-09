@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// ------BANNER-------
 .event-banner {
   background-image: url("../img/blockparty.png");
   background-repeat: no-repeat;
@@ -30,11 +36,25 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
-
+.event-subtitle-mobile a {
+  text-decoration: none;
+  color: $redIndigen;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
     font-size: 6rem;
+  }
+  .separator-event {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    font-family: $textBold;
+    color: $redIndigen;
+    font-size: 0.6rem;
+    margin-top: 5%;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -113,8 +133,14 @@
 }
 
 // FONT SIZE SPECIAL SCREEN
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
   .event-title {
+    font-size: 5rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
@@ -131,22 +157,20 @@
     width: 9rem;
     height: 6rem;
   }
+  .separator-event {
+    display: none;
+  }
 }
-
-// PAT
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
 .title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
+  font-family: $titleFont;
+  color: $redIndigen;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.content_verse .content_reverse {
-  height: 50vh;
-  width: 80vw;
-}
 .event-text {
-  font-family: Roboto, sans-serif;
+  font-family: $subtitlesFont;
   font-size: 0.8rem;
   color: black;
   padding: 1rem;
@@ -224,7 +248,37 @@
   }
 
   .title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 0.4rem;
+  }
+  .event-text {
+    font-size: 0.5rem;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+  /*disparition du banner en responsive*/
+  .event-trapeze {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .event-video {
+    display: none;
+  }
+  .event-subtitle {
+    display: none;
+  }
+  .event-p {
+    display: none;
+  }
+  .separator-event {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    font-family: $textBold;
+    color: $redIndigen;
+    font-size: 0.6rem;
+    margin-top: 5%;
   }
 }

@@ -5,13 +5,17 @@
   margin: 0;
   padding: 0;
 }
+html,
 body {
   overflow-x: hidden;
+}
+/*HEADER*/
+.navbar:hover {
+  opacity: 100%;
 }
 .opacity {
   opacity: 50%;
 }
-
 // MOBILE
 .triptych-wrapper {
   display: flex;
@@ -86,7 +90,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-polygone-graffiti {
     background-image: url("../img/graffitiNB.png");
     background-size: cover;
@@ -121,7 +125,7 @@ body {
       }
     }
   }
-  
+
   // EVENTS
   .index-polygone-events {
     margin-left: -38px;
@@ -157,7 +161,7 @@ body {
       }
     }
   }
-  
+
   // TOURISME
   .index-polygone-tourisme {
     background-image: url("../img/parcoururbainNB.png");
@@ -200,7 +204,7 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
+
   .triptych {
     transform: scale(1.35);
     transform-origin: top;
@@ -209,17 +213,17 @@ body {
       transform: scale(1.6);
     }
   }
-  
+
   // BLACK BOXES
   .index-black-box {
     height: 7vh;
     width: 100vw;
     background-color: black;
   }
-  
+
   .index-black-box-bot {
     margin-top: 25.9vh;
-    height: 7vh;
+    //height: 7vh;
     width: 100vw;
     background-color: black;
   }
