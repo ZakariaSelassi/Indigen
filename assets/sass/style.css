@@ -6,7 +6,7 @@
 }
 
 .tourism-banner {
-  background-image: url("../img/landgraph.png");
+  background-image: url("../img/landgraph.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,7 +28,7 @@
 .tourism-polygone-classique {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/tourismebike.png");
+  background-image: url("../img/tourismebike.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -40,7 +40,7 @@
 .tourism-polygone-vip {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/workshop.png");
+  background-image: url("../img/workshop.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -67,7 +67,7 @@
 .tourism-polygone-urbain {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -193,7 +193,7 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .tourism-polygone-classique {
-    background-image: url("../img/tourismebikeNB.jpg");
+    background-image: url("../img/tourismebikeNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -228,7 +228,7 @@
     color: white;
   }
   .tourism-polygone-classique:hover {
-    background-image: url("../img/tourismebike.png");
+    background-image: url("../img/tourismebike.webp");
     height: 62.5vh;
   }
   .tourism-polygone-classique:hover .title-graffiti {
@@ -237,7 +237,7 @@
   .tourism-polygone-vip {
     margin-left: -38px;
     margin-bottom: 0;
-    background-image: url("../img/workshopNB.png");
+    background-image: url("../img/workshopNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -263,14 +263,14 @@
     padding-top: 2%;
   }
   .tourism-polygone-vip:hover {
-    background-image: url("../img/workshop.png");
+    background-image: url("../img/workshop.webp");
     height: 62.5vh;
   }
   .tourism-polygone-vip:hover .title-events {
     display: none;
   }
   .tourism-polygone-urbain {
-    background-image: url("../img/parcoururbainNB.png");
+    background-image: url("../img/parcoururbainNB.webp");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -307,7 +307,7 @@
     color: white;
   }
   .tourism-polygone-urbain:hover {
-    background-image: url("../img/parcoururbain.png");
+    background-image: url("../img/parcoururbain.webp");
     height: 62.5vh;
     width: 26.2%;
   }
@@ -335,7 +335,7 @@
 }
 
 .partenaires-banner {
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -496,7 +496,7 @@
 }
 
 .event-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -709,7 +709,7 @@
   height: 50vh;
   width: 40vw;
   float: right;
-  background: black url(../img/graph.png) center top no-repeat;
+  background: black url(../img/graph.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
@@ -734,7 +734,7 @@
   height: 50vh;
   width: 40vw;
   float: left;
-  background: black url(../img/mama.png) center top no-repeat;
+  background: black url(../img/mama.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
@@ -1163,7 +1163,7 @@ video {
 }
 
 .gallery-banner {
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1324,7 +1324,7 @@ video {
 }
 
 .event-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1537,7 +1537,7 @@ video {
   height: 50vh;
   width: 40vw;
   float: right;
-  background: black url(../img/graph.png) center top no-repeat;
+  background: black url(../img/graph.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
@@ -1562,7 +1562,7 @@ video {
   height: 50vh;
   width: 40vw;
   float: left;
-  background: black url(../img/mama.png) center top no-repeat;
+  background: black url(../img/mama.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
@@ -1691,7 +1691,7 @@ video {
 }
 
 .event-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1904,7 +1904,7 @@ video {
   height: 50vh;
   width: 40vw;
   float: right;
-  background: black url(../img/graph.png) center top no-repeat;
+  background: black url(../img/graph.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
@@ -1929,7 +1929,7 @@ video {
   height: 50vh;
   width: 40vw;
   float: left;
-  background: black url(../img/mama.png) center top no-repeat;
+  background: black url(../img/mama.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
@@ -2045,7 +2045,7 @@ body {
 .index-polygone-graffiti {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/graffiti.png");
+  background-image: url("../img/graffiti.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -2072,7 +2072,7 @@ body {
 .index-polygone-events {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -2099,7 +2099,7 @@ body {
 .index-polygone-tourisme {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -2131,7 +2131,7 @@ body {
 
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-polygone-graffiti {
-    background-image: url("../img/graffitiNB.png");
+    background-image: url("../img/graffitiNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -2166,7 +2166,7 @@ body {
     color: white;
   }
   .index-polygone-graffiti:hover {
-    background-image: url("../img/graffiti.png");
+    background-image: url("../img/graffiti.webp");
     height: 62.5vh;
   }
   .index-polygone-graffiti:hover .title-graffiti {
@@ -2175,7 +2175,7 @@ body {
   .index-polygone-events {
     margin-left: -38px;
     margin-bottom: 0;
-    background-image: url("../img/blockpartyNB.png");
+    background-image: url("../img/blockpartyNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -2201,14 +2201,14 @@ body {
     padding-top: 2%;
   }
   .index-polygone-events:hover {
-    background-image: url("../img/blockparty.png");
+    background-image: url("../img/blockparty.webp");
     height: 62.5vh;
   }
   .index-polygone-events:hover .title-events {
     display: none;
   }
   .index-polygone-tourisme {
-    background-image: url("../img/parcoururbainNB.png");
+    background-image: url("../img/parcoururbainNB.webp");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -2245,7 +2245,7 @@ body {
     color: white;
   }
   .index-polygone-tourisme:hover {
-    background-image: url("../img/parcoururbain.png");
+    background-image: url("../img/parcoururbain.webp");
     height: 62.5vh;
     width: 26.2%;
   }

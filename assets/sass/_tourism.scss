@@ -5,7 +5,7 @@
 }
 // ------BANNER-------
 .tourism-banner {
-  background-image: url("../img/landgraph.png");
+  background-image: url("../img/landgraph.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,7 +20,7 @@
 .tourism-polygone-classique {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/tourismebike.png");
+  background-image: url("../img/tourismebike.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -31,7 +31,7 @@
 .tourism-polygone-vip {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/workshop.png");
+  background-image: url("../img/workshop.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -49,7 +49,7 @@
 .tourism-polygone-urbain {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -151,7 +151,7 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .tourism-polygone-classique {
-    background-image: url("../img/tourismebikeNB.jpg");
+    background-image: url("../img/tourismebikeNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -177,7 +177,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/tourismebike.png");
+      background-image: url("../img/tourismebike.webp");
       height: 62.5vh;
       .title-graffiti {
         display: none;
@@ -188,7 +188,7 @@
   .tourism-polygone-vip {
     margin-left: -38px;
     margin-bottom: 0;
-    background-image: url("../img/workshopNB.png");
+    background-image: url("../img/workshopNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -212,7 +212,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/workshop.png");
+      background-image: url("../img/workshop.webp");
       height: 62.5vh;
       .title-events {
         display: none;
@@ -220,7 +220,7 @@
     }
   }
   .tourism-polygone-urbain {
-    background-image: url("../img/parcoururbainNB.png");
+    background-image: url("../img/parcoururbainNB.webp");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -248,7 +248,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/parcoururbain.png");
+      background-image: url("../img/parcoururbain.webp");
       height: 62.5vh;
       width: 26.2%;
       .title-tourisme {
