@@ -17,6 +17,24 @@ body {
   opacity: 50%;
 }
 // MOBILE
+
+.separatorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .separatorLogo {
+    width: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .couvert {
+    width: 7rem;
+  }
+}
+
 .triptych-wrapper {
   display: flex;
   flex-direction: column;
@@ -86,6 +104,19 @@ body {
   .triptych-wrapper {
     p {
       font-size: 2.5rem;
+    }
+  }
+
+  .separatorContainer {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    .separatorLogo {
+      width: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
     }
   }
 }
@@ -230,6 +261,19 @@ body {
   .triptych-wrapper {
     p {
       font-size: 1.8rem;
+    }
+  }
+
+  .separatorContainer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .separatorLogo {
+      width: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
     }
   }
 }
