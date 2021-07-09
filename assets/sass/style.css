@@ -669,7 +669,7 @@ body {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 7rem;
+    font-size: 5rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -706,7 +706,6 @@ body {
 
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
   .event-title {
-    font-size: 5rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
