@@ -2036,8 +2036,8 @@ html, body {
   padding: 0;
 }
 
-.event-banner {
-  background-image: url("../img/blockparty.png");
+.ecole-banner {
+  background-image: url("../images/blockparty.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2103,7 +2103,7 @@ html, body {
 }
 
 @media only screen and (min-width: 1025px) {
-  .event-banner {
+  .ecole-banner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2136,8 +2136,10 @@ html, body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
   }
   .event-type {
     display: -webkit-box;
@@ -2155,7 +2157,7 @@ html, body {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 7rem;
+    font-size: 5rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -2250,7 +2252,7 @@ html, body {
   height: 50vh;
   width: 40vw;
   float: right;
-  background: black url(../img/graph.png) center top no-repeat;
+  background: black url(../images/graph.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
@@ -2275,7 +2277,7 @@ html, body {
   height: 50vh;
   width: 40vw;
   float: left;
-  background: black url(../img/mama.png) center top no-repeat;
+  background: black url(../images/mama.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
