@@ -1143,7 +1143,7 @@ video {
 }
 
 @media only screen and (min-width: 1025px) {
-  .event-banner {
+  .gallery-banner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
