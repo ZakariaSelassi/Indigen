@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../img/favicon.png"
+      href="../images/favicon.png"
     />
 
     <link
@@ -24,8 +24,8 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="../sass/style.css" />
-    <link rel="stylesheet" href="../sass/galerie_lightbox/lightbox.min.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/lightbox.min.css" />
 
     <title>Galerie photos INDIGEN</title>
 </head>
@@ -33,7 +33,7 @@
 <body>
     <header class="header">
         <a href="index.html" class="nav-logo">
-          <img class="logo" src="../img/logolight.png" alt="logo"
+          <img class="logo" src="../images/logolight.png" alt="logo"
         /></a>
         <nav class="navbar ">
           <ul class="nav-menu">
@@ -66,27 +66,26 @@
       <div class="gallery-banner">
         <div class="event-trapeze">
           <div class="event-description">
-            <h1 class="event-title">Galerie</h1>
+            <h1 class="event-title">Events</h1>
             <div class="event-type">
-              <h2 class="event-subtitle">Lorem</h2>
-                <p class="event-p">
-                Faites de vos journées d'entrerpise un évenement <span class="textBold">culturel</span> et
+              <h2 class="event-subtitle">TEAM BUILDING</h2>
+              <p class="event-p">
+                Faites de vos journées d'entrerpise un évenement
+                <span class="textBold">culturel</span> et
                 <span class="textBold">participatif</span>
               </p>
             </div>
             <div class="event-type">
-              <h2 class="event-subtitle">Lorem</h2>
+              <h2 class="event-subtitle">LIVE PAINTING</h2>
               <p class="event-p">
                 Une <span class="textBold">performance artistique</span> pour
-                animer vos événements, faites le
-                show devant vos invités !
+                animer vos événements, faites le show devant vos invités !
               </p>
             </div>
             <div class="event-type">
-              <h2 class="event-subtitle">Lorem</h2>
+              <h2 class="event-subtitle">FESTIVALS</h2>
               <p class="event-p">
-                Animation musicale, ambiances
-                DJ, live painting sortez le grand
+                Animation musicale, ambiances DJ, live painting sortez le grand
                 jeu pour vos événements
               </p>
             </div>
@@ -100,177 +99,252 @@
           </div>
         </div>
       </div>
-    </main>
+      <div class="index-black-box"></div>
+      <!--second part-->
+      <!--ajout d une class pour les mobiles-->
+      <div class="separator-event">
+        <h2 class="event-subtitle-mobile">
+          <a href="#teamBuilding">TEAM BUILDING</a>
+        </h2>
+        <span>-</span>
+        <h2 class="event-subtitle-mobile">
+          <a href="#livePainting">LIVE PAINTING</a>
+        </h2>
+        <span>-</span>
+        <h2 class="event-subtitle-mobile"><a href="#Festival">FESTIVAL</a></h2>
+      </div>
 
     <!--Séparateur-->
     <section class="separator sep">
       <div class="separatorContainer">
-          <img src="../img/logoIndigenH.png" alt="logo">
+          <img src="../images/logoIndigenH.png" alt="logo">
       </div>
     </section>
 
 
     <!--Galerie photos-->
-    <section id="galerie">
-      <div id="container">
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+  <section class="container">
+      <!--Page 1-->
+      <div class="gallery-container w-2 h-3">
+          <a href="../images/blockparty.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockparty.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-2">
+          <a href="../images/fresqueBlue.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueBlue.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-1">
+          <a href="../images/concert.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/concert.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/DJduo.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/DJduo.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/fresqueOrange.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueOrange.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/blockpartyNB.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockpartyNB.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/fresqueMusique.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueMusique.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-3">
+          <a href="../images/blockparty.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockparty.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-2">
+          <a href="../images/concert.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/concert.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-1 h-2">
+          <a href="../images/DJduo.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/DJduo.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-1 h-2">
+          <a href="../images/fresqueOrange.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueOrange.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-3">
+          <a href="../images/blockparty.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockparty.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-2">
+          <a href="../images/fresqueBlue.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueBlue.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-1">
+          <a href="../images/concert.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/concert.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/DJduo.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/DJduo.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/fresqueOrange.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueOrange.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/blockpartyNB.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockpartyNB.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container">
+          <a href="../images/fresqueMusique.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueMusique.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-3">
+          <a href="../images/blockparty.png" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/blockparty.png" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-2 h-2">
+          <a href="../images/concert.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/concert.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-              <div class="photo-wrapper">
-                  <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
+      <div class="gallery-container w-1 h-2">
+          <a href="../images/DJduo.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/DJduo.webp" alt="Indigen">
+                  </div>
               </div>
           </a>
+      </div>
 
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-            <div class="photo-wrapper">
-                <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
-            </div>
+      <div class="gallery-container w-1 h-2">
+          <a href="../images/fresqueOrange.webp" data-lightbox="indigen_gallery" data-title="Indigen">
+              <div class="gallery-item">
+                  <div class="image">
+                      <img src="../images/fresqueOrange.webp" alt="Indigen">
+                  </div>
+              </div>
           </a>
-
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-            <div class="photo-wrapper">
-                <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
-            </div>
-          </a>
-
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-            <div class="photo-wrapper">
-                <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
-            </div>
-          </a>
-
-          <a href="../img/galerie/blockparty.png" data-lightbox="galerie_indigen" data-title="Indigen">
-            <div class="photo-wrapper">
-                <img class="photo" src="../img/galerie/blockparty.png" alt="Indigen">
-            </div>
-          </a>
-    </div>
+      </div>
   </section>
-
-  <div class="pagination">
-      <div class="prev">Prev</div>
-      <div class="page"><span id="page-num"></span></div>
-      <div class="next">Next</div>
-  </div>
-
 
 
     <!--Footer-->
@@ -286,9 +360,8 @@
         </div>
       </footer>
 
-        <script src="../js/header.js"></script>
-        <script src="../js/galerie.js"></script>
-        <script src="../js/galerie_lightbox/lightbox-plus-jquery.min.js"></script>
+        <script src="../scripts/header.js"></script>
+        <script src="../scripts/lightbox-plus-jquery.min.js"></script>
         <script
         src="https://kit.fontawesome.com/d97f99d55c.js"
         crossorigin="anonymous"
