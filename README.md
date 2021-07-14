@@ -11,7 +11,6 @@ Developers :
 
 [Jazzon](https://github.com/Laurent-Jazzon)
 [Patricia](https://github.com/Patgit-design)
-[Natalia](https://github.com/nataliacherman08)
 
 ## Présentation d'Indigen
 
