@@ -30,7 +30,7 @@
   color: white;
   height: 50vh;
   font-family: $titleFont;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,9 +44,112 @@
   display: none;
 }
 
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
+.title {
+  font-family: $titleFont;
+  color: $redIndigen;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: $subtitlesFont;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem;
+}
+
+.container_verse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  margin-left: 10%;
+  border-left: 2px solid #db3632;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+.shaped {
+  height: 50vh;
+  width: 40vw;
+  float: right;
+  background: black url(../img/graph.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  shape-margin: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  border: 1px solid black;
+}
+.container_reverse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 2px solid #db3632;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped_reverse {
+  height: 50vh;
+  width: 40vw;
+  float: left;
+  background: black url(../img/mama.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  shape-margin: 1.5rem;
+  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  border: 1px solid black;
+}
+
+.shaped {
+  border: none;
+  shape-outside: none;
+  clip-path: none;
+  margin-left: 1rem;
+}
+.shaped_reverse {
+  border: none;
+  shape-outside: none;
+  margin-right: 1rem;
+  clip-path: none;
+}
+
+.content_verse {
+  height: 50vh;
+  width: 80vw;
+}
+.content_reverse {
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+/*disparition du banner en responsive*/
+.separator-event {
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  font-family: $textBold;
+  color: $redIndigen;
+  font-size: 0.6rem;
+  margin-top: 5%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .separator-event {
     visibility: visible;
@@ -56,9 +159,17 @@
     gap: 3%;
     font-family: $textBold;
     color: $redIndigen;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-top: 5%;
   }
+}
+
+.event-text {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
 }
 @media only screen and (min-width: 1025px) {
   .logoIndigen{
@@ -111,7 +222,7 @@
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -125,7 +236,7 @@
     z-index: 2;
     text-align: right;
     color: $redIndigen;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .event-p {
@@ -164,7 +275,7 @@
     background-color: black;
   }
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
@@ -185,6 +296,7 @@
     display: none;
   }
 }
+<<<<<<< HEAD
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
 .title {
   font-family: $titleFont;
@@ -292,3 +404,5 @@
     font-size: 0.6rem;
     margin-top: 5%;
   }*/
+=======
+>>>>>>> Jazzon

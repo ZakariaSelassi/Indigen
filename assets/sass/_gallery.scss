@@ -1,5 +1,100 @@
-@import 'header';
-@import 'footer';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//Galerie
+.galerie {
+  position: relative;
+  column-count: 5;
+  margin: 80px 50px 20px 50px;
+}
+
+.photo {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+//Hide
+.photo.hide {
+  display: none;
+}
+
+//Show
+.photo.show {
+  display: inline-block;
+  animation: show 0.5s ease;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// C'est l'animation d'effet zoom
+.galerie-image {
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+.photo:hover .galerie-image {
+  transform: scale(1.1);
+}
+
+//Pagination--------------------------------------------
+.pagination {
+  width: 100%;
+  text-align: center;
+}
+
+.pagination .page {
+  color: #000;
+  font-family: $subtitlesFont;
+}
+
+.pagination div {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 0 40px 0;
+}
+
+.prev,
+.next {
+  color: #000;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 7px 15px;
+}
+
+// Disabled également
+.prev.disabled,
+.next.disabled {
+  border-color: gray;
+  color: gray;
+  pointer-events: none;
+}
+
+//responsive Galerie
+@media screen and (max-width: 940px) {
+  .galerie {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .galerie {
+    column-count: 2;
+  }
+}
 
 // ------BANNER-------
 .gallery-banner {
@@ -28,7 +123,7 @@
   color: white;
   height: 50vh;
   font-family: $titleFont;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,19 +182,8 @@
   display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .title-gallery{
-  
-    padding: 1rem;
-    font-size: 3rem;
-    font-family: $titleFont;
-  }
-  .item {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-}
-  .gallery-title {
-    font-size: 6rem;
+  .event-title {
+    font-size: 4rem;
   }
   .separator-event {
     visibility: visible;
@@ -148,7 +232,7 @@
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
-    font-size: 7rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -188,19 +272,14 @@
 }
 
 // FONT SIZE SPECIAL SCREEN
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .index-black-box {
-    height: 7vh;
-    width: 100vw;
-    background-color: black;
-  }
-  .gallery-title {
-    font-size: 5rem;
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .event-title {
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
-  .gallery-subtitle {
-    font-size: 1.5rem;
+  .event-subtitle {
+    font-size: 2rem;
   }
   .gallery-p {
     line-height: 120%;

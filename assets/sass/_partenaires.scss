@@ -2,135 +2,49 @@
   background-image: url("../img/parcoururbain.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 10rem;
 }
-
-.event-trapeze {
-  background-color: none;
-}
-
-.event-description {
-  color: none;
-}
-
-.event-type {
-  display: none;
-}
-
-.event-video {
-  display: none;
-}
-
-.event-title {
-  color: white;
-  height: 50vh;
-  font-family: $titleFont;
-  font-size: 4rem;
+.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.514);
+  color: white;
+  font-family: $titleFont;
+  h1 {
+    font-weight: normal;
+    font-size: 3rem;
+  }
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .event-title {
-    font-size: 6rem;
+  .partenaires-banner {
+    height: 15rem;
+  }
+  .filter {
+    height: 15rem;
+    h1 {
+      font-size: 4rem;
+    }
   }
 }
 @media only screen and (min-width: 1025px) {
   // ------BANNER-------
   .partenaires-banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 85vh;
-    width: 100vw;
+    height: 20rem;
   }
-
-  .event-trapeze {
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 70%;
-    padding: 2%;
-  }
-
-  .event-description {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
-
-  .event-type {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .partenaires-title {
-    font-weight: lighter;
-    font-family: $titleFont;
-    text-align: right;
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0);
-    height: auto;
-    margin-bottom: -50px;
-    margin-top: -40px;
-  }
-
-  .event-subtitle {
-    margin-top: 8%;
-    font-weight: lighter;
-    font-family: $subtitlesFont;
-    z-index: 2;
-    text-align: right;
-    color: $redIndigen;
-    font-size: 2rem;
-  }
-
-  .event-p {
-    margin-top: 2%;
-    font-weight: lighter;
-    color: white;
-    text-align: right;
-    font-family: $subtitlesFont;
-    font-size: 1rem;
-    width: 16vw;
-  }
-
-  .textBold {
-    font-family: $textBold;
-  }
-
-  .event-video {
-    margin-top: 1rem;
-    width: 10vw;
-    height: 15vh;
-    display: block;
+  .filter {
+    height: 20rem;
+    h1 {
+      font-size: 4rem;
+    }
   }
 }
 
-// FONT SIZE SPECIAL SCREEN
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
-  .event-title {
-    font-size: 5rem;
-    margin-bottom: -3%;
-    margin-top: -1%;
-  }
-  .event-subtitle {
-    font-size: 1.5rem;
-  }
-  .event-p {
-    line-height: 120%;
-    font-size: 1rem;
-    text-align: right;
-  }
-  .event-video {
-    margin-top: 7%;
-    width: 9rem;
-    height: 6rem;
-  }
-}
+@import "event";
 
 //Partenaires
 .partenaires {
