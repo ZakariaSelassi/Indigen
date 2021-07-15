@@ -419,8 +419,8 @@
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/livePaint.webp") no-repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/livePaint.webp") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/fresqueMusique.webp") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/fresqueMusique.webp") no-repeat;
 }
 
 .boxTwo:hover {
@@ -441,6 +441,7 @@
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
   overflow: hidden;
+  opacity: 1;
 }
 
 .titleTwo {
@@ -450,6 +451,26 @@
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
   overflow: hidden;
+}
+
+.titleOne:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+.titleTwo:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
