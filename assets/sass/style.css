@@ -392,7 +392,7 @@
   width: 100%;
 }
 
-.container-picture .boxOne {
+.boxOne {
   padding: 11rem;
   margin: 2.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/fresqueMusique.webp") no-repeat;
@@ -405,11 +405,51 @@
 .boxTwo {
   padding: 11rem;
   margin: 2.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../img/livePaint.webp") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/livePaint.webp") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/livePaint.webp") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../img/livePaint.webp") no-repeat;
   background-size: cover;
   width: 100%;
   height: auto;
+}
+
+.boxOne:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/livePaint.webp") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/livePaint.webp") no-repeat;
+}
+
+.boxTwo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/livePaint.webp") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/livePaint.webp") no-repeat;
+}
+
+.titleOne {
+  position: absolute;
+  text-align: center;
+  color: #db3632;
+  font-family: Sedgwick, sans-serif;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.titleTwo {
+  position: absolute;
+  text-align: center;
+  color: #db3632;
+  font-family: Sedgwick, sans-serif;
+  font-size: 2rem;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
