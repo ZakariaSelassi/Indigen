@@ -31,7 +31,7 @@
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,19 @@
   text-align: center;
   font-family: Sedgwick, sans-serif;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tourism-polygone-vip {
@@ -111,12 +124,12 @@
 }
 
 .separatorContainer {
-  font-family: Roboto, sans-serif;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
 
 .separatorContainer h3 {
+  font-family: Sedgwick, sans-serif;
   font-size: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -128,7 +141,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .separatorContainer {
     font-family: Roboto, sans-serif;
@@ -200,7 +213,7 @@
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 2.5rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
   }
@@ -269,6 +282,7 @@
   }
   .tourism-polygone-classique .title-graffiti {
     height: 30vh;
+    width: 30vw;
     -webkit-clip-path: polygon(0 0, 0% 100%, 70% 100%);
             clip-path: polygon(0 0, 0% 100%, 70% 100%);
     background-color: rgba(255, 0, 0, 0.274);
@@ -370,12 +384,12 @@
     display: none;
   }
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
   .event-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .event-p {
     line-height: 120%;
@@ -393,153 +407,55 @@
   background-image: url("../img/parcoururbain.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 10rem;
 }
 
-.event-trapeze {
-  background-color: none;
-}
-
-.event-description {
-  color: none;
-}
-
-.event-type {
-  display: none;
-}
-
-.event-video {
-  display: none;
-}
-
-.event-title {
-  color: white;
-  height: 50vh;
-  font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
+.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.514);
+  color: white;
+  font-family: Sedgwick, sans-serif;
+}
+
+.filter h1 {
+  font-weight: normal;
+  font-size: 3rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .event-title {
-    font-size: 6rem;
+  .partenaires-banner {
+    height: 15rem;
+  }
+  .filter {
+    height: 15rem;
+  }
+  .filter h1 {
+    font-size: 4rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .partenaires-banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 85vh;
-    width: 100vw;
+    height: 20rem;
   }
-  .event-trapeze {
-    -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 70%;
-    padding: 2%;
+  .filter {
+    height: 20rem;
   }
-  .event-description {
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .event-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .partenaires-title {
-    font-weight: lighter;
-    font-family: Sedgwick, sans-serif;
-    text-align: right;
+  .filter h1 {
     font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0);
-    height: auto;
-    margin-bottom: -50px;
-    margin-top: -40px;
-  }
-  .event-subtitle {
-    margin-top: 8%;
-    font-weight: lighter;
-    font-family: Roboto, sans-serif;
-    z-index: 2;
-    text-align: right;
-    color: #db3632;
-    font-size: 2rem;
-  }
-  .event-p {
-    margin-top: 2%;
-    font-weight: lighter;
-    color: white;
-    text-align: right;
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    width: 16vw;
-  }
-  .textBold {
-    font-family: Roboto-bold, sans-serif;
-  }
-  .event-video {
-    margin-top: 1rem;
-    width: 10vw;
-    height: 15vh;
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
-  .event-title {
-    font-size: 5rem;
-    margin-bottom: -3%;
-    margin-top: -1%;
-  }
-  .event-subtitle {
-    font-size: 1.5rem;
-  }
-  .event-p {
-    line-height: 120%;
-    font-size: 1rem;
-    text-align: right;
-  }
-  .event-video {
-    margin-top: 7%;
-    width: 9rem;
-    height: 6rem;
   }
 }
 
@@ -576,7 +492,7 @@
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,9 +510,125 @@
   color: #db3632;
 }
 
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
+.title {
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem;
+}
+
+.container_verse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  margin-left: 10%;
+  border-left: 2px solid #db3632;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped {
+  height: 50vh;
+  width: 40vw;
+  float: right;
+  background: black url(../img/graph.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  border: 1px solid black;
+}
+
+.container_reverse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 2px solid #db3632;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped_reverse {
+  height: 50vh;
+  width: 40vw;
+  float: left;
+  background: black url(../img/mama.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  border: 1px solid black;
+}
+
+.shaped {
+  border: none;
+  shape-outside: none;
+  -webkit-clip-path: none;
+          clip-path: none;
+  margin-left: 1rem;
+}
+
+.shaped_reverse {
+  border: none;
+  shape-outside: none;
+  margin-right: 1rem;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.content_verse {
+  height: 50vh;
+  width: 80vw;
+}
+
+.content_reverse {
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+/*disparition du banner en responsive*/
+.separator-event {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3%;
+  font-family: Roboto-bold, sans-serif;
+  color: #db3632;
+  font-size: 0.6rem;
+  margin-top: 5%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .separator-event {
     visibility: visible;
@@ -611,9 +643,17 @@
     gap: 3%;
     font-family: Roboto-bold, sans-serif;
     color: #db3632;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-top: 5%;
   }
+}
+
+.event-text {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -671,7 +711,7 @@
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -684,7 +724,7 @@
     z-index: 2;
     text-align: right;
     color: #db3632;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .event-p {
     margin-top: 2%;
@@ -713,7 +753,7 @@
     background-color: black;
   }
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
@@ -732,137 +772,6 @@
   }
   .separator-event {
     display: none;
-  }
-}
-
-/*TEXTE_PHOTO EN DIAGONALE PAT*/
-.title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.event-text {
-  font-family: Roboto, sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 1rem;
-}
-
-.container_verse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  margin-left: 10%;
-  border-left: 2px solid #db3632;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped {
-  height: 50vh;
-  width: 40vw;
-  float: right;
-  background: black url(../img/graph.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  border: 1px solid black;
-}
-
-.container_reverse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: left;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-right: 2px solid #db3632;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped_reverse {
-  height: 50vh;
-  width: 40vw;
-  float: left;
-  background: black url(../img/mama.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  border: 1px solid black;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .shaped {
-    border: none;
-    shape-outside: none;
-    -webkit-clip-path: none;
-            clip-path: none;
-    margin-left: 1rem;
-  }
-  .shaped_reverse {
-    border: none;
-    shape-outside: none;
-    margin-right: 1rem;
-    -webkit-clip-path: none;
-            clip-path: none;
-  }
-  .content_verse {
-    height: 50vh;
-    width: 80vw;
-  }
-  .content_reverse {
-    height: 50vh;
-    width: 80vw;
-    text-align: right;
-    padding-right: 0.5rem;
-  }
-  .title {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-  }
-  .event-text {
-    font-size: 0.5rem;
-    padding: 0;
-    font-weight: normal;
-    letter-spacing: 1px;
-  }
-  /*disparition du banner en responsive*/
-  .event-trapeze {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .event-video {
-    display: none;
-  }
-  .event-subtitle {
-    display: none;
-  }
-  .event-p {
-    display: none;
-  }
-  .separator-event {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 3%;
-    font-family: Roboto-bold, sans-serif;
-    color: #db3632;
-    font-size: 0.6rem;
-    margin-top: 5%;
   }
 }
 
@@ -1194,7 +1103,7 @@ video {
 .next {
   color: #000;
   border: 1px solid black;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 7px 15px;
 }
 
@@ -1245,7 +1154,7 @@ video {
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,7 +1169,7 @@ video {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
@@ -1317,7 +1226,7 @@ video {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 7rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -1354,12 +1263,12 @@ video {
 
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
   .event-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .event-p {
     line-height: 120%;
@@ -1406,7 +1315,7 @@ video {
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1424,9 +1333,125 @@ video {
   color: #db3632;
 }
 
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
+.title {
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem;
+}
+
+.container_verse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  margin-left: 10%;
+  border-left: 2px solid #db3632;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped {
+  height: 50vh;
+  width: 40vw;
+  float: right;
+  background: black url(../img/graph.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  border: 1px solid black;
+}
+
+.container_reverse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 2px solid #db3632;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped_reverse {
+  height: 50vh;
+  width: 40vw;
+  float: left;
+  background: black url(../img/mama.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  border: 1px solid black;
+}
+
+.shaped {
+  border: none;
+  shape-outside: none;
+  -webkit-clip-path: none;
+          clip-path: none;
+  margin-left: 1rem;
+}
+
+.shaped_reverse {
+  border: none;
+  shape-outside: none;
+  margin-right: 1rem;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.content_verse {
+  height: 50vh;
+  width: 80vw;
+}
+
+.content_reverse {
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+/*disparition du banner en responsive*/
+.separator-event {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3%;
+  font-family: Roboto-bold, sans-serif;
+  color: #db3632;
+  font-size: 0.6rem;
+  margin-top: 5%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .separator-event {
     visibility: visible;
@@ -1441,9 +1466,17 @@ video {
     gap: 3%;
     font-family: Roboto-bold, sans-serif;
     color: #db3632;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-top: 5%;
   }
+}
+
+.event-text {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -1501,7 +1534,7 @@ video {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -1514,7 +1547,7 @@ video {
     z-index: 2;
     text-align: right;
     color: #db3632;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .event-p {
     margin-top: 2%;
@@ -1543,7 +1576,7 @@ video {
     background-color: black;
   }
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
@@ -1565,140 +1598,8 @@ video {
   }
 }
 
-/*TEXTE_PHOTO EN DIAGONALE PAT*/
-.title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.event-text {
-  font-family: Roboto, sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 1rem;
-}
-
-.container_verse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  margin-left: 10%;
-  border-left: 2px solid #db3632;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped {
-  height: 50vh;
-  width: 40vw;
-  float: right;
-  background: black url(../img/graph.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  border: 1px solid black;
-}
-
-.container_reverse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: left;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-right: 2px solid #db3632;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped_reverse {
-  height: 50vh;
-  width: 40vw;
-  float: left;
-  background: black url(../img/mama.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  border: 1px solid black;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .shaped {
-    border: none;
-    shape-outside: none;
-    -webkit-clip-path: none;
-            clip-path: none;
-    margin-left: 1rem;
-  }
-  .shaped_reverse {
-    border: none;
-    shape-outside: none;
-    margin-right: 1rem;
-    -webkit-clip-path: none;
-            clip-path: none;
-  }
-  .content_verse {
-    height: 50vh;
-    width: 80vw;
-  }
-  .content_reverse {
-    height: 50vh;
-    width: 80vw;
-    text-align: right;
-    padding-right: 0.5rem;
-  }
-  .title {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-  }
-  .event-text {
-    font-size: 0.5rem;
-    padding: 0;
-    font-weight: normal;
-    letter-spacing: 1px;
-  }
-  /*disparition du banner en responsive*/
-  .event-trapeze {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .event-video {
-    display: none;
-  }
-  .event-subtitle {
-    display: none;
-  }
-  .event-p {
-    display: none;
-  }
-  .separator-event {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 3%;
-    font-family: Roboto-bold, sans-serif;
-    color: #db3632;
-    font-size: 0.6rem;
-    margin-top: 5%;
-  }
-}
-
 /*FOOTER*/
 .reseau {
-  font-size: 1rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: black;
@@ -1708,27 +1609,43 @@ video {
 
 .reseau a {
   color: white;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .reseau {
-    padding-top: 2rem;
-    font-size: 1rem;
-  }
+.reseau a:hover {
+  color: #db3632;
+}
+
+.socialLinks a {
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .reseau {
     padding-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-    background: black;
     padding: 2rem;
   }
   .reseau a {
-    color: white;
+    font-size: 1.3rem;
     text-decoration: none;
+  }
+  .socialLinks a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .reseau {
+    padding-top: 2rem;
+    padding: 2rem;
+  }
+  .reseau a {
+    font-size: 1.3rem;
+  }
+  .socialLinks a {
+    font-size: 2rem;
   }
 }
 
@@ -1780,7 +1697,7 @@ video {
   color: white;
   height: 50vh;
   font-family: Sedgwick, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1798,9 +1715,125 @@ video {
   color: #db3632;
 }
 
+/*TEXTE_PHOTO EN DIAGONALE PAT*/
+.title {
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem;
+}
+
+.container_verse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  margin-left: 10%;
+  border-left: 2px solid #db3632;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped {
+  height: 50vh;
+  width: 40vw;
+  float: right;
+  background: black url(../img/graph.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  border: 1px solid black;
+}
+
+.container_reverse {
+  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-right: 2px solid #db3632;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.shaped_reverse {
+  height: 50vh;
+  width: 40vw;
+  float: left;
+  background: black url(../img/mama.webp) center top no-repeat;
+  background-size: cover;
+  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  shape-margin: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  border: 1px solid black;
+}
+
+.shaped {
+  border: none;
+  shape-outside: none;
+  -webkit-clip-path: none;
+          clip-path: none;
+  margin-left: 1rem;
+}
+
+.shaped_reverse {
+  border: none;
+  shape-outside: none;
+  margin-right: 1rem;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.content_verse {
+  height: 50vh;
+  width: 80vw;
+}
+
+.content_reverse {
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+/*disparition du banner en responsive*/
+.separator-event {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3%;
+  font-family: Roboto-bold, sans-serif;
+  color: #db3632;
+  font-size: 0.6rem;
+  margin-top: 5%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .separator-event {
     visibility: visible;
@@ -1815,9 +1848,17 @@ video {
     gap: 3%;
     font-family: Roboto-bold, sans-serif;
     color: #db3632;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-top: 5%;
   }
+}
+
+.event-text {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -1875,7 +1916,7 @@ video {
     font-weight: lighter;
     font-family: Sedgwick, sans-serif;
     text-align: right;
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -1888,7 +1929,7 @@ video {
     z-index: 2;
     text-align: right;
     color: #db3632;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .event-p {
     margin-top: 2%;
@@ -1917,7 +1958,7 @@ video {
     background-color: black;
   }
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
@@ -1936,137 +1977,6 @@ video {
   }
   .separator-event {
     display: none;
-  }
-}
-
-/*TEXTE_PHOTO EN DIAGONALE PAT*/
-.title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.event-text {
-  font-family: Roboto, sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 1rem;
-}
-
-.container_verse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  margin-left: 10%;
-  border-left: 2px solid #db3632;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped {
-  height: 50vh;
-  width: 40vw;
-  float: right;
-  background: black url(../img/graph.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  border: 1px solid black;
-}
-
-.container_reverse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: left;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-right: 2px solid #db3632;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped_reverse {
-  height: 50vh;
-  width: 40vw;
-  float: left;
-  background: black url(../img/mama.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  border: 1px solid black;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .shaped {
-    border: none;
-    shape-outside: none;
-    -webkit-clip-path: none;
-            clip-path: none;
-    margin-left: 1rem;
-  }
-  .shaped_reverse {
-    border: none;
-    shape-outside: none;
-    margin-right: 1rem;
-    -webkit-clip-path: none;
-            clip-path: none;
-  }
-  .content_verse {
-    height: 50vh;
-    width: 80vw;
-  }
-  .content_reverse {
-    height: 50vh;
-    width: 80vw;
-    text-align: right;
-    padding-right: 0.5rem;
-  }
-  .title {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-  }
-  .event-text {
-    font-size: 0.5rem;
-    padding: 0;
-    font-weight: normal;
-    letter-spacing: 1px;
-  }
-  /*disparition du banner en responsive*/
-  .event-trapeze {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .event-video {
-    display: none;
-  }
-  .event-subtitle {
-    display: none;
-  }
-  .event-p {
-    display: none;
-  }
-  .separator-event {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 3%;
-    font-family: Roboto-bold, sans-serif;
-    color: #db3632;
-    font-size: 0.6rem;
-    margin-top: 5%;
   }
 }
 

@@ -1,6 +1,5 @@
 /*FOOTER*/
 .reseau {
-  font-size: 1rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: black;
@@ -9,24 +8,46 @@
 }
 .reseau a {
   color: white;
+  font-family: $subtitlesFont;
+  text-decoration: none;
+  font-size: 1rem;
+  &:hover {
+    color: $redIndigen;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .reseau {
-    padding-top: 2rem;
-    font-size: 1rem;
+.socialLinks {
+  a{
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .reseau {
     padding-top: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-    background: black;
     padding: 2rem;
     a {
-      color: white;
+      font-size: 1.3rem;
       text-decoration: none;
+    }
+  }
+  .socialLinks {
+    a{
+      font-size: 2rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .reseau {
+    padding-top: 2rem;
+    padding: 2rem;
+    a {
+      font-size: 1.3rem;
+    }
+  }
+  .socialLinks {
+    a{
+      font-size: 2rem;
     }
   }
 }

@@ -71,7 +71,7 @@
 .next {
   color: #000;
   border: 1px solid black;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 7px 15px;
 }
 
@@ -123,7 +123,7 @@
   color: white;
   height: 50vh;
   font-family: $titleFont;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .event-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -170,7 +170,7 @@
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
-    font-size: 7rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -212,12 +212,12 @@
 // FONT SIZE SPECIAL SCREEN
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
   .event-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: -3%;
     margin-top: -1%;
   }
   .event-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .event-p {
     line-height: 120%;
