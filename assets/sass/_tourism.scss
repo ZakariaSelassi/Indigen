@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,23 +5,23 @@
 }
 // ------BANNER-------
 .tourism-banner {
-  background-image: url("../img/landgraph.png");
+  background-image: url("../img/landgraph.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .tourism-trapeze {
   background-color: none;
 }
-.tourism-description{
+.tourism-description {
   color: none;
 }
-.tourism-type{
-  display:none;
+.tourism-type {
+  display: none;
 }
-.tourism-video{
-  display:none;
+.tourism-video {
+  display: none;
 }
-.tourism-title{
+.tourism-title {
   color: white;
   height: 50vh;
   font-family: $titleFont;
@@ -36,7 +35,7 @@
 .tourism-polygone-classique {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/tourismebike.png");
+  background-image: url("../img/tourismebike.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -47,7 +46,7 @@
 .tourism-polygone-vip {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/workshop.png");
+  background-image: url("../img/workshop.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -65,7 +64,7 @@
 .tourism-polygone-urbain {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -80,95 +79,129 @@
     background-color: rgba(0, 0, 0, 0.35);
   }
 }
-.separator-tourism {
-  font-size: 3vh;
+
+.separatorContainer {
   font-family: $subtitlesFont;
-  text-align: center;
-  height: 20vh;
-  padding-top: calc(20vh / 2);
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  h3 {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .couvert {
+    width: 12rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-.event-title {
-  font-size: 6rem;
-}
-
+  .event-title {
+    font-size: 6rem;
+  }
+  .separatorContainer {
+    font-family: $subtitlesFont;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h3 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
+    }
+  }
 }
 @media only screen and (min-width: 1025px) {
-// ------BANNER-------
-.tourism-banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 85vh;
-  width: 100vw;
-}
+  // ------BANNER-------
+  .tourism-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
 
-.tourism-trapeze {
-  clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-  background-color: rgba(0, 0, 0, 0.514);
-  width: 70%;
-  padding: 2%;
-}
+  .tourism-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
 
-.tourism-description {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-around;
-}
+  .tourism-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
 
-.tourism-type {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+  .tourism-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.tourism-title {
-  font-weight: lighter;
-  font-family: $titleFont;
-  text-align: right;
-  font-size: 2.5rem;
-  background-color: rgba(0, 0, 0, 0);
-  height: auto;
-}
+  .tourism-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+  }
 
-.tourism-subtitle {
-  margin-top: 8%;
-  font-weight: lighter;
-  font-family: $subtitlesFont;
-  z-index: 2;
-  text-align: right;
-  color: $redIndigen;
-  font-size: 2rem;
-}
+  .tourism-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
 
-.tourism-p {
-  margin-top: 2%;
-  font-weight: lighter;
-  color: white;
-  text-align: right;
-  font-family: $subtitlesFont;
-  font-size: 1rem;
-  width: 16vw;
-}
+  .tourism-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
+  }
 
-.textBold {
-  font-family: $textBold;
-}
+  .textBold {
+    font-family: $textBold;
+  }
 
-.event-video {
-  margin-top: 1rem;
-  width: 10vw;
-  height: 15vh;
-  display: block;
-}
+  .event-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+  
+  .separatorContainer {
+    font-family: $subtitlesFont;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h3 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .tourism-polygone-classique {
-    background-image: url("../img/tourismebikeNB.jpg");
+    background-image: url("../img/tourismebikeNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -194,7 +227,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/tourismebike.png");
+      background-image: url("../img/tourismebike.webp");
       height: 62.5vh;
       .title-graffiti {
         display: none;
@@ -205,7 +238,7 @@
   .tourism-polygone-vip {
     margin-left: -38px;
     margin-bottom: 0;
-    background-image: url("../img/workshopNB.png");
+    background-image: url("../img/workshopNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -229,7 +262,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/workshop.png");
+      background-image: url("../img/workshop.webp");
       height: 62.5vh;
       .title-events {
         display: none;
@@ -237,7 +270,7 @@
     }
   }
   .tourism-polygone-urbain {
-    background-image: url("../img/parcoururbainNB.png");
+    background-image: url("../img/parcoururbainNB.webp");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -265,7 +298,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/parcoururbain.png");
+      background-image: url("../img/parcoururbain.webp");
       height: 62.5vh;
       width: 26.2%;
       .title-tourisme {
@@ -273,25 +306,22 @@
       }
     }
   }
-.event-title {
-  font-size: 5rem;
-  margin-bottom: -3%;
-  margin-top: -1%;
+  .event-title {
+    font-size: 5rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .event-subtitle {
+    font-size: 1.5rem;
+  }
+  .event-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
 }
-.event-subtitle {
-  font-size: 1.5rem;
-}
-.event-p {
-  line-height: 120%;
-  font-size: 1rem;
-  text-align: right;
-}
-.event-video {
-  margin-top: 7%;
-  width: 9rem;
-  height: 6rem;
-}
-}
-
-// triptyque
-//@import 'event'

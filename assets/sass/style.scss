@@ -1,10 +1,6 @@
-
 $titleFont: Sedgwick, sans-serif;
 $subtitlesFont: Roboto, sans-serif;
-$redIndigen: #db3632;
-$titleFont: Sedgwick, sans-serif;
-$subtitlesFont: Roboto, sans-serif;
-$textBold: Roboto-bold;
+$textBold: Roboto-bold,sans-serif;
 $redIndigen: #db3632;
 
 @import 'tourism';
@@ -16,4 +12,3 @@ $redIndigen: #db3632;
 @import 'font';
 @import 'event';
 @import 'index';
-

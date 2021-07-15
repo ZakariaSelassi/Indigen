@@ -1,20 +1,40 @@
-
-  *,::before,::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html,body {
-    overflow-x: hidden;
-  }
-  /*HEADER*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/*HEADER*/
 .navbar:hover {
   opacity: 100%;
 }
-.opacity{
+.opacity {
   opacity: 50%;
 }
- // MOBILE
+// MOBILE
+
+.separatorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .separatorLogo {
+    width: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .couvert {
+    width: 7rem;
+  }
+}
+
 .triptych-wrapper {
   display: flex;
   flex-direction: column;
@@ -27,7 +47,7 @@
 .index-polygone-graffiti {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/graffiti.png");
+  background-image: url("../img/graffiti.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -46,7 +66,7 @@
 .index-polygone-events {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -64,7 +84,7 @@
 .index-polygone-tourisme {
   width: 100vw;
   height: 15vh;
-  background-image: url("../img/parcoururbain.png");
+  background-image: url("../img/parcoururbain.webp");
   background-position: center;
   background-size: cover;
   color: white;
@@ -86,11 +106,24 @@
       font-size: 2.5rem;
     }
   }
+
+  .separatorContainer {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    .separatorLogo {
+      width: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .index-polygone-graffiti {
-    background-image: url("../img/graffitiNB.png");
+    background-image: url("../img/graffitiNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -116,19 +149,19 @@
       }
     }
     &:hover {
-      background-image: url("../img/graffiti.png");
+      background-image: url("../img/graffiti.webp");
       height: 62.5vh;
       .title-graffiti {
         display: none;
       }
     }
   }
-  
+
   // EVENTS
   .index-polygone-events {
     margin-left: -38px;
     margin-bottom: 0;
-    background-image: url("../img/blockpartyNB.png");
+    background-image: url("../img/blockpartyNB.webp");
     background-size: cover;
     background-position: center;
     height: 74.07407407vh;
@@ -152,17 +185,17 @@
       }
     }
     &:hover {
-      background-image: url("../img/blockparty.png");
+      background-image: url("../img/blockparty.webp");
       height: 62.5vh;
       .title-events {
         display: none;
       }
     }
   }
-  
+
   // TOURISME
   .index-polygone-tourisme {
-    background-image: url("../img/parcoururbainNB.png");
+    background-image: url("../img/parcoururbainNB.webp");
     background-size: cover;
     background-position: center;
     margin-left: 4vh;
@@ -190,7 +223,7 @@
       }
     }
     &:hover {
-      background-image: url("../img/parcoururbain.png");
+      background-image: url("../img/parcoururbain.webp");
       height: 62.5vh;
       width: 26.2%;
       .title-tourisme {
@@ -202,7 +235,7 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .triptych {
     transform: scale(1.35);
     transform-origin: top;
@@ -211,14 +244,14 @@
       transform: scale(1.6);
     }
   }
-  
+
   // BLACK BOXES
   .index-black-box {
     height: 7vh;
     width: 100vw;
     background-color: black;
   }
-  
+
   .index-black-box-bot {
     margin-top: 25.9vh;
     //height: 7vh;
@@ -228,6 +261,19 @@
   .triptych-wrapper {
     p {
       font-size: 1.8rem;
+    }
+  }
+
+  .separatorContainer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .separatorLogo {
+      width: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .couvert {
+      width: 12rem;
     }
   }
 }

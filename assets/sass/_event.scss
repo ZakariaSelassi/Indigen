@@ -1,12 +1,11 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 // ------BANNER-------
 .event-banner {
-  background-image: url("../img/blockparty.png");
+  background-image: url("../img/blockparty.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,7 +36,7 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
-.event-subtitle-mobile a{
+.event-subtitle-mobile a {
   text-decoration: none;
   color: $redIndigen;
 }
@@ -80,7 +79,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .event-type {
@@ -93,7 +93,7 @@
     font-weight: lighter;
     font-family: $titleFont;
     text-align: right;
-    font-size: 7rem;
+    font-size: 5rem;
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     margin-bottom: -50px;
@@ -157,12 +157,11 @@
     width: 9rem;
     height: 6rem;
   }
-  .separator-event{
+  .separator-event {
     display: none;
   }
 }
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
-
 .title {
   font-family: $titleFont;
   color: $redIndigen;
@@ -192,7 +191,7 @@
   height: 50vh;
   width: 40vw;
   float: right;
-  background: black url(../img/graph.png) center top no-repeat;
+  background: black url(../img/graph.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   shape-margin: 1.5rem;
@@ -215,7 +214,7 @@
   height: 50vh;
   width: 40vw;
   float: left;
-  background: black url(../img/mama.png) center top no-repeat;
+  background: black url(../img/mama.webp) center top no-repeat;
   background-size: cover;
   shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   shape-margin: 1.5rem;
