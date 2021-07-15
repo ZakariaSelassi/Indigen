@@ -496,7 +496,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 0px;
           flex: 0 0 0;
-  background-color: #000;
   overflow: hidden;
   -webkit-transition: flex-grow 0.35s ease, -webkit-box-flex 0.35s ease;
   transition: flex-grow 0.35s ease, -webkit-box-flex 0.35s ease;
@@ -512,10 +511,12 @@
 }
 
 .titleOne {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 30%;
   color: #db3632;
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
-  line-height: 1.5;
   overflow: hidden;
   opacity: 0;
   -webkit-transform: scale(0.5) translateY(100%);
