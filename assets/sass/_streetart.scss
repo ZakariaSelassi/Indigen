@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// ------BANNER-------
+.streetart-banner {
+  background-image: url("../img/fresqueOrange.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.streetart-trapeze {
+  background-color: none;
+}
+
+.streetart-description {
+  color: none;
+}
+
+.streetart-type {
+  display: none;
+}
+
+.event-video {
+  display: none;
+}
+
+.streetart-title {
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.streetart-subtitle-mobile a {
+  text-decoration: none;
+  color: $redIndigen;
+}
+
+//SECOND PART
+.container-picture {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 5%;
+}
+.streetartPict {
+  width: 80%;
+  height: auto;
+}
+.boxOne {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+.boxTwo {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .streetart-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .streetart-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+
+  .streetart-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+
+  .streetart-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .streetart-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .streetart-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+
+  .streetart-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
+
+  .streetart-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
+  }
+
+  .textBold {
+    font-family: $textBold;
+  }
+
+  .event-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+// FONT SIZE SPECIAL SCREEN
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
+  .streetart-title {
+    font-size: 2rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .streetart-subtitle {
+    font-size: 1.5rem;
+  }
+  .streetart-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+
+  /*disparition du banner en responsive*/
+  .streetart-trapeze {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .event-video {
+    display: none;
+  }
+  .streetart-subtitle {
+    display: none;
+  }
+  .streetart-p {
+    display: none;
+  }
+}
