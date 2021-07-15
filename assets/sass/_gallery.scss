@@ -83,6 +83,9 @@
   text-align: center;
   padding:1rem; 
 }
+.title-gallery{
+  display: none;
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .item {
     -ms-flex: 50%;
@@ -206,7 +209,13 @@
   .separator-event{
     display: none;
   }
+  .title-gallery{
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: $titleFont;
+  }
 }
+
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
 
 .title {
