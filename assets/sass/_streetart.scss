@@ -45,72 +45,93 @@
 .container-picture {
   display: flex;
   width: 100%;
-}
-.boxOne {
-  padding: 11rem;
-  margin: 2.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
-    url("../img/fresqueMusique.webp") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
 
-.boxTwo {
-  padding: 11rem;
-  margin: 2.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
-    url("../img/livePaint.webp") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-.boxOne:hover {
-  transform: scale(1.1);
-  transition: transform 0.9s ease;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("../img/fresqueMusique.webp") no-repeat;
-}
-.boxTwo:hover {
-  transform: scale(1.1);
-  transition: transform 0.9s ease;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("../img/livePaint.webp") no-repeat;
-}
-.titleOne {
-  position: absolute;
-  text-align: center;
-  color: $redIndigen;
-  font-family: $titleFont;
-  font-size: 2rem;
-  overflow: hidden;
-  opacity: 1;
-}
-.titleTwo {
-  position: absolute;
-  text-align: center;
-  color: $redIndigen;
-  font-family: $titleFont;
-  font-size: 2rem;
-  overflow: hidden;
-}
-.titleOne:hover {
-  opacity: 0;
-  display: block;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-}
-.titleTwo:hover {
-  opacity: 0;
-  display: block;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
+  .boxOne {
+    position: relative;
+    padding: 11rem;
+    margin: 2.5rem;
+    background-image: url(/assets/img/fresqueMusique.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 30vh;
+    font-size: 2rem;
+    .filter {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 40vw;
+      height: 100%;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      left: 0;
+      transition: background-color 1.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .titleOne {
+      transition: margin-top 1.5s;
+      text-align: center;
+      color: $redIndigen;
+      font-family: $titleFont;
+      font-size: 2rem;
+      //position: absolute;
+    }
+    &:hover {
+      .filter {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .titleOne {
+        margin-top: -1000px;
+      }
+    }
+  }
+  .boxTwo {
+    position: relative;
+    padding: 11rem;
+    margin: 2.5rem;
+    background-image: url(../img/livePaint.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 30vh;
+    font-size: 2rem;
+    .filterTwo {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 40vw;
+      height: 100%;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      left: 0;
+      transition: background-color 1.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .titleTwo {
+      transition: margin-top 1.5s;
+      text-align: center;
+      color: $redIndigen;
+      font-family: $titleFont;
+      font-size: 2rem;
+      //position: absolute;
+    }
+    &:hover {
+      .filterTwo {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .titleTwo {
+        margin-top: -1000px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

@@ -392,85 +392,114 @@
   width: 100%;
 }
 
-.boxOne {
+.container-picture .boxOne {
+  position: relative;
   padding: 11rem;
   margin: 2.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/fresqueMusique.webp") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../img/fresqueMusique.webp") no-repeat;
+  background-image: url(/assets/img/fresqueMusique.webp);
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: auto;
+  background-position: center;
+  width: 40vw;
+  height: 30vh;
+  font-size: 2rem;
 }
 
-.boxTwo {
-  padding: 11rem;
-  margin: 2.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/livePaint.webp") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../img/livePaint.webp") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-
-.boxOne:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.9s ease;
-  transition: -webkit-transform 0.9s ease;
-  transition: transform 0.9s ease;
-  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/fresqueMusique.webp") no-repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/fresqueMusique.webp") no-repeat;
-}
-
-.boxTwo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.9s ease;
-  transition: -webkit-transform 0.9s ease;
-  transition: transform 0.9s ease;
-  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/livePaint.webp") no-repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/livePaint.webp") no-repeat;
-}
-
-.titleOne {
+.container-picture .boxOne .filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 100%;
   position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color 1.5s;
+  transition: background-color 1.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-picture .boxOne .titleOne {
+  -webkit-transition: margin-top 1.5s;
+  transition: margin-top 1.5s;
   text-align: center;
   color: #db3632;
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
-  overflow: hidden;
-  opacity: 1;
 }
 
-.titleTwo {
+.container-picture .boxOne:hover .filter {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container-picture .boxOne:hover .titleOne {
+  margin-top: -1000px;
+}
+
+.container-picture .boxTwo {
+  position: relative;
+  padding: 11rem;
+  margin: 2.5rem;
+  background-image: url(../img/livePaint.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+  height: 30vh;
+  font-size: 2rem;
+}
+
+.container-picture .boxTwo .filterTwo {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 100%;
   position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color 1.5s;
+  transition: background-color 1.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-picture .boxTwo .titleTwo {
+  -webkit-transition: margin-top 1.5s;
+  transition: margin-top 1.5s;
   text-align: center;
   color: #db3632;
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
-  overflow: hidden;
 }
 
-.titleOne:hover {
-  opacity: 0;
-  display: block;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
+.container-picture .boxTwo:hover .filterTwo {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.titleTwo:hover {
-  opacity: 0;
-  display: block;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
+.container-picture .boxTwo:hover .titleTwo {
+  margin-top: -1000px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
