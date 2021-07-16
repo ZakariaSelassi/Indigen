@@ -779,6 +779,20 @@
   padding: 1rem;
 }
 
+.title {
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 1rem;
+}
+
 .container_verse {
   overflow: hidden;
   height: 50vh;
@@ -827,34 +841,6 @@
   -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
-}
-
-.shaped {
-  border: none;
-  shape-outside: none;
-  -webkit-clip-path: none;
-          clip-path: none;
-  margin-left: 1rem;
-}
-
-.shaped_reverse {
-  border: none;
-  shape-outside: none;
-  margin-right: 1rem;
-  -webkit-clip-path: none;
-          clip-path: none;
-}
-
-.content_verse {
-  height: 50vh;
-  width: 80vw;
-}
-
-.content_reverse {
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  padding-right: 0.5rem;
 }
 
 .title {
@@ -1544,54 +1530,130 @@ video {
   }
 }
 
-/*FOOTER*/
-.reseau {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: black;
-  text-align: center;
   color: white;
-}
-
-.reseau a {
-  color: white;
+  padding: 2rem;
   font-family: Roboto, sans-serif;
-  text-decoration: none;
-  font-size: 1rem;
 }
 
-.reseau a:hover {
-  color: #db3632;
+.info-Asbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  text-align: left;
+}
+
+.info-Asbl p:nth-child(3) {
+  line-height: 1.5rem;
+  width: 50%;
+}
+
+.socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
 }
 
 .socialLinks a {
-  font-size: 1.3rem;
+  color: white;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .reseau {
-    padding-top: 2rem;
-    padding: 2rem;
-  }
-  .reseau a {
-    font-size: 1.3rem;
-    text-decoration: none;
-  }
-  .socialLinks a {
-    font-size: 2rem;
-  }
+.socialLinks a:hover {
+  color: #db3632;
+}
+
+.partner {
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 1025px) {
-  .reseau {
-    padding-top: 2rem;
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    color: white;
     padding: 2rem;
+    font-family: Roboto, sans-serif;
   }
-  .reseau a {
-    font-size: 1.3rem;
+  .info-Asbl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30%;
+    text-align: left;
+  }
+  .socialContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
   }
   .socialLinks a {
-    font-size: 2rem;
+    color: white;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    font-size: rem;
+  }
+  .socialLinks a:hover {
+    color: #db3632;
+  }
+  footer a {
+    color: white;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  footer a:hover {
+    color: #db3632;
   }
 }
 
@@ -1676,6 +1738,20 @@ video {
   padding: 1rem;
 }
 
+.title {
+  font-family: Sedgwick, sans-serif;
+  color: #db3632;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 1rem;
+}
+
 .container_verse {
   overflow: hidden;
   height: 50vh;
@@ -1724,34 +1800,6 @@ video {
   -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
-}
-
-.shaped {
-  border: none;
-  shape-outside: none;
-  -webkit-clip-path: none;
-          clip-path: none;
-  margin-left: 1rem;
-}
-
-.shaped_reverse {
-  border: none;
-  shape-outside: none;
-  margin-right: 1rem;
-  -webkit-clip-path: none;
-          clip-path: none;
-}
-
-.content_verse {
-  height: 50vh;
-  width: 80vw;
-}
-
-.content_reverse {
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  padding-right: 0.5rem;
 }
 
 .title {
@@ -2288,5 +2336,13 @@ body {
   .triptych-wrapper p {
     font-size: 2.8rem;
   }
+}
+
+.fresco {
+  background-image: url(https://www.heta-graffiti.com/wp-content/uploads/2019/05/fresque-chambery-singe.jpg);
+}
+
+.school {
+  background-image: url(https://www.parissurunfil.com/wp-content/uploads/2019/05/1-art42.jpeg);
 }
 /*# sourceMappingURL=style.css.map */

@@ -55,6 +55,19 @@
   color: black;
   padding: 1rem;
 }
+.title {
+  font-family: $titleFont;
+  color: $redIndigen;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.event-text {
+  font-family: $subtitlesFont;
+  font-size: 0.8rem;
+  color: black;
+  padding: 1rem;
+}
 
 .container_verse {
   overflow: hidden;
@@ -100,30 +113,6 @@
   shape-margin: 1.5rem;
   clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
   border: 1px solid black;
-}
-
-.shaped {
-  border: none;
-  shape-outside: none;
-  clip-path: none;
-  margin-left: 1rem;
-}
-.shaped_reverse {
-  border: none;
-  shape-outside: none;
-  margin-right: 1rem;
-  clip-path: none;
-}
-
-.content_verse {
-  height: 50vh;
-  width: 80vw;
-}
-.content_reverse {
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  padding-right: 0.5rem;
 }
 
 .title {

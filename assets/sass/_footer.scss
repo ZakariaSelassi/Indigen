@@ -1,53 +1,89 @@
-/*FOOTER*/
-.reseau {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+footer{
+  display: flex;
   background-color: black;
-  text-align: center;
   color: white;
+  padding: 2rem;
+  font-family: $subtitlesFont;
 }
-.reseau a {
+.info-Asbl{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: left;
+  p:nth-child(3){
+    line-height: 1.5rem;
+    width: 50%;
+  }
+
+}
+.socialContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.socialLinks a {
   color: white;
   font-family: $subtitlesFont;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   &:hover {
     color: $redIndigen;
   }
 }
-.socialLinks {
-  a{
-    font-size: 1.3rem;
-  }
+.partner{
+  font-size: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .reseau {
-    padding-top: 2rem;
-    padding: 2rem;
-    a {
-      font-size: 1.3rem;
-      text-decoration: none;
-    }
-  }
-  .socialLinks {
-    a{
-      font-size: 2rem;
-    }
-  }
+  
 }
 
 
 @media screen and (min-width: 1025px) {
-  .reseau {
-    padding-top: 2rem;
+  footer{
+    display: flex;
+    background-color: black;
+    color: white;
     padding: 2rem;
-    a {
-      font-size: 1.3rem;
+    font-family: $subtitlesFont;
+  }
+  .info-Asbl{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    text-align: left;
+  }
+  .socialContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  .socialLinks a {
+    color: white;
+    font-family: $subtitlesFont;
+    text-decoration: none;
+    font-size: rem;
+    &:hover {
+      color: $redIndigen;
     }
   }
-  .socialLinks {
-    a{
-      font-size: 2rem;
+  footer a {
+    color: white;
+    font-family: $subtitlesFont;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &:hover {
+      color: $redIndigen;
     }
   }
 }
