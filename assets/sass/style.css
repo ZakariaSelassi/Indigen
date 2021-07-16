@@ -389,30 +389,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7rem;
 }
 
 .container-picture .boxOne {
-  position: relative;
-  padding: 11rem;
-  margin: 2.5rem;
   background-image: url(/assets/img/fresqueMusique.webp);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 40vw;
-  height: 30vh;
+  height: 36vh;
   font-size: 2rem;
 }
 
 .container-picture .boxOne .filter {
   background-color: rgba(0, 0, 0, 0.5);
   width: 40vw;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
+  height: 36vh;
   -webkit-transition: background-color 1.5s;
   transition: background-color 1.5s;
   display: -webkit-box;
@@ -431,10 +433,9 @@
 }
 
 .container-picture .boxOne .titleOne {
-  -webkit-transition: margin-top 1.5s;
-  transition: margin-top 1.5s;
-  text-align: center;
-  color: #db3632;
+  -webkit-transition: margin-top 1.5s, color 1s;
+  transition: margin-top 1.5s, color 1s;
+  color: white;
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
 }
@@ -444,30 +445,25 @@
 }
 
 .container-picture .boxOne:hover .titleOne {
-  margin-top: -1000px;
+  margin-top: -500px;
+  color: rgba(0, 0, 0, 0);
 }
 
 .container-picture .boxTwo {
   position: relative;
-  padding: 11rem;
-  margin: 2.5rem;
   background-image: url(../img/livePaint.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 40vw;
-  height: 30vh;
+  height: 36vh;
   font-size: 2rem;
 }
 
 .container-picture .boxTwo .filterTwo {
   background-color: rgba(0, 0, 0, 0.5);
   width: 40vw;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
+  height: 36vh;
   -webkit-transition: background-color 1.5s;
   transition: background-color 1.5s;
   display: -webkit-box;
@@ -486,10 +482,10 @@
 }
 
 .container-picture .boxTwo .titleTwo {
-  -webkit-transition: margin-top 1.5s;
-  transition: margin-top 1.5s;
+  -webkit-transition: margin-top 1.5s , color 1s;
+  transition: margin-top 1.5s , color 1s;
   text-align: center;
-  color: #db3632;
+  color: white;
   font-family: Sedgwick, sans-serif;
   font-size: 2rem;
 }
@@ -499,7 +495,8 @@
 }
 
 .container-picture .boxTwo:hover .titleTwo {
-  margin-top: -1000px;
+  margin-top: -500px;
+  color: rgba(0, 0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
