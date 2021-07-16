@@ -1277,6 +1277,11 @@ video {
   width: 100%;
 }
 
+.video {
+  position: relative;
+  z-index: -1;
+}
+
 @media screen and (min-width: 1024px) {
   .video {
     position: relative;
