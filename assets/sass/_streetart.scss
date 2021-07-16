@@ -1,0 +1,216 @@
+// ------BANNER-------
+.streetart-banner {
+  background-image: url("../img/fresqueOrange.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.streetart-trapeze {
+  background-color: none;
+}
+
+.streetart-description {
+  color: none;
+}
+
+.streetart-type {
+  display: none;
+}
+
+.event-video {
+  display: none;
+}
+
+.streetart-title {
+  color: white;
+  height: 50vh;
+  font-family: $titleFont;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.streetart-subtitle-mobile a {
+  text-decoration: none;
+  color: $redIndigen;
+}
+
+//SECOND PART
+.container-picture {
+  display: flex;
+  width: 100%;
+}
+.boxOne {
+  padding: 11rem;
+  margin: 2.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../img/fresqueMusique.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.boxTwo {
+  padding: 11rem;
+  margin: 2.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../img/livePaint.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.boxOne:hover {
+  transform: scale(1.1);
+  transition: transform 0.9s ease;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../img/fresqueMusique.webp") no-repeat;
+}
+.boxTwo:hover {
+  transform: scale(1.1);
+  transition: transform 0.9s ease;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../img/livePaint.webp") no-repeat;
+}
+.titleOne {
+  position: absolute;
+  text-align: center;
+  color: $redIndigen;
+  font-family: $titleFont;
+  font-size: 2rem;
+  overflow: hidden;
+  opacity: 1;
+}
+.titleTwo {
+  position: absolute;
+  text-align: center;
+  color: $redIndigen;
+  font-family: $titleFont;
+  font-size: 2rem;
+  overflow: hidden;
+}
+.titleOne:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+.titleTwo:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .streetart-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  // ------BANNER-------
+  .streetart-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+
+  .streetart-trapeze {
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+
+  .streetart-description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .streetart-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .streetart-title {
+    font-weight: lighter;
+    font-family: $titleFont;
+    text-align: right;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+
+  .streetart-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: $subtitlesFont;
+    z-index: 2;
+    text-align: right;
+    color: $redIndigen;
+    font-size: 2rem;
+  }
+
+  .streetart-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: $subtitlesFont;
+    font-size: 1rem;
+    width: 16vw;
+  }
+
+  .textBold {
+    font-family: $textBold;
+  }
+
+  .event-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+// FONT SIZE SPECIAL SCREEN
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
+  .streetart-title {
+    font-size: 2rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .streetart-subtitle {
+    font-size: 1.5rem;
+  }
+  .streetart-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+}

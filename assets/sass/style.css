@@ -403,6 +403,260 @@
   }
 }
 
+.streetart-banner {
+  background-image: url("../img/fresqueOrange.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.streetart-trapeze {
+  background-color: none;
+}
+
+.streetart-description {
+  color: none;
+}
+
+.streetart-type {
+  display: none;
+}
+
+.event-video {
+  display: none;
+}
+
+.streetart-title {
+  color: white;
+  height: 50vh;
+  font-family: Sedgwick, sans-serif;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.streetart-subtitle-mobile a {
+  text-decoration: none;
+  color: #db3632;
+}
+
+.container-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.boxOne {
+  padding: 11rem;
+  margin: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/fresqueMusique.webp") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../img/fresqueMusique.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.boxTwo {
+  padding: 11rem;
+  margin: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../img/livePaint.webp") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url("../img/livePaint.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.boxOne:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.9s ease;
+  transition: -webkit-transform 0.9s ease;
+  transition: transform 0.9s ease;
+  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/fresqueMusique.webp") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/fresqueMusique.webp") no-repeat;
+}
+
+.boxTwo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.9s ease;
+  transition: -webkit-transform 0.9s ease;
+  transition: transform 0.9s ease;
+  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../img/livePaint.webp") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/livePaint.webp") no-repeat;
+}
+
+.titleOne {
+  position: absolute;
+  text-align: center;
+  color: #db3632;
+  font-family: Sedgwick, sans-serif;
+  font-size: 2rem;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.titleTwo {
+  position: absolute;
+  text-align: center;
+  color: #db3632;
+  font-family: Sedgwick, sans-serif;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.titleOne:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+.titleTwo:hover {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .streetart-title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .streetart-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 85vh;
+    width: 100vw;
+  }
+  .streetart-trapeze {
+    -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 70%;
+    padding: 2%;
+  }
+  .streetart-description {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+  .streetart-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .streetart-title {
+    font-weight: lighter;
+    font-family: Sedgwick, sans-serif;
+    text-align: right;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+  .streetart-subtitle {
+    margin-top: 8%;
+    font-weight: lighter;
+    font-family: Roboto, sans-serif;
+    z-index: 2;
+    text-align: right;
+    color: #db3632;
+    font-size: 2rem;
+  }
+  .streetart-p {
+    margin-top: 2%;
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    width: 16vw;
+  }
+  .textBold {
+    font-family: Roboto-bold, sans-serif;
+  }
+  .event-video {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 15vh;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .index-black-box {
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+  }
+  .streetart-title {
+    font-size: 2rem;
+    margin-bottom: -3%;
+    margin-top: -1%;
+  }
+  .streetart-subtitle {
+    font-size: 1.5rem;
+  }
+  .streetart-p {
+    line-height: 120%;
+    font-size: 1rem;
+    text-align: right;
+  }
+  .event-video {
+    margin-top: 7%;
+    width: 9rem;
+    height: 6rem;
+  }
+}
+
 .partenaires-banner {
   background-image: url("../img/parcoururbain.webp");
   background-repeat: no-repeat;
@@ -646,6 +900,9 @@
     font-size: 1rem;
     margin-top: 5%;
   }
+  .logoIndigen {
+    display: none;
+  }
 }
 
 .event-text {
@@ -657,6 +914,27 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .logoIndigen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .indigenskull {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 4rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .event-banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1015,121 +1293,8 @@ video {
   z-index: -1;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.galerie {
-  position: relative;
-  -webkit-column-count: 5;
-          column-count: 5;
-  margin: 80px 50px 20px 50px;
-}
-
-.photo {
-  display: inline-block;
-  overflow: hidden;
-  border: 1px solid grey;
-  border-radius: 10px;
-}
-
-.photo.hide {
-  display: none;
-}
-
-.photo.show {
-  display: inline-block;
-  -webkit-animation: show 0.5s ease;
-          animation: show 0.5s ease;
-}
-
-@-webkit-keyframes show {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-.galerie-image {
-  width: 100%;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.photo:hover .galerie-image {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.pagination {
-  width: 100%;
-  text-align: center;
-}
-
-.pagination .page {
-  color: #000;
-  font-family: Roboto, sans-serif;
-}
-
-.pagination div {
-  display: inline-block;
-  padding: 15px;
-  margin: 0 0 40px 0;
-}
-
-.prev,
-.next {
-  color: #000;
-  border: 1px solid black;
-  font-size: 1rem;
-  padding: 7px 15px;
-}
-
-.prev.disabled,
-.next.disabled {
-  border-color: gray;
-  color: gray;
-  pointer-events: none;
-}
-
-@media screen and (max-width: 940px) {
-  .galerie {
-    -webkit-column-count: 3;
-            column-count: 3;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .galerie {
-    -webkit-column-count: 2;
-            column-count: 2;
-  }
-}
-
 .gallery-banner {
-  background-image: url("../img/parcoururbain.webp");
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/27/16/23/woman-1283009__340.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1167,7 +1332,98 @@ video {
   background-color: rgba(0, 0, 0, 0.514);
 }
 
+#galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galerie {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-width: 70%;
+}
+
+.item {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.item img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 10px;
+}
+
+.prev, .next {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.sep {
+  text-align: center;
+  padding: 1rem;
+}
+
+.title-gallery {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .item {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .item {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+  .gallery-title {
+    font-size: 6rem;
+  }
   .event-title {
     font-size: 4rem;
   }
@@ -1259,6 +1515,12 @@ video {
     height: 15vh;
     display: block;
   }
+  .title-gallery {
+    display: block;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: Sedgwick, sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
@@ -1279,322 +1541,6 @@ video {
     margin-top: 7%;
     width: 9rem;
     height: 6rem;
-  }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.event-banner {
-  background-image: url("../img/blockparty.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.event-trapeze {
-  background-color: none;
-}
-
-.event-description {
-  color: none;
-}
-
-.event-type {
-  display: none;
-}
-
-.event-video {
-  display: none;
-}
-
-.event-title {
-  color: white;
-  height: 50vh;
-  font-family: Sedgwick, sans-serif;
-  font-size: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(0, 0, 0, 0.514);
-}
-
-.event-subtitle-mobile a {
-  text-decoration: none;
-  color: #db3632;
-}
-
-/*TEXTE_PHOTO EN DIAGONALE PAT*/
-.title {
-  font-family: Sedgwick, sans-serif;
-  color: #db3632;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.event-text {
-  font-family: Roboto, sans-serif;
-  font-size: 0.9rem;
-  color: black;
-  padding: 1rem;
-}
-
-.container_verse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  margin-left: 10%;
-  border-left: 2px solid #db3632;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped {
-  height: 50vh;
-  width: 40vw;
-  float: right;
-  background: black url(../img/graph.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-  border: 1px solid black;
-}
-
-.container_reverse {
-  overflow: hidden;
-  height: 50vh;
-  width: 80vw;
-  text-align: left;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-right: 2px solid #db3632;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-.shaped_reverse {
-  height: 50vh;
-  width: 40vw;
-  float: left;
-  background: black url(../img/mama.webp) center top no-repeat;
-  background-size: cover;
-  shape-outside: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  shape-margin: 1.5rem;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-  border: 1px solid black;
-}
-
-.shaped {
-  border: none;
-  shape-outside: none;
-  -webkit-clip-path: none;
-          clip-path: none;
-  margin-left: 1rem;
-}
-
-.shaped_reverse {
-  border: none;
-  shape-outside: none;
-  margin-right: 1rem;
-  -webkit-clip-path: none;
-          clip-path: none;
-}
-
-.content_verse {
-  height: 50vh;
-  width: 80vw;
-}
-
-.content_reverse {
-  height: 50vh;
-  width: 80vw;
-  text-align: right;
-  padding-right: 0.5rem;
-}
-
-.title {
-  font-size: 1.2rem;
-  padding: 0.4rem;
-}
-
-/*disparition du banner en responsive*/
-.separator-event {
-  visibility: visible;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 3%;
-  font-family: Roboto-bold, sans-serif;
-  color: #db3632;
-  font-size: 0.6rem;
-  margin-top: 5%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .event-title {
-    font-size: 4rem;
-  }
-  .separator-event {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 3%;
-    font-family: Roboto-bold, sans-serif;
-    color: #db3632;
-    font-size: 1rem;
-    margin-top: 5%;
-  }
-}
-
-.event-text {
-  font-size: 1rem;
-}
-
-.title {
-  font-size: 1.5rem;
-}
-
-@media only screen and (min-width: 1025px) {
-  .event-banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 85vh;
-    width: 100vw;
-  }
-  .event-trapeze {
-    -webkit-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-            clip-path: polygon(58% 0, 100% 0%, 100% 100%, 76% 100%);
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 70%;
-    padding: 2%;
-  }
-  .event-description {
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 100%;
-  }
-  .event-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .event-title {
-    font-weight: lighter;
-    font-family: Sedgwick, sans-serif;
-    text-align: right;
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0);
-    height: auto;
-    margin-bottom: -50px;
-    margin-top: -40px;
-  }
-  .event-subtitle {
-    margin-top: 8%;
-    font-weight: lighter;
-    font-family: Roboto, sans-serif;
-    z-index: 2;
-    text-align: right;
-    color: #db3632;
-    font-size: 1.5rem;
-  }
-  .event-p {
-    margin-top: 2%;
-    font-weight: lighter;
-    color: white;
-    text-align: right;
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    width: 16vw;
-  }
-  .textBold {
-    font-family: Roboto-bold, sans-serif;
-  }
-  .event-video {
-    margin-top: 1rem;
-    width: 10vw;
-    height: 15vh;
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .index-black-box {
-    height: 7vh;
-    width: 100vw;
-    background-color: black;
-  }
-  .event-title {
-    font-size: 4rem;
-    margin-bottom: -3%;
-    margin-top: -1%;
-  }
-  .event-subtitle {
-    font-size: 1.5rem;
-  }
-  .event-p {
-    line-height: 120%;
-    font-size: 1rem;
-    text-align: right;
-  }
-  .event-video {
-    margin-top: 7%;
-    width: 9rem;
-    height: 6rem;
-  }
-  .separator-event {
-    display: none;
   }
 }
 
@@ -1851,6 +1797,9 @@ video {
     font-size: 1rem;
     margin-top: 5%;
   }
+  .logoIndigen {
+    display: none;
+  }
 }
 
 .event-text {
@@ -1862,6 +1811,27 @@ video {
 }
 
 @media only screen and (min-width: 1025px) {
+  .logoIndigen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .indigenskull {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 4rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .event-banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2318,5 +2288,13 @@ body {
   .triptych-wrapper p {
     font-size: 2.8rem;
   }
+}
+
+.fresco {
+  background-image: url(https://www.heta-graffiti.com/wp-content/uploads/2019/05/fresque-chambery-singe.jpg);
+}
+
+.school {
+  background-image: url(https://www.parissurunfil.com/wp-content/uploads/2019/05/1-art42.jpeg);
 }
 /*# sourceMappingURL=style.css.map */

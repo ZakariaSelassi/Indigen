@@ -1,104 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-//Galerie
-.galerie {
-  position: relative;
-  column-count: 5;
-  margin: 80px 50px 20px 50px;
-}
-
-.photo {
-  display: inline-block;
-  overflow: hidden;
-  border: 1px solid grey;
-  border-radius: 10px;
-}
-
-//Hide
-.photo.hide {
-  display: none;
-}
-
-//Show
-.photo.show {
-  display: inline-block;
-  animation: show 0.5s ease;
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-// C'est l'animation d'effet zoom
-.galerie-image {
-  width: 100%;
-  transition: 0.25s ease-in-out;
-}
-
-.photo:hover .galerie-image {
-  transform: scale(1.1);
-}
-
-//Pagination--------------------------------------------
-.pagination {
-  width: 100%;
-  text-align: center;
-}
-
-.pagination .page {
-  color: #000;
-  font-family: $subtitlesFont;
-}
-
-.pagination div {
-  display: inline-block;
-  padding: 15px;
-  margin: 0 0 40px 0;
-}
-
-.prev,
-.next {
-  color: #000;
-  border: 1px solid black;
-  font-size: 1rem;
-  padding: 7px 15px;
-}
-
-// Disabled également
-.prev.disabled,
-.next.disabled {
-  border-color: gray;
-  color: gray;
-  pointer-events: none;
-}
-
-//responsive Galerie
-@media screen and (max-width: 940px) {
-  .galerie {
-    column-count: 3;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .galerie {
-    column-count: 2;
-  }
-}
-
 // ------BANNER-------
 .gallery-banner {
-  background-image: url("../img/parcoururbain.webp");
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/27/16/23/woman-1283009__340.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,8 +31,72 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.514);
 }
+// gallery 
 
+#galleryContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.galerie {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-width: 70%;
+}
+.item {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.item img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 10px;
+}
+.prev,.next{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+.sep{
+  text-align: center;
+  padding:1rem; 
+}
+.title-gallery{
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .item {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .item {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .gallery-title {
+    font-size: 6rem;
+  }
   .event-title {
     font-size: 4rem;
   }
@@ -207,6 +173,12 @@
     height: 15vh;
     display: block;
   }
+  .title-gallery{
+    display: block;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: $titleFont;
+  }
 }
 
 // FONT SIZE SPECIAL SCREEN
@@ -230,4 +202,3 @@
     height: 6rem;
   }
 }
-@import "event";
