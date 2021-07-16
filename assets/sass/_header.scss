@@ -174,7 +174,7 @@
     opacity: 100%;
   }
   .video {
-    position: relative;
+   // position: relative;
     //top: 150px;
     margin-top: -80px;
     z-index: 1;
@@ -187,9 +187,13 @@ video {
   display: block;
   width: 100%;
 }
-.video {
-  position: relative;
-  //top: -210px;
-  margin-top: -115px;
-  z-index: -1;
+
+
+@media screen and (min-width: 1024px){
+  .video{
+    position: relative;
+    //top: -210px;
+    margin-top: -115px;
+    z-index: -1;
+  }
 }

@@ -40,7 +40,9 @@
   text-decoration: none;
   color: $redIndigen;
 }
-
+.indigenskull{
+  display: none;
+}
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
 .title {
   font-family: $titleFont;
@@ -167,6 +169,7 @@
     width: 100%;
   }
   .indigenskull{
+    display: block;
     //padding-top: 10rem;
     padding-top: 10rem;
     padding-bottom: 10rem;

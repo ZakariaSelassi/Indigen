@@ -764,6 +764,10 @@
   color: #db3632;
 }
 
+.indigenskull {
+  display: none;
+}
+
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
 .title {
   font-family: Sedgwick, sans-serif;
@@ -913,6 +917,7 @@
     width: 100%;
   }
   .indigenskull {
+    display: block;
     padding-top: 10rem;
     padding-bottom: 10rem;
     width: 4rem;
@@ -1260,7 +1265,6 @@
     opacity: 100%;
   }
   .video {
-    position: relative;
     margin-top: -80px;
     z-index: 1;
     width: 100% !important;
@@ -1273,10 +1277,12 @@ video {
   width: 100%;
 }
 
-.video {
-  position: relative;
-  margin-top: -115px;
-  z-index: -1;
+@media screen and (min-width: 1024px) {
+  .video {
+    position: relative;
+    margin-top: -115px;
+    z-index: -1;
+  }
 }
 
 .gallery-banner {
@@ -1723,6 +1729,10 @@ footer a {
   color: #db3632;
 }
 
+.indigenskull {
+  display: none;
+}
+
 /*TEXTE_PHOTO EN DIAGONALE PAT*/
 .title {
   font-family: Sedgwick, sans-serif;
@@ -1872,6 +1882,7 @@ footer a {
     width: 100%;
   }
   .indigenskull {
+    display: block;
     padding-top: 10rem;
     padding-bottom: 10rem;
     width: 4rem;
